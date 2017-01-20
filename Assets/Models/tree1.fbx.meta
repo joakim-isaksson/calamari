@@ -14,6 +14,9 @@ ModelImporter:
     100012: pCylinder8
     100014: //RootNode
     100016: trunk1
+    100018: beam
+    100020: pCylinder10
+    100022: pCylinder11
     400000: pCylinder2
     400002: pCylinder3
     400004: pCylinder4
@@ -23,6 +26,9 @@ ModelImporter:
     400012: pCylinder8
     400014: //RootNode
     400016: trunk1
+    400018: beam
+    400020: pCylinder10
+    400022: pCylinder11
     2300000: pCylinder2
     2300002: pCylinder3
     2300004: pCylinder4
@@ -31,6 +37,9 @@ ModelImporter:
     2300010: pCylinder7
     2300012: pCylinder8
     2300014: trunk1
+    2300016: beam
+    2300018: pCylinder10
+    2300020: pCylinder11
     3300000: pCylinder2
     3300002: pCylinder3
     3300004: pCylinder4
@@ -39,6 +48,9 @@ ModelImporter:
     3300010: pCylinder7
     3300012: pCylinder8
     3300014: trunk1
+    3300016: beam
+    3300018: pCylinder10
+    3300020: pCylinder11
     4300000: trunk1
     4300002: pCylinder2
     4300004: pCylinder3
@@ -47,6 +59,9 @@ ModelImporter:
     4300010: pCylinder6
     4300012: pCylinder7
     4300014: pCylinder8
+    4300016: beam
+    4300018: pCylinder11
+    4300020: pCylinder10
   materials:
     importMaterials: 1
     materialName: 0
