@@ -41,16 +41,22 @@ public class PlayerHand : MonoBehaviour {
 	/// </summary>
 	public void PlayerClick(){
 
-		if (handState == HandState.Resting || stamina <= 0)
+		//Debug.Log ("Player clicked");
+
+		if (handState == HandState.Waving || stamina <= 0)
 			return;
 
-		Vector3 point = mainCamera.ScreenToWorldPoint (Input.mousePosition);
-		Collider2D clickOnCol = Physics2D.OverlapPoint (point, RaycastLayer);
+
+		Ray mouseRay = mainCamera.ScreenPointToRay (Input.mousePosition);
+		RaycastHit hit;
+		Physics.Raycast(mouseRay,out hit,100,RaycastLayer);
 
 		StartCoroutine (PlayHandAnimation());
+		Debug.Log ("Wave");
 
-		if (clickOnCol != null) {
-			if (clickOnCol.gameObject.CompareTag (EnemyTag)) {
+		if (hit.collider != null) {
+			Debug.Log ("Player hit something");
+			if (hit.collider.gameObject.CompareTag (EnemyTag)) {
 				//TODO call the enemy stuff;
 			}
 		}
