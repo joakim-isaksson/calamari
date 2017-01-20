@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.86459553, g: 0.86459553, b: 0.86459553, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -190,6 +190,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114951813183372696, guid: ec111b212271106498429e30e773ddc3,
+        type: 2}
+      propertyPath: BuildingPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4983017970514758, guid: ec111b212271106498429e30e773ddc3, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -222,6 +227,36 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114951813183372696, guid: ec111b212271106498429e30e773ddc3,
+        type: 2}
+      propertyPath: BuildingPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1537440553348222, guid: ddd866c056b4df048ad5ceb580c9827d,
+        type: 2}
+    - target: {fileID: 114951813183372696, guid: ec111b212271106498429e30e773ddc3,
+        type: 2}
+      propertyPath: LampPostPrefab
+      value: 
+      objectReference: {fileID: 1162805254488346, guid: 5b49e3f265db85e488e33011198e17a6,
+        type: 2}
+    - target: {fileID: 114951813183372696, guid: ec111b212271106498429e30e773ddc3,
+        type: 2}
+      propertyPath: TreePrefab
+      value: 
+      objectReference: {fileID: 1793615550477268, guid: e11af69cc1c6d824c81f12360d64796b,
+        type: 2}
+    - target: {fileID: 114951813183372696, guid: ec111b212271106498429e30e773ddc3,
+        type: 2}
+      propertyPath: RoadPrefab
+      value: 
+      objectReference: {fileID: 1922467264555540, guid: a20b12acf18092e4ba00f4c4b689a983,
+        type: 2}
+    - target: {fileID: 114951813183372696, guid: ec111b212271106498429e30e773ddc3,
+        type: 2}
+      propertyPath: SidewalkPrefab
+      value: 
+      objectReference: {fileID: 1503220576560828, guid: df0b53df3bfaeb344ace46a400685217,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec111b212271106498429e30e773ddc3, type: 2}
   m_IsPrefabParent: 0

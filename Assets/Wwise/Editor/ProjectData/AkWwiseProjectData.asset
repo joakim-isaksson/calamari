@@ -13,12 +13,204 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
+  - PhysicalPath: Events\Atmo.wwu
+    ParentPhysicalPath: 
+    Guid: '{EBAB7ACE-F075-4252-B78C-AD21E1D8CDDF}'
+    m_lastTimePsrt1: -1656544039
+    m_lastTimePart2: -1999355530
+    List: []
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{9578ABCE-040E-436B-9EA4-045F9B9FCA17}'
     m_lastTimePsrt1: -1800033768
     m_lastTimePart2: -1999355546
     List: []
+  - PhysicalPath: Events\Dialogue.wwu
+    ParentPhysicalPath: 
+    Guid: '{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}'
+    m_lastTimePsrt1: -1656488889
+    m_lastTimePart2: -1999355530
+    List:
+    - Name: Narrator_Go
+      Path: Dialogue\Narrator\Narrator_Go
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: Narrator
+        ObjectType: 4
+      - ElementName: Narrator_Go
+        ObjectType: 3
+      ID: -1820328229
+      Guid: 02d6fc577a28c747be0b9ee689a3d040
+      maxAttenuation: 0
+    - Name: Narrator_Negative
+      Path: Dialogue\Narrator\Narrator_Negative
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: Narrator
+        ObjectType: 4
+      - ElementName: Narrator_Negative
+        ObjectType: 3
+      ID: -1432130804
+      Guid: b34a7233927cda479bffc26c3b4609b6
+      maxAttenuation: 0
+    - Name: Narrator_Neutral
+      Path: Dialogue\Narrator\Narrator_Neutral
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: Narrator
+        ObjectType: 4
+      - ElementName: Narrator_Neutral
+        ObjectType: 3
+      ID: 645232014
+      Guid: 9302e3ba84b7a5489378115e97e87cc1
+      maxAttenuation: 0
+    - Name: Narrator_Positive
+      Path: Dialogue\Narrator\Narrator_Positive
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: Narrator
+        ObjectType: 4
+      - ElementName: Narrator_Positive
+        ObjectType: 3
+      ID: -993414556
+      Guid: d2cb5e07fd9ef24ead82a6d62854dd31
+      maxAttenuation: 0
+    - Name: Narrator_Ready
+      Path: Dialogue\Narrator\Narrator_Ready
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: Narrator
+        ObjectType: 4
+      - ElementName: Narrator_Ready
+        ObjectType: 3
+      ID: -654777450
+      Guid: 3845b058175bd443bb2bcde905226601
+      maxAttenuation: 0
+    - Name: People_Negative_Reaction
+      Path: Dialogue\People\People_Negative_Reaction
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: People
+        ObjectType: 4
+      - ElementName: People_Negative_Reaction
+        ObjectType: 3
+      ID: -1955499320
+      Guid: 1cf3c31b6f4ca040b07c117d83b01ecf
+      maxAttenuation: 0
+    - Name: People_Positive_Reaction
+      Path: Dialogue\People\People_Positive_Reaction
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: People
+        ObjectType: 4
+      - ElementName: People_Positive_Reaction
+        ObjectType: 3
+      ID: 2100382536
+      Guid: 8546fc65af8b37499a02ba826cbe15e8
+      maxAttenuation: 0
+  - PhysicalPath: Events\Music.wwu
+    ParentPhysicalPath: 
+    Guid: '{2AB8BC12-B398-4B6E-8851-7861A56CC893}'
+    m_lastTimePsrt1: -1656443765
+    m_lastTimePart2: -1999355530
+    List:
+    - Name: Play_EndGame_Music
+      Path: Music\Play_EndGame_Music
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_EndGame_Music
+        ObjectType: 3
+      ID: -1366768573
+      Guid: f2dfd4fb38618b4b8a5f54a528350a42
+      maxAttenuation: 0
+    - Name: Play_InGame_Music
+      Path: Music\Play_InGame_Music
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_InGame_Music
+        ObjectType: 3
+      ID: 347845317
+      Guid: 6829960b095b974193acac2706764aa9
+      maxAttenuation: 0
+    - Name: Play_Menu_Music
+      Path: Music\Play_Menu_Music
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_Menu_Music
+        ObjectType: 3
+      ID: -2066813397
+      Guid: 5842e645cad5e542b7cb9d50e495ca61
+      maxAttenuation: 0
+  - PhysicalPath: Events\SFX.wwu
+    ParentPhysicalPath: 
+    Guid: '{90A53CA4-E6D7-4B50-8BEC-7BE3239AB797}'
+    m_lastTimePsrt1: -1656388626
+    m_lastTimePart2: -1999355530
+    List:
+    - Name: Main_Character_Pain
+      Path: SFX\Main_Character\Main_Character_Pain
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Main_Character
+        ObjectType: 4
+      - ElementName: Main_Character_Pain
+        ObjectType: 3
+      ID: 1230095489
+      Guid: cb4ef6337fcefc45bdd83c494991037b
+      maxAttenuation: 0
+    - Name: Wave_Failed
+      Path: SFX\Foley\Wave_Failed
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Foley
+        ObjectType: 4
+      - ElementName: Wave_Failed
+        ObjectType: 3
+      ID: 335424322
+      Guid: 14d68dbe36db744e9b25fc1470e81432
+      maxAttenuation: 0
+    - Name: Wave_Success
+      Path: SFX\Foley\Wave_Success
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Foley
+        ObjectType: 4
+      - ElementName: Wave_Success
+        ObjectType: 3
+      ID: -863687854
+      Guid: 219ebe537e2a8040a9f36ef40801fdd2
+      maxAttenuation: 0
+  - PhysicalPath: Events\UI.wwu
+    ParentPhysicalPath: 
+    Guid: '{7D9028B3-6809-4D42-9EA1-BDA8FF6D0CE6}'
+    m_lastTimePsrt1: -1656348493
+    m_lastTimePart2: -1999355530
+    List:
+    - Name: Menu_Click
+      Path: UI\Menu\Menu_Click
+      PathAndIcons:
+      - ElementName: UI
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: Menu_Click
+        ObjectType: 3
+      ID: 760777789
+      Guid: 7d4e6459f9eb464da42edcccc1927579
+      maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 

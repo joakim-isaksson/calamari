@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerHand : MonoBehaviour {
 
-
 	public string EnemyTag;
 	public LayerMask RaycastLayer;
 

@@ -2,15 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WorldController : MonoBehaviour {
+public class WorldController : MonoBehaviour
+{
+    public GameObject[] BuildingPrefabs;
+    public GameObject LampPostPrefab;
+    public GameObject TreePrefab;
+    public GameObject SidewalkPrefab;
+    public GameObject RoadPrefab;
 
-	// Use this for initialization
-	void Start () {
+	void Start()
+    {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void Update()
+    {
 		
 	}
+
+    private void GenerateLevel()
+    {
+        
+    }
 }

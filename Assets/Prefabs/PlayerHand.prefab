@@ -16,33 +16,33 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4427857729088354}
-  - 114: {fileID: 114481763103828622}
+  - component: {fileID: 4427857729088354}
+  - component: {fileID: 114481763103828622}
   m_Layer: 0
   m_Name: PlayerHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1421498071164150
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4184778349360494}
-  - 212: {fileID: 212720412493804180}
+  - component: {fileID: 4184778349360494}
+  - component: {fileID: 212720412493804180}
   m_Layer: 0
-  m_Name: 
+  m_Name: HandSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4184778349360494
 Transform:
   m_ObjectHideFlags: 1
@@ -52,10 +52,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4427857729088354}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4427857729088354
 Transform:
   m_ObjectHideFlags: 1
@@ -65,11 +65,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4184778349360494}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114481763103828622
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,10 +81,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36626ffad92e404393fa8f0c54d9ef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyTag: 
-  RaycastLayer:
+  enemyTag: Enemy
+  raycastLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!212 &212720412493804180
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -99,7 +99,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -107,7 +109,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
