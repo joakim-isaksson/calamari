@@ -1,16 +1,27 @@
 fileFormatVersion: 2
-guid: b8930083b948b5142ad5ffb8ac07f39d
-timeCreated: 1484944923
+guid: 23d21015dfd4efd41b39e6236b392fde
+timeCreated: 1484949640
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube1
-    4300002: house1
+    100000: beam
+    100002: pCylinder10
+    100004: pCylinder11
+    100006: //RootNode
+    400000: beam
+    400002: pCylinder10
+    400004: pCylinder11
+    400006: //RootNode
+    2300000: beam
+    2300002: pCylinder10
+    2300004: pCylinder11
+    3300000: beam
+    3300002: pCylinder10
+    3300004: pCylinder11
+    4300000: beam
+    4300002: pCylinder11
+    4300004: pCylinder10
   materials:
     importMaterials: 1
     materialName: 0
