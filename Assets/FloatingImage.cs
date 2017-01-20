@@ -6,19 +6,19 @@ using UnityEngine.UI;
 public class FloatingImage : MonoBehaviour {
 
 
-	public float existingTime;
-	public Vector2 floatingSpeed;
+	public float ExistingTime;
+	public float FloatingSpeed;
 
-	public Text text;
+	public Text Text;
 
 	// Use this for initialization
 	void Start () {
-		GameObject.Destroy (gameObject,existingTime);
+		GameObject.Destroy (gameObject, ExistingTime);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position += floatingSpeed * Time.deltaTime;
+		transform.position += Vector3.up * FloatingSpeed * Time.deltaTime;
 	}
 
 	/// <summary>
@@ -26,7 +26,7 @@ public class FloatingImage : MonoBehaviour {
 	/// </summary>
 	/// <param name="textToShow">Text to show.</param>
 	public void SetText(string textToShow){
-		text.text = textToShow;
+		Text.text = textToShow;
 	}
 
 

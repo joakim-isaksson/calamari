@@ -5,14 +5,14 @@ using UnityEngine;
 public class PlayerHand : MonoBehaviour {
 
 
-	public string enemyTag;
-	public LayerMask raycastLayer;
+	public string EnemyTag;
+	public LayerMask RaycastLayer;
 
 
-	Camera mainCamera;
+	private Camera mainCamera;
 
 	//maybe not used
-	float stamina = 1;
+	private float stamina = 1;
 
 
 
@@ -22,7 +22,7 @@ public class PlayerHand : MonoBehaviour {
 	}
 
 
-	HandState handState;
+	private HandState handState;
 
 	// Use this for initialization
 	void Start () {
@@ -45,12 +45,12 @@ public class PlayerHand : MonoBehaviour {
 			return;
 
 		Vector3 point = mainCamera.ScreenToWorldPoint (Input.mousePosition);
-		Collider2D clickOnCol = Physics2D.OverlapPoint (point,raycastLayer);
+		Collider2D clickOnCol = Physics2D.OverlapPoint (point, RaycastLayer);
 
 		StartCoroutine (PlayHandAnimation());
 
 		if (clickOnCol != null) {
-			if (clickOnCol.gameObject.CompareTag (enemyTag)) {
+			if (clickOnCol.gameObject.CompareTag (EnemyTag)) {
 				//TODO call the enemy stuff;
 			}
 		}
