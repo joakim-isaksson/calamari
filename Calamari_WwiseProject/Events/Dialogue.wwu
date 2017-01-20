@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Dialogue" ID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Narrator" ID="{CB80D573-82BB-43E8-8834-479C44B4E9E2}" ShortID="33174935">
+					<ChildrenList>
+						<Event Name="Narrator_Negative" ID="{33724AB3-7C92-47DA-9BFF-C26C3B4609B6}">
+							<ChildrenList>
+								<Action Name="Play" ID="{9D3C959D-9A6F-4998-B9A3-BB9B8418D26F}" ShortID="830309292" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="Narrator_Neutral" ID="{BAE30293-B784-48A5-9378-115E97E87CC1}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6C6B26A7-26A3-4562-85C7-DDE8F00CE42A}" ShortID="621766987" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="Narrator_Positive" ID="{075ECBD2-9EFD-4EF2-AD82-A6D62854DD31}">
+							<ChildrenList>
+								<Action Name="Play" ID="{31EE86A2-A3A7-4C09-B35C-023ABD5C0D61}" ShortID="926136832" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="Narrator_Ready" ID="{58B04538-5B17-43D4-BB2B-CDE905226601}">
+							<ChildrenList>
+								<Action Name="Play" ID="{D6FA6AC8-B623-491A-928C-9F1BE1920549}" ShortID="97052749" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="Narrator_Go" ID="{57FCD602-287A-47C7-BE0B-9EE689A3D040}">
+							<ChildrenList>
+								<Action Name="Play" ID="{04D1AF86-B7C4-49C6-8138-4BA639ECDFAB}" ShortID="1007753653" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="People" ID="{F0120EEA-A40A-422E-8DC0-69217C578E29}" ShortID="247955968">
+					<ChildrenList>
+						<Event Name="People_Negative_Reaction" ID="{1BC3F31C-4C6F-40A0-B07C-117D83B01ECF}">
+							<ChildrenList>
+								<Action Name="Play" ID="{B777BE31-5BD5-4738-8412-E5E03964A77C}" ShortID="486450530" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="People_Positive_Reaction" ID="{65FC4685-8BAF-4937-9A02-BA826CBE15E8}">
+							<ChildrenList>
+								<Action Name="Play" ID="{438BD1D7-E997-41FC-9F97-805EA66A7F21}" ShortID="1034076407" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EBAB7ACE-F075-4252-B78C-AD21E1D8CDDF}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Atmo" ID="{EBAB7ACE-F075-4252-B78C-AD21E1D8CDDF}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Cars" ID="{9A6A5969-9EBF-430B-999D-E6EF606A271D}" ShortID="446203838"/>
+				<Folder Name="City" ID="{6FEDB336-E862-45AC-B916-CAD0ED15F859}" ShortID="538577077"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

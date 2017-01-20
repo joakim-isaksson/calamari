@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{55A3D991-FCA0-4AC9-8509-9A25F89CE836}" SchemaVersion="75">
+	<InteractiveMusic>
+		<WorkUnit Name="Music" ID="{55A3D991-FCA0-4AC9-8509-9A25F89CE836}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Menu_Music" ID="{E2608360-2266-4716-9A49-9D5E393804BC}" ShortID="388153038"/>
+				<Folder Name="InGame_Music" ID="{A032666C-BB55-4649-B0C4-E08EF609497F}" ShortID="215740797"/>
+				<Folder Name="EndGame_Music" ID="{59F30132-F1B0-4B74-9E00-2ED00F08489E}" ShortID="285258766"/>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

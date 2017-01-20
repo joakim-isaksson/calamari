@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}" SchemaVersion="75">
+	<AudioObjects>
+		<WorkUnit Name="Dialogue" ID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Narrator" ID="{103D182A-C3B1-469D-A8C3-225D06633749}" ShortID="1044855515">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Narrator_Positive" ID="{339A42D9-3070-43E5-8954-0B325E118F73}" ShortID="415196743">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Narrator_Neutral" ID="{7689E991-1A9E-488E-AB49-C5C3F01A2C9B}" ShortID="910470510">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Narrator_Negative" ID="{B6A5EAD9-BC50-4932-A41D-C85A4522903E}" ShortID="975940056">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<ActorMixer Name="Narrator_Ready" ID="{40382EF7-A901-4923-A4AD-97E113341F69}" ShortID="322659845">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+						</ActorMixer>
+						<ActorMixer Name="Narrator_Go" ID="{EE6E26B5-2269-44A5-A3BC-9882DB1F8D1D}" ShortID="763994303">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="People" ID="{175F7AEC-0A05-4206-94FF-2EE00CE9E179}" ShortID="190682918">
+					<ChildrenList>
+						<RandomSequenceContainer Name="People_Positive_Reaction" ID="{F14E7D32-E917-4321-9C8B-3D5E9D7C226E}" ShortID="620132050">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="People_Negative_Reaction" ID="{479F1DE1-BA61-47C3-9129-543D0B45A1BB}" ShortID="204749957">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="People_Buuu" ID="{F2615CC0-1544-4193-A085-FB4E9DBE3BDB}" ShortID="1059809994">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

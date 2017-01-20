@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2AB8BC12-B398-4B6E-8851-7861A56CC893}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Music" ID="{2AB8BC12-B398-4B6E-8851-7861A56CC893}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Menu_Music" ID="{45E64258-D5CA-42E5-B7CB-9D50E495CA61}">
+					<ChildrenList>
+						<Action Name="Play" ID="{DF2BA3BE-D362-4094-92E3-2BF786BF664C}" ShortID="629488979" Type="Play" Scope="One" Global="false"/>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_InGame_Music" ID="{0B962968-5B09-4197-93AC-AC2706764AA9}">
+					<ChildrenList>
+						<Action Name="Play" ID="{366D5C8D-D3E4-4390-9F1E-251CC68C9C4B}" ShortID="311631553" Type="Play" Scope="One" Global="false"/>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EndGame_Music" ID="{FBD4DFF2-6138-4B8B-8A5F-54A528350A42}">
+					<ChildrenList>
+						<Action Name="Play" ID="{632C4347-162F-4084-A858-51622FBBF6C8}" ShortID="468491664" Type="Play" Scope="One" Global="false"/>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

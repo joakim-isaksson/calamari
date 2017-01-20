@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5E8E5288-D206-403B-93D7-E1E9D1962C00}" SchemaVersion="75">
+	<AudioObjects>
+		<WorkUnit Name="UI" ID="{5E8E5288-D206-403B-93D7-E1E9D1962C00}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Menu" ID="{18609E86-AF04-4807-A647-5FF1B22F04A3}" ShortID="754393050">
+					<ChildrenList>
+						<ActorMixer Name="Menu_Click" ID="{300D3A3C-7AEB-4698-A828-4BF7B2B4E54F}" ShortID="1019703167">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

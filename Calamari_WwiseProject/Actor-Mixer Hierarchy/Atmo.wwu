@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F3EE3F16-094D-4B1C-84F0-8447E5971D36}" SchemaVersion="75">
+	<AudioObjects>
+		<WorkUnit Name="Atmo" ID="{F3EE3F16-094D-4B1C-84F0-8447E5971D36}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Cars" ID="{A7ACD215-723C-42E4-A312-B8AE9892EA6B}" ShortID="389597570"/>
+				<Folder Name="City" ID="{EB6D15A0-CF87-4C26-896B-FA9BF05FF580}" ShortID="176444625"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
