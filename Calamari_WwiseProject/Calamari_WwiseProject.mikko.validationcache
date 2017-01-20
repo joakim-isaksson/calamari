@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="75">
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3354292156" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="3355062097" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="3354893757" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Calamari_WwiseProject.wproj" DateLow="3353996354" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="3354542823" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="3354838610" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="3122041602" DateHigh="30567455"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3355112377" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Effects\Default Work Unit.wwu" DateLow="3354663147" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Effects\Factory Effects.wwu" DateLow="3123585704" DateHigh="30567455"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Events\Default Work Unit.wwu" DateLow="3354357326" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="3354161798" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3354948900" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3354226983" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="3355167662" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="3355217783" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Presets\Default Work Unit.wwu" DateLow="3354773710" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Queries\Default Work Unit.wwu" DateLow="3355009317" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Queries\Factory Queries.wwu" DateLow="3121921274" DateHigh="30567455"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="3354477650" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3354597970" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\States\Default Work Unit.wwu" DateLow="3354417490" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Switches\Default Work Unit.wwu" DateLow="3354091603" DateHigh="30569294"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="3354718282" DateHigh="30569294"/>
+</ValidationCache>
