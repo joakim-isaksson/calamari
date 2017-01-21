@@ -667,10 +667,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 1319587544726598, guid: ee5ca39459f1f124d852ba7fd613f0be, type: 2}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee5ca39459f1f124d852ba7fd613f0be, type: 2}
   m_IsPrefabParent: 0
@@ -819,6 +815,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementSpeed: 2
+  CameraBobbingSpeed: 0
+  CameraBobbingScaleX: 0
+  CameraBobbingScaleY: 0
 --- !u!1001 &1349872377
 Prefab:
   m_ObjectHideFlags: 0

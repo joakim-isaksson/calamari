@@ -39,8 +39,12 @@ public class EnemyController : MonoBehaviour
     void Awake()
 	{
         Player = GameObject.FindGameObjectWithTag("Player");
-        Score = ScoreManager.instance;
+
     }
+
+	void Start(){
+		Score = ScoreManager.instance;
+	}
 
     void Update()
 	{
@@ -99,27 +103,27 @@ public class EnemyController : MonoBehaviour
         greeted = true;
 
         // Greeting an unfriendly character (really bad)
-        if (Friendly)
+        if (!Friendly)
         {
             Score.Add(ScoreGreetHostile);
             Anim.SetTrigger("Angry");
-            Debug.Log("A");
+			GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up*1, GamePlayUI.WaveQualityText.Bad);
         }
 
         // Greeting a friendly character too early (bad)
         else if (wavingStartedTime < 0)
         {
             Score.Add(ScoreGreetHostile);
-            Anim.SetTrigger("Happy");
-            Debug.Log("B");
+            Anim.SetTrigger("Angry");
+			GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up*1, GamePlayUI.WaveQualityText.Average);
         }
 
         // Responding to a friendly characters greeting in time (good)
-        else if (wavingStartedTime <= MaxResponseTime)
+		else if (Time.realtimeSinceStartup - wavingStartedTime <= MaxResponseTime)
         {
             Score.Add(ScoreGreetFriendlyOnTime);
-            Anim.SetTrigger("Angry");
-            Debug.Log("C");
+            Anim.SetTrigger("Happy");
+			GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up*1, GamePlayUI.WaveQualityText.Great);
         }
 
         // Greeting a friendly character too late (bad)
@@ -127,7 +131,7 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetFriendlyLate);
             Anim.SetTrigger("Angry");
-            Debug.Log("D");
+			GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up*1, GamePlayUI.WaveQualityText.Average);
         }
     }
 }
