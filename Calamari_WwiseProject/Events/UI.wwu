@@ -16,6 +16,46 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Menu_Button_Hit" ID="{090DE3AF-49CB-45D6-B755-CB5ADAD97E96}">
+							<ChildrenList>
+								<Action Name="Play" ID="{0F83BB04-FF3C-435A-9FAB-E0F1A2CADB13}" ShortID="525862587" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E035D017-7A44-4BAB-B6B6-3D1EA8D00047}" Global="false">
+											<ObjectRef Name="Menu_Button_Hit_01" ID="{327E357B-A939-42D8-8321-5751CF5F7D3D}" WorkUnitID="{5E8E5288-D206-403B-93D7-E1E9D1962C00}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Menu_Button_Release" ID="{147349A9-C753-4B66-B385-731A7CC08586}">
+							<ChildrenList>
+								<Action Name="Play" ID="{026B0020-B89F-4608-8DC6-E7486FC2D9DE}" ShortID="502738117" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{54CA0020-E38E-428A-AED1-8B7B8901F21F}" Global="false">
+											<ObjectRef Name="Menu_Button_Release_01" ID="{0DEEB244-DB6B-4C70-8BE4-27A6706D548E}" WorkUnitID="{5E8E5288-D206-403B-93D7-E1E9D1962C00}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{0EE1B878-0D43-4343-9EF3-889EFC7BF0E2}" ShortID="770390019" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E62343EA-EC2A-4E10-80E0-B89F8DCC9B8F}" Global="false">
+											<ObjectRef Name="Menu_Button_Hit_01" ID="{327E357B-A939-42D8-8321-5751CF5F7D3D}" WorkUnitID="{5E8E5288-D206-403B-93D7-E1E9D1962C00}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Menu_Start_Game" ID="{363C7343-FCBF-41BB-A079-FF32C1C1B3EC}">
+							<ChildrenList>
+								<Action Name="Play" ID="{1AAA9C43-E53A-4611-B11A-B9AF3485476B}" ShortID="361146200" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{00ECB6A0-151C-4D50-85AA-B5DD9D1E2205}" Global="false">
+											<ObjectRef Name="Menu_Start_Game_01" ID="{CC8AB096-E093-4A20-B324-0B02BFD05C21}" WorkUnitID="{5E8E5288-D206-403B-93D7-E1E9D1962C00}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

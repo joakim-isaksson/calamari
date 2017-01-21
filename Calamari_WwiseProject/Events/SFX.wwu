@@ -5,18 +5,26 @@
 			<ChildrenList>
 				<Folder Name="Foley" ID="{979204A4-DB43-4699-8302-892218CAEF88}" ShortID="137029191">
 					<ChildrenList>
-						<Event Name="Wave" ID="{53BE9E21-2A7E-4080-A9F3-6EF40801FDD2}">
+						<Event Name="Wave_Hit" ID="{53BE9E21-2A7E-4080-A9F3-6EF40801FDD2}">
 							<ChildrenList>
-								<Action Name="Play" ID="{5F4207E1-40CE-4B13-A3F9-94E0E36FA96D}" ShortID="737274061" Type="Play" Scope="One" Global="false"/>
+								<Action Name="Play" ID="{5F4207E1-40CE-4B13-A3F9-94E0E36FA96D}" ShortID="737274061" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{642D913B-163B-46F8-B2B8-1C2E538B10BB}" Global="false">
+											<ObjectRef Name="Wave_Hit" ID="{EAE0A3DC-F8F0-4AC9-9D1E-B654250C2B81}" WorkUnitID="{40D63269-781E-4BD4-8619-D96D532107FD}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Main_Character" ID="{5DFD8313-5B15-43EF-BDEB-02FE75A8B854}" ShortID="961761019">
-					<ChildrenList>
-						<Event Name="Main_Character_Pain" ID="{33F64ECB-CE7F-45FC-BDD8-3C494991037B}">
+						<Event Name="Wave_Miss" ID="{5C36FE6C-E55C-4FD8-9D12-703E299A6E0C}">
 							<ChildrenList>
-								<Action Name="Play" ID="{F2C6AD64-933A-495A-AC45-500DC7D66A54}" ShortID="462532684" Type="Play" Scope="One" Global="false"/>
+								<Action Name="Play" ID="{D53B2168-923C-47B1-B39D-7690B6A34C1C}" ShortID="743660822" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{43E6259C-CE9E-4FD0-9B90-12D094772B5A}" Global="false">
+											<ObjectRef Name="Wave_Miss" ID="{F39E1B55-FC2F-4EA6-ADB6-4B98E323353F}" WorkUnitID="{40D63269-781E-4BD4-8619-D96D532107FD}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>

@@ -28,7 +28,10 @@
 				<Event Id="911506639" Name="Man_Negative" ObjectPath="\Events\Dialogue\People\Man_Negative" MaxAttenuation="18.000000"/>
 				<Event Id="666034363" Name="Man_Positive" ObjectPath="\Events\Dialogue\People\Man_Positive" MaxAttenuation="18.000000"/>
 				<Event Id="889047188" Name="Man_Very_Negative" ObjectPath="\Events\Dialogue\People\Man_Very_Negative" MaxAttenuation="18.000000"/>
+				<Event Id="126614945" Name="Menu_Button_Hit" ObjectPath="\Events\UI\Menu\Menu_Button_Hit"/>
+				<Event Id="1540417201" Name="Menu_Button_Release" ObjectPath="\Events\UI\Menu\Menu_Button_Release"/>
 				<Event Id="760777789" Name="Menu_Click" ObjectPath="\Events\UI\Menu\Menu_Click"/>
+				<Event Id="1931074718" Name="Menu_Start_Game" ObjectPath="\Events\UI\Menu\Menu_Start_Game"/>
 				<Event Id="2474639067" Name="Narrator_Go" ObjectPath="\Events\Dialogue\Narrator\Narrator_Go"/>
 				<Event Id="2862836492" Name="Narrator_Negative" ObjectPath="\Events\Dialogue\Narrator\Narrator_Negative"/>
 				<Event Id="645232014" Name="Narrator_Neutral" ObjectPath="\Events\Dialogue\Narrator\Narrator_Neutral"/>
@@ -37,7 +40,8 @@
 				<Event Id="347845317" Name="Play_InGame_Music" ObjectPath="\Events\Music\Play_InGame_Music"/>
 				<Event Id="3540843768" Name="Play_MenuAndCredits_Music" ObjectPath="\Events\Music\Play_MenuAndCredits_Music"/>
 				<Event Id="2890725208" Name="Play_StartLevel_Music" ObjectPath="\Events\Music\Play_StartLevel_Music"/>
-				<Event Id="1941003890" Name="Wave" ObjectPath="\Events\SFX\Foley\Wave" MaxAttenuation="0.000000"/>
+				<Event Id="756234724" Name="Wave_Hit" ObjectPath="\Events\SFX\Foley\Wave_Hit"/>
+				<Event Id="543282405" Name="Wave_Miss" ObjectPath="\Events\SFX\Foley\Wave_Miss"/>
 				<Event Id="1024076021" Name="Woman_Negative" ObjectPath="\Events\Dialogue\People\Woman_Negative" MaxAttenuation="15.000000"/>
 				<Event Id="2318958257" Name="Woman_Positive" ObjectPath="\Events\Dialogue\People\Woman_Positive" MaxAttenuation="15.000000"/>
 				<Event Id="3367768002" Name="Woman_Very_Negative" ObjectPath="\Events\Dialogue\People\Woman_Very_Negative" MaxAttenuation="15.000000"/>
@@ -46,6 +50,10 @@
 				<File Id="2877773" Language="SFX">
 					<ShortName>Man_Negative_21.wav</ShortName>
 					<Path>SFX\Man_Negative_21_9E69E797.wem</Path>
+				</File>
+				<File Id="5196065" Language="SFX">
+					<ShortName>Menu_Button_Release_01.wav</ShortName>
+					<Path>SFX\Menu_Button_Release_01_9E69E797.wem</Path>
 				</File>
 				<File Id="9549458" Language="SFX">
 					<ShortName>narration_NEGATIVE_comeone.wav</ShortName>
@@ -154,6 +162,10 @@
 				<File Id="119191464" Language="SFX">
 					<ShortName>fx_car1.wav</ShortName>
 					<Path>SFX\fx_car1_9E69E797.wem</Path>
+				</File>
+				<File Id="120168269" Language="SFX">
+					<ShortName>Wave_Hit_02.wav</ShortName>
+					<Path>SFX\Wave_Hit_02_9E69E797.wem</Path>
 				</File>
 				<File Id="123469264" Language="SFX">
 					<ShortName>Woman_Negative_17.wav</ShortName>
@@ -419,6 +431,10 @@
 					<ShortName>narration_NEGATIVE_howembarrasing.wav</ShortName>
 					<Path>SFX\narration_NEGATIVE_howembarrasing_9E69E797.wem</Path>
 				</File>
+				<File Id="481351117" Language="SFX">
+					<ShortName>Menu_Button_Hit_01.wav</ShortName>
+					<Path>SFX\Menu_Button_Hit_01_9E69E797.wem</Path>
+				</File>
 				<File Id="489415607" Language="SFX">
 					<ShortName>Grandma_Positive_01.wav</ShortName>
 					<Path>SFX\Grandma_Positive_01_9E69E797.wem</Path>
@@ -446,6 +462,10 @@
 				<File Id="533962747" Language="SFX">
 					<ShortName>narration_NEUTRAL_fine.wav</ShortName>
 					<Path>SFX\narration_NEUTRAL_fine_9E69E797.wem</Path>
+				</File>
+				<File Id="561283307" Language="SFX">
+					<ShortName>Wave_Miss_01.wav</ShortName>
+					<Path>SFX\Wave_Miss_01_9E69E797.wem</Path>
 				</File>
 				<File Id="564181978" Language="SFX">
 					<ShortName>Woman_Positive_18.wav</ShortName>
@@ -490,6 +510,10 @@
 				<File Id="626661951" Language="SFX">
 					<ShortName>Grandma_Very_Negative_02.wav</ShortName>
 					<Path>SFX\Grandma_Very_Negative_02_9E69E797.wem</Path>
+				</File>
+				<File Id="633845885" Language="SFX">
+					<ShortName>Wave_Miss_02.wav</ShortName>
+					<Path>SFX\Wave_Miss_02_9E69E797.wem</Path>
 				</File>
 				<File Id="635039946" Language="SFX">
 					<ShortName>Woman_Positive_09.wav</ShortName>
@@ -558,6 +582,10 @@
 				<File Id="764807767" Language="SFX">
 					<ShortName>Man_Very_Negative_05.wav</ShortName>
 					<Path>SFX\Man_Very_Negative_05_9E69E797.wem</Path>
+				</File>
+				<File Id="764982263" Language="SFX">
+					<ShortName>Wave_Hit_01.wav</ShortName>
+					<Path>SFX\Wave_Hit_01_9E69E797.wem</Path>
 				</File>
 				<File Id="766169375" Language="SFX">
 					<ShortName>Woman_Very_Negative_02.wav</ShortName>
@@ -647,6 +675,10 @@
 					<ShortName>Grandma_Negative_07.wav</ShortName>
 					<Path>SFX\Grandma_Negative_07_9E69E797.wem</Path>
 				</File>
+				<File Id="867681206" Language="SFX">
+					<ShortName>Wave_Miss_03.wav</ShortName>
+					<Path>SFX\Wave_Miss_03_9E69E797.wem</Path>
+				</File>
 				<File Id="873728625" Language="SFX">
 					<ShortName>Man_Negative_05.wav</ShortName>
 					<Path>SFX\Man_Negative_05_9E69E797.wem</Path>
@@ -670,6 +702,10 @@
 				<File Id="909488199" Language="SFX">
 					<ShortName>Man_Positive_33.wav</ShortName>
 					<Path>SFX\Man_Positive_33_9E69E797.wem</Path>
+				</File>
+				<File Id="910447369" Language="SFX">
+					<ShortName>Menu_Start_Game_01.wav</ShortName>
+					<Path>SFX\Menu_Start_Game_01_9E69E797.wem</Path>
 				</File>
 				<File Id="910448495" Language="SFX">
 					<ShortName>Woman_Positive_20.wav</ShortName>
