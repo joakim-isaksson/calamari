@@ -132,7 +132,7 @@ MonoBehaviour:
   RunningSpeed: -5
   Friendly: 1
   WaveMinDelay: 1
-  WaveMaxDelay: 6
+  WaveMaxDelay: 4
   MaxResponseTime: 2
   ScoreNotGreetedFriendly: -1000
   ScoreNotGreetedHostile: 1000
@@ -141,6 +141,9 @@ MonoBehaviour:
   ScoreGreetFriendlyOnTime: 10000
   ScoreGreetFriendlyLate: -500
   Anim: {fileID: 95626999431531104}
+  NegativeWwiseSfx: Grandma_Negative
+  PositiveWwiseSfx: Grandma_Positive
+  VeryNegativeWwiseSfx: Grandma_Very_Negative
 --- !u!212 &212277661433588464
 SpriteRenderer:
   m_ObjectHideFlags: 1

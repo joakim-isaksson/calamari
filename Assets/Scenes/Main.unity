@@ -254,6 +254,11 @@ Prefab:
       propertyPath: EnemyCount
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114701350769072622, guid: 62e05542944b3524a9efe7cdb0bea9dd,
+        type: 2}
+      propertyPath: EnemyCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 62e05542944b3524a9efe7cdb0bea9dd, type: 2}
   m_IsPrefabParent: 0
@@ -378,6 +383,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114213477475110764, guid: 88a950a8071e32d459ffd8a26a75de5a,
+        type: 2}
+      propertyPath: HandInput
+      value: 
+      objectReference: {fileID: 1373080430}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88a950a8071e32d459ffd8a26a75de5a, type: 2}
   m_IsPrefabParent: 0
@@ -444,6 +454,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1373080430 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114002772240766470, guid: 933ac8c5bacbfa14cbdec95e968ea2f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1804233700}
+  m_Script: {fileID: 11500000, guid: efc864082f58fa24281f3011453ca562, type: 3}
 --- !u!1 &1439296643
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +470,7 @@ GameObject:
   - component: {fileID: 1439296646}
   - component: {fileID: 1439296645}
   - component: {fileID: 1439296644}
+  - component: {fileID: 1439296647}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -504,6 +521,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1439296647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1439296643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a102374d0edaa148b15f4e54b125166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: 350ce74ee2de494493fd7c746ecb019c
+  bankName: Main_SoundBank
+  loadAsynchronous: 0
+  decodeBank: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 
 --- !u!1 &1748034984 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1570027312801156, guid: 88a950a8071e32d459ffd8a26a75de5a,
