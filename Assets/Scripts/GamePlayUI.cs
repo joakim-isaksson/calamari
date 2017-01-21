@@ -12,11 +12,12 @@ public class GamePlayUI : MonoBehaviour {
 	public Sprite[] FaceSprites;
 	public Image FaceImage;
 	public GameObject EndGamePanel;
-	//public Sprite goodWaveText;
-	//public Sprite averageWaveText;
 	public GameObject WaveTextUIPref;
 
-
+	public GameObject ScorePanelsGood;
+	public GameObject ScorePanelsBad;
+	public GameObject ScorePanelsAverage;
+	public GameObject TotalScorePanel;
 
 	private Camera mainCamera;
 
@@ -39,12 +40,8 @@ public class GamePlayUI : MonoBehaviour {
 		mainCamera = Camera.main;
 
 		//test
-		//ShowClickText (mainCamera.transform.position + Vector3.forward*10, WaveQualityText.Average);
-
-		//ShowClickText (mainCamera.transform.position + Vector3.right*10 + Vector3.forward*10, WaveQualityText.Average);
-
-
-
+		//ShowEndGamePanel ();
+		ChangeFaceImage (0);
 	}
 	
 	// Update is called once per frame
@@ -92,7 +89,7 @@ public class GamePlayUI : MonoBehaviour {
 	/// Shows the end game panel.(score panel)
 	/// </summary>
 	public void ShowEndGamePanel(){
-		EndGamePanel.SetActive (true);
+		StartCoroutine (ShowScoreCoroutine());
 	}
 
 	/// <summary>
@@ -111,6 +108,28 @@ public class GamePlayUI : MonoBehaviour {
 			SceneManager.LoadScene ("MenuScene");
 		});
 		
+	}
+
+	/// <summary>
+	/// Shows the score coroutine. For now, just activate the difference panels in sequence
+	/// Maybe will use tween later
+	/// </summary>
+	/// <returns>The score coroutine.</returns>
+	private IEnumerator ShowScoreCoroutine(){
+		//TODO add the scores text from game controller
+		EndGamePanel.SetActive (true);
+		ScorePanelsGood.SetActive (false);
+		ScorePanelsAverage.SetActive (false);
+		ScorePanelsBad.SetActive (false);
+		TotalScorePanel.SetActive (false);
+		yield return new WaitForSeconds (1);
+		ScorePanelsGood.SetActive (true);
+		yield return new WaitForSeconds (1);
+		ScorePanelsAverage.SetActive (true);
+		yield return new WaitForSeconds (1);
+		ScorePanelsBad.SetActive (true);
+		yield return new WaitForSeconds (1);
+		TotalScorePanel.SetActive (true);
 	}
 
 }
