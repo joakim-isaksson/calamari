@@ -107,7 +107,7 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetHostile);
             Anim.SetTrigger("Angry");
-			GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Bad);
+			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Bad);
         }
 
         // Greeting a friendly character too early (bad)
@@ -115,7 +115,7 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetHostile);
             Anim.SetTrigger("Angry");
-			GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Average);
+			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Average);
         }
 
         // Responding to a friendly characters greeting in time (good)
@@ -123,7 +123,7 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetFriendlyOnTime);
             Anim.SetTrigger("Happy");
-			GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Great);
+			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Great);
         }
 
         // Greeting a friendly character too late (bad)
@@ -131,7 +131,7 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetFriendlyLate);
             Anim.SetTrigger("Angry");
-			GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Average);
+			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Average);
         }
     }
 }

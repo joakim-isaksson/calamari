@@ -639,6 +639,7 @@ MonoBehaviour:
   ScorePanelsCombo: {fileID: 1713360287826432}
   ScorePanelsTotal: {fileID: 1570027312801156}
   RatingBadge: {fileID: 1835003803870430}
+  HandInput: {fileID: 0}
 --- !u!114 &114297217115863400
 MonoBehaviour:
   m_ObjectHideFlags: 1

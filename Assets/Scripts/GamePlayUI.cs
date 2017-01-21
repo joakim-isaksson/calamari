@@ -21,7 +21,7 @@ public class GamePlayUI : MonoBehaviour {
 	public GameObject ScorePanelsCombo;
 	public GameObject ScorePanelsTotal;
 	public GameObject RatingBadge;
-
+	public PlayerInput HandInput;
 
 	private Camera mainCamera;
 
@@ -125,6 +125,7 @@ public class GamePlayUI : MonoBehaviour {
 	/// </summary>
 	public void ShowEndGamePanel(){
 		StartCoroutine (ShowScoreCoroutine());
+		HandInput.enabled = false;
 	}
 
 	/// <summary>
