@@ -14,6 +14,84 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="narration_POSITIVE_fantastic" ID="{7FFCBFB6-0515-4970-B1D5-FCFC9EE3D3A8}" ShortID="942876630" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_POSITIVE_fantastic" ID="{EF0C0485-81AD-401C-A51F-90B72C21B8D2}" ShortID="502447757">
+											<Language>SFX</Language>
+											<AudioFile>narration_POSITIVE_fantastic.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_POSITIVE_fantastic" ID="{EF0C0485-81AD-401C-A51F-90B72C21B8D2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_POSITIVE_great" ID="{A9620796-592F-4AE4-B417-DB9E7D427844}" ShortID="361927555" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_POSITIVE_great" ID="{4C65EDD2-3FC8-4E37-BF85-72BE685401AB}" ShortID="1063706577">
+											<Language>SFX</Language>
+											<AudioFile>narration_POSITIVE_great.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_POSITIVE_great" ID="{4C65EDD2-3FC8-4E37-BF85-72BE685401AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_POSITIVE_niceone" ID="{9EF26DE5-247E-4FA3-8C1A-E37FA17B59D6}" ShortID="699403807" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_POSITIVE_niceone" ID="{A22BAF7B-F084-4C36-81D2-BB20AA5EAE34}" ShortID="418302521">
+											<Language>SFX</Language>
+											<AudioFile>narration_POSITIVE_niceone.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_POSITIVE_niceone" ID="{A22BAF7B-F084-4C36-81D2-BB20AA5EAE34}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_POSITIVE_perfect" ID="{22FF025E-C8C7-48A1-9917-11EB170D8525}" ShortID="597982099" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_POSITIVE_perfect" ID="{743C4980-72D5-4234-94CE-084EB31907D1}" ShortID="953625436">
+											<Language>SFX</Language>
+											<AudioFile>narration_POSITIVE_perfect.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_POSITIVE_perfect" ID="{743C4980-72D5-4234-94CE-084EB31907D1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Narrator_Neutral" ID="{7689E991-1A9E-488E-AB49-C5C3F01A2C9B}" ShortID="910470510">
 							<ReferenceList>
@@ -24,6 +102,122 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="narration_NEUTRAL_fine" ID="{63C0BFFB-7C23-4052-B4D9-1621A014C127}" ShortID="238110743" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEUTRAL_fine" ID="{8012C031-71A1-42F7-B63C-B1EEA7644321}" ShortID="533962747">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEUTRAL_fine.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEUTRAL_fine" ID="{8012C031-71A1-42F7-B63C-B1EEA7644321}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_NEUTRAL_good" ID="{CF45617C-004A-4EBE-ABF6-8AF8C6DC2821}" ShortID="656944809" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEUTRAL_good" ID="{10132C77-D2EE-434E-B415-98B00EC209E1}" ShortID="133826350">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEUTRAL_good.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEUTRAL_good" ID="{10132C77-D2EE-434E-B415-98B00EC209E1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_NEUTRAL_hmm" ID="{B140BF27-36E6-4CF5-B94A-85F187D3AD0E}" ShortID="335066454" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEUTRAL_hmm" ID="{81E6819A-21BB-4AB7-BC98-C8457B80BD7D}" ShortID="399268194">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEUTRAL_hmm.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEUTRAL_hmm" ID="{81E6819A-21BB-4AB7-BC98-C8457B80BD7D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_NEUTRAL_ok" ID="{2C8F1A05-F6E6-4039-AD09-7E8C228BE518}" ShortID="930305700" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEUTRAL_ok" ID="{8CF05BB3-B228-49E0-997B-3C2E7E90F4BC}" ShortID="704211355">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEUTRAL_ok.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEUTRAL_ok" ID="{8CF05BB3-B228-49E0-997B-3C2E7E90F4BC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_NEUTRAL_okayy" ID="{048033EA-A76B-49C5-8FDF-DD8D1F3744BA}" ShortID="559017364" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEUTRAL_okayy" ID="{B1833FB0-FFDE-4256-A258-3554588F3D0B}" ShortID="701220709">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEUTRAL_okayy.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEUTRAL_okayy" ID="{B1833FB0-FFDE-4256-A258-3554588F3D0B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_NEUTRAL_right" ID="{35672749-EB67-41A3-A38F-09BA1413D3E5}" ShortID="359358541" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEUTRAL_right" ID="{EB8C388B-BA84-4B93-A7E5-795F6DB8506C}" ShortID="855451501">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEUTRAL_right.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEUTRAL_right" ID="{EB8C388B-BA84-4B93-A7E5-795F6DB8506C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Narrator_Negative" ID="{B6A5EAD9-BC50-4932-A41D-C85A4522903E}" ShortID="975940056">
 							<ReferenceList>
@@ -34,6 +228,141 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="narration_NEGATIVE_awkward" ID="{1822F074-F9E6-4332-96AE-8D6DFF3C1FB7}" ShortID="597872204" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEGATIVE_awkward" ID="{118A4B7D-23FD-4366-9D70-155893B67D97}" ShortID="432251244">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEGATIVE_awkward.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEGATIVE_awkward" ID="{118A4B7D-23FD-4366-9D70-155893B67D97}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_NEGATIVE_comeone" ID="{80AD134A-9B4A-4488-A6FC-EE7F50DBD463}" ShortID="198641472" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEGATIVE_comeone" ID="{928975AD-4AC2-4280-A523-B62E5A071275}" ShortID="9549458">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEGATIVE_comeone.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEGATIVE_comeone" ID="{928975AD-4AC2-4280-A523-B62E5A071275}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_NEGATIVE_doh" ID="{D5460A4C-9A55-476D-BE80-1522FE29AC0B}" ShortID="587079471" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEGATIVE_doh" ID="{416789AC-FDE5-4A17-8F09-DBEE89A3A5FE}" ShortID="726545679">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEGATIVE_doh.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEGATIVE_doh" ID="{416789AC-FDE5-4A17-8F09-DBEE89A3A5FE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_NEGATIVE_howembarrasing" ID="{4830CCB3-8078-4E7C-93AC-BD179D1101D2}" ShortID="878460506" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEGATIVE_howembarrasing" ID="{580BB5E8-F6A6-458F-A2F1-937FD46F93AA}" ShortID="481146199">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEGATIVE_howembarrasing.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEGATIVE_howembarrasing" ID="{580BB5E8-F6A6-458F-A2F1-937FD46F93AA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_NEGATIVE_pff" ID="{627F1AC7-4279-4FB9-A233-8D6E17659C96}" ShortID="55957656" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEGATIVE_pff" ID="{E94DF2F1-1457-478E-AF51-744C47DA61C3}" ShortID="266643463">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEGATIVE_pff.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEGATIVE_pff" ID="{E94DF2F1-1457-478E-AF51-744C47DA61C3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_NEGATIVE_really" ID="{F8AE6327-0E42-442D-932E-92959DF3C400}" ShortID="835036476" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEGATIVE_really" ID="{63E9A17A-2EC8-47D0-8781-9A84C252999C}" ShortID="302346980">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEGATIVE_really.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEGATIVE_really" ID="{63E9A17A-2EC8-47D0-8781-9A84C252999C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="narration_NEGATIVE_whatwere" ID="{9B11FB24-76D0-48B8-8A26-F4E72B8EC464}" ShortID="441437713" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_NEGATIVE_whatwere" ID="{79E74609-A94D-4904-8713-49681361DE31}" ShortID="454069176">
+											<Language>SFX</Language>
+											<AudioFile>narration_NEGATIVE_whatwere.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_NEGATIVE_whatwere" ID="{79E74609-A94D-4904-8713-49681361DE31}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 						<ActorMixer Name="Narrator_Ready" ID="{40382EF7-A901-4923-A4AD-97E113341F69}" ShortID="322659845">
 							<ReferenceList>
@@ -44,6 +373,27 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="narration_START_ready" ID="{A0936E86-0C4D-4C87-99D8-D35E2DC89EC3}" ShortID="223301686" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_START_ready" ID="{A8B24FC6-665F-4B73-874C-25ECD692B805}" ShortID="14429959">
+											<Language>SFX</Language>
+											<AudioFile>narration_START_ready.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_START_ready" ID="{A8B24FC6-665F-4B73-874C-25ECD692B805}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Narrator_Go" ID="{EE6E26B5-2269-44A5-A3BC-9882DB1F8D1D}" ShortID="763994303">
 							<ReferenceList>
@@ -54,6 +404,27 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="narration_START_go" ID="{78C6C4B2-B7F4-4819-8F0B-E8371E2817D3}" ShortID="340850353" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="narration_START_go" ID="{96B3DEA9-054E-4E65-902C-27A8FCDCC8FC}" ShortID="505881422">
+											<Language>SFX</Language>
+											<AudioFile>narration_START_go.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="narration_START_go" ID="{96B3DEA9-054E-4E65-902C-27A8FCDCC8FC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</Folder>
