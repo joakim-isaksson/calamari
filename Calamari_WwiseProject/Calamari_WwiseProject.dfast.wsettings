@@ -22,22 +22,32 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="Interactive Music\x64_{09E5F8BB-BAE7-46FE-A8AC-B3606147A2B5} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP1JVVVVVHSBAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{1F3BA351-843E-4211-A7B8-2DE1BF1D09C1} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP6uqqqqqajJAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{407140EB-DCFC-4943-BDE0-B11FA3023388} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAoFtAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="5"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
 				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value=""/>
+				<Property Name="Music Transition List\{1927BA91-A0A2-4649-B554-810C908EFEFE}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{2C6B9FB5-6C7D-47DA-A5A8-55377F0194EE}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{4297DAAE-2B6F-4115-9A6E-462E68E76C92}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{4B237AFF-31EC-4E51-A3C5-B73805C679E8}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{77EC9A0D-F37E-46BE-B7DE-E7D2C2EA1F40}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{7B225EDB-CFF1-43DB-A168-B78D1ACCE584}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{C62A2E23-378A-43B2-B72A-2E2D08FAE28C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{F889F709-8CA2-462C-9A8E-EDA1B83DA9D1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{B6A5EAD9-BC50-4932-A41D-C85A4522903E}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{2388DAEA-9775-46C6-A2ED-C5222A397756}"/>
 				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
 				<Property Name="ProjectExplorer\FirstVisible_8_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
 				<Property Name="ProjectExplorer\x64_Expanded_10_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_11_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value="bGYyoFW7SUawxOCO9glJf2CDYOJmIhZHmkmdXjk4BLyR2aNVoPzJSoUJmiX4nOg2MgHzWbDxdEueAC7QDwhIng=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value="UaM7Hz6EEUKnuC3hvx0JwWxmMqBVu0lGsMTgjvYJSX+7+OUJ57r+Rqiss2BhR6K1YINg4mYiFkeaSZ1eOTgEvOtAcUD83ENJveCxH6MCM4iR2aNVoPzJSoUJmiX4nOg2MgHzWbDxdEueAC7QDwhIng=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_13_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_14_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_15_1" Type="string" Value=""/>

@@ -27,6 +27,13 @@
 									<Language>SFX</Language>
 									<AudioFile>fx_menubutton.wav</AudioFile>
 								</AudioFileSource>
+								<AudioFileSource Name="fx_menubutton_01" ID="{BB833710-D42E-414F-8E84-F55F1E5919BF}" ShortID="863454315">
+									<Language>SFX</Language>
+									<AudioFile>fx_menubutton.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="259754369"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="fx_menubutton" ID="{7F46C273-D751-43F1-95F6-BDAA099C6546}" Platform="Linked"/>
