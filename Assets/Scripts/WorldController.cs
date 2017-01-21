@@ -8,7 +8,7 @@ public class WorldController : MonoBehaviour
 
     public GameObject[] TilePrefabs;
     public GameObject EndingTile;
-    public GameObject EnemySpawner;
+    public GameObject[] EnemyPrefabs;
 
 	void Start()
     {
@@ -24,7 +24,7 @@ public class WorldController : MonoBehaviour
     /// Generate the level, given the number of tiles.
     /// </summary>
     /// <param name="levelLength"></param>
-    public void GenerateLevel(int levelLength)
+    public void GenerateLevel(int levelLength, int enemies)
     {
         float zOffset = 0;
 
@@ -45,5 +45,51 @@ public class WorldController : MonoBehaviour
         GameObject endingTile = Instantiate(EndingTile);
 
         endingTile.transform.position = new Vector3(0, 0, zOffset);
+
+        // Enemy spawning. Uses zOffset as helper
+        // Divide the enemy count into 5 sections, but randomize the position within the section
+
+        var enemySections = 5;
+        var startOffset = 10f;
+
+        var possibleStartXs = new List<float> {-1, -0.5f, 0.5f, 1};
+        var startZs = new List<float>();
+
+        var sectionSize = (zOffset - startOffset) / enemySections;
+
+        for (var i = 0; i < enemySections; ++i)
+        {
+            startZs.Add(startOffset + sectionSize * i);
+        }
+
+        var enemiesPerSection = new List<int>();
+        for (var i = 0; i < enemySections; ++i)
+        {
+            enemiesPerSection.Add(0);
+        }
+
+        var enemiesAdded = 0;
+        while (enemiesAdded < enemies)
+        {
+            enemiesPerSection[enemiesAdded % enemySections]++;
+            enemiesAdded++;
+        }
+
+        for (var i = 0; i < enemySections; ++i)
+        {
+            for (var j = 0; j < enemiesPerSection[i]; j++)
+            {
+                var spawnZ = startZs[i] + Random.Range(0f, TileOffset);
+                var spawnX = possibleStartXs[Random.Range(0, 4)];
+
+                var randomEnemyPrefab = EnemyPrefabs[Random.Range(0, EnemyPrefabs.Length)];
+
+                var enemy = Instantiate(randomEnemyPrefab);
+                enemy.transform.position = new Vector3(spawnX, 0f, spawnZ);
+
+                enemy.GetComponent<EnemyController>().enabled = false;
+                enemy.transform.Find("Sprite").GetComponent<SpriteRenderer>().enabled = false;
+            }
+        }
     }
 }
