@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{50A95469-C110-4823-8F90-41D1A370D747}" SchemaVersion="75">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{50A95469-C110-4823-8F90-41D1A370D747}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{50A95469-C110-4823-8F90-41D1A370D747}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main_SoundBank" ID="{4EE70C35-DEE2-4449-93FD-7C746ECB019C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Man_Negative" ID="{1BC3F31C-4C6F-40A0-B07C-117D83B01ECF}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Grandma_Negative" ID="{9A4520ED-2BBA-4137-AC71-A3AFFE19B760}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_StartLevel_Music" ID="{0B962968-5B09-4197-93AC-AC2706764AA9}" WorkUnitID="{2AB8BC12-B398-4B6E-8851-7861A56CC893}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_InGame_Music" ID="{45E64258-D5CA-42E5-B7CB-9D50E495CA61}" WorkUnitID="{2AB8BC12-B398-4B6E-8851-7861A56CC893}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Narrator_Ready" ID="{58B04538-5B17-43D4-BB2B-CDE905226601}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Grandma_Very_Negative" ID="{4A149DA2-E87C-45B3-8258-BFF72A2D08F0}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Man_Very_Negative" ID="{16B8A576-821A-45E6-B7AF-D419BE343CBA}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Woman_Negative" ID="{6EBCB44D-071B-46CF-8308-DD09E4938BDE}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Narrator_Go" ID="{57FCD602-287A-47C7-BE0B-9EE689A3D040}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Narrator_Negative" ID="{33724AB3-7C92-47DA-9BFF-C26C3B4609B6}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Narrator_Neutral" ID="{BAE30293-B784-48A5-9378-115E97E87CC1}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Man_Positive" ID="{65FC4685-8BAF-4937-9A02-BA826CBE15E8}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Grandma_Positive" ID="{C025C93A-30D5-4B4C-860A-07B03998F7F3}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_MenuAndCredits_Music" ID="{FBD4DFF2-6138-4B8B-8A5F-54A528350A42}" WorkUnitID="{2AB8BC12-B398-4B6E-8851-7861A56CC893}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Car_PassBy" ID="{7E9DC825-02D0-4D55-AF36-859DCF0FD053}" WorkUnitID="{EBAB7ACE-F075-4252-B78C-AD21E1D8CDDF}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Woman_Very_Negative" ID="{F0A49ABB-0A84-4E8E-9F28-49303E1DE0E3}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Narrator_Positive" ID="{075ECBD2-9EFD-4EF2-AD82-A6D62854DD31}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Woman_Positive" ID="{95CA10C2-CC90-4F5B-B9ED-2283227FA66B}" WorkUnitID="{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

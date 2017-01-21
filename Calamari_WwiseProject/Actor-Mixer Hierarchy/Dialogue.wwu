@@ -364,7 +364,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<ActorMixer Name="Narrator_Ready" ID="{40382EF7-A901-4923-A4AD-97E113341F69}" ShortID="322659845">
+						<Sound Name="narration_START_go" ID="{78C6C4B2-B7F4-4819-8F0B-E8371E2817D3}" ShortID="340850353" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
@@ -374,28 +374,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="narration_START_ready" ID="{A0936E86-0C4D-4C87-99D8-D35E2DC89EC3}" ShortID="223301686" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="narration_START_ready" ID="{A8B24FC6-665F-4B73-874C-25ECD692B805}" ShortID="14429959">
-											<Language>SFX</Language>
-											<AudioFile>narration_START_ready.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="narration_START_ready" ID="{A8B24FC6-665F-4B73-874C-25ECD692B805}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								<AudioFileSource Name="narration_START_go" ID="{96B3DEA9-054E-4E65-902C-27A8FCDCC8FC}" ShortID="505881422">
+									<Language>SFX</Language>
+									<AudioFile>narration_START_go.wav</AudioFile>
+								</AudioFileSource>
 							</ChildrenList>
-						</ActorMixer>
-						<ActorMixer Name="Narrator_Go" ID="{EE6E26B5-2269-44A5-A3BC-9882DB1F8D1D}" ShortID="763994303">
+							<ActiveSourceList>
+								<ActiveSource Name="narration_START_go" ID="{96B3DEA9-054E-4E65-902C-27A8FCDCC8FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="narration_START_ready" ID="{A0936E86-0C4D-4C87-99D8-D35E2DC89EC3}" ShortID="223301686" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
@@ -405,32 +393,28 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="narration_START_go" ID="{78C6C4B2-B7F4-4819-8F0B-E8371E2817D3}" ShortID="340850353" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="narration_START_go" ID="{96B3DEA9-054E-4E65-902C-27A8FCDCC8FC}" ShortID="505881422">
-											<Language>SFX</Language>
-											<AudioFile>narration_START_go.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="narration_START_go" ID="{96B3DEA9-054E-4E65-902C-27A8FCDCC8FC}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								<AudioFileSource Name="narration_START_ready" ID="{A8B24FC6-665F-4B73-874C-25ECD692B805}" ShortID="14429959">
+									<Language>SFX</Language>
+									<AudioFile>narration_START_ready.wav</AudioFile>
+								</AudioFileSource>
 							</ChildrenList>
-						</ActorMixer>
+							<ActiveSourceList>
+								<ActiveSource Name="narration_START_ready" ID="{A8B24FC6-665F-4B73-874C-25ECD692B805}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="People" ID="{175F7AEC-0A05-4206-94FF-2EE00CE9E179}" ShortID="190682918">
 					<ChildrenList>
-						<RandomSequenceContainer Name="People_Positive_Reaction" ID="{F14E7D32-E917-4321-9C8B-3D5E9D7C226E}" ShortID="620132050">
+						<RandomSequenceContainer Name="Man_Negative" ID="{F14E7D32-E917-4321-9C8B-3D5E9D7C226E}" ShortID="620132050">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="18"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
@@ -439,8 +423,564 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Man_Negative_01" ID="{D02FE0BD-A9B4-4D57-BD84-898C97A66BDD}" ShortID="882645289" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_01" ID="{B2C1E7F0-3F37-45F7-A621-3E33EAEADE4C}" ShortID="823370847">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_01" ID="{B2C1E7F0-3F37-45F7-A621-3E33EAEADE4C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_02" ID="{1DF6CD59-E6E8-40F0-A145-E4C87FC11989}" ShortID="1006596171" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_02" ID="{0853FBEC-082F-4A20-88AC-49BE413664CE}" ShortID="53735143">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_02" ID="{0853FBEC-082F-4A20-88AC-49BE413664CE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_03" ID="{15431AAB-0D28-4BA6-B88D-FCA8D969DF7F}" ShortID="232453861" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_03" ID="{AFD04D25-2AD2-4F89-832D-E28A2FE96D1D}" ShortID="857526467">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_03" ID="{AFD04D25-2AD2-4F89-832D-E28A2FE96D1D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_04" ID="{926F8949-49DF-4573-8F13-4824D42F05BB}" ShortID="157206579" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_04" ID="{BCBF76C1-1F53-4BA4-82E4-1632FDAA7AD4}" ShortID="311226976">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_04" ID="{BCBF76C1-1F53-4BA4-82E4-1632FDAA7AD4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_05" ID="{4C74B924-B4BE-48B4-B126-D240354165C1}" ShortID="492600556" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_05" ID="{37305907-3070-46B4-97C6-F59608589D04}" ShortID="873728625">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_05" ID="{37305907-3070-46B4-97C6-F59608589D04}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_06" ID="{BD6D8D7E-B56C-4886-A966-D40056B8401C}" ShortID="933660162" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_06" ID="{0ED96003-C29A-4035-9518-2E345FC0EF8C}" ShortID="1017030701">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_06" ID="{0ED96003-C29A-4035-9518-2E345FC0EF8C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_07" ID="{598A5244-6E97-4F93-8FEC-AC725003C766}" ShortID="311497038" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_07" ID="{21480055-9CA4-4AC9-88D3-3E7466756DFB}" ShortID="782366523">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_07" ID="{21480055-9CA4-4AC9-88D3-3E7466756DFB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_08" ID="{6FBDEE8F-D24A-41FF-BBCD-B4AF991E94E0}" ShortID="595752259" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_08" ID="{B121EAEE-2897-41DF-B519-EE85E1331590}" ShortID="854945334">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_08" ID="{B121EAEE-2897-41DF-B519-EE85E1331590}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_09" ID="{250477FD-AADA-4D75-8DE3-70A5E922DE7E}" ShortID="28371406" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_09" ID="{EFFC797B-722B-4307-A0C0-AA8104415F73}" ShortID="905445822">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_09" ID="{EFFC797B-722B-4307-A0C0-AA8104415F73}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_10" ID="{6ED10288-3CAE-4E5B-B870-A025F5279E1E}" ShortID="467132085" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_10" ID="{380C9A24-466A-433D-9EA5-9CC5D6328E50}" ShortID="109256533">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_10.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_10" ID="{380C9A24-466A-433D-9EA5-9CC5D6328E50}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_11" ID="{4EC5815A-DF93-4CBC-8E74-65947852592D}" ShortID="321259480" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_11" ID="{44B8C0F9-2B19-424E-AC5A-5DC614014913}" ShortID="680976898">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_11.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_11" ID="{44B8C0F9-2B19-424E-AC5A-5DC614014913}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_12" ID="{986D5F55-C0A2-4766-A1EA-0026B3753556}" ShortID="238628367" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_12" ID="{6B22E729-C2F7-4F8B-9D60-F3BC6C06BAF6}" ShortID="329911965">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_12.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_12" ID="{6B22E729-C2F7-4F8B-9D60-F3BC6C06BAF6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_13" ID="{8BAC3E01-8D92-48B8-93D3-FF6779E3A3A9}" ShortID="796001873" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_13" ID="{9D406AC2-BAAC-4033-993A-72BE5C517F4F}" ShortID="10625442">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_13.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_13" ID="{9D406AC2-BAAC-4033-993A-72BE5C517F4F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_14" ID="{D1D70854-5541-4F9D-B15B-4303282D807D}" ShortID="552563385" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_14" ID="{E4947E5C-1C44-43A4-A231-D5B79B2D4696}" ShortID="1033994117">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_14.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_14" ID="{E4947E5C-1C44-43A4-A231-D5B79B2D4696}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_15" ID="{431EB6B7-CEEF-468C-B640-EBF7F415EF36}" ShortID="763722704" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_15" ID="{20E705AD-B7DE-4176-9DB2-242AAC50CB7F}" ShortID="161861598">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_15.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_15" ID="{20E705AD-B7DE-4176-9DB2-242AAC50CB7F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_16" ID="{20A81BAE-812A-421E-95BB-EDE92B2FF88C}" ShortID="876394248" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_16" ID="{06BE471B-231B-47DA-A7BC-EB2CBA2AB3AA}" ShortID="601874643">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_16.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_16" ID="{06BE471B-231B-47DA-A7BC-EB2CBA2AB3AA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_17" ID="{044A9A1C-C5A1-49F7-B4B6-8BF883AA0747}" ShortID="531660616" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_17" ID="{2C698D6F-390E-4100-978E-14A8D8F211D7}" ShortID="114133025">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_17.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_17" ID="{2C698D6F-390E-4100-978E-14A8D8F211D7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_18" ID="{372F84EF-7C75-44B0-9523-938586C0C5C8}" ShortID="496497201" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_18" ID="{A9845BEF-C4C6-4C69-842C-D1020F23AE8F}" ShortID="14062417">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_18.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_18" ID="{A9845BEF-C4C6-4C69-842C-D1020F23AE8F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_19" ID="{3FEDA395-B298-4B87-8390-B4C22B83FB39}" ShortID="891086891" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_19" ID="{3DF0744C-F928-470A-ADFE-F7BCCA212A08}" ShortID="238118283">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_19.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_19" ID="{3DF0744C-F928-470A-ADFE-F7BCCA212A08}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_20" ID="{1019DBB7-A919-4700-8AAB-6900F4576885}" ShortID="153848435" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_20" ID="{DE13C541-CB9E-4272-9AA9-53811379EDFB}" ShortID="188543519">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_20.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_20" ID="{DE13C541-CB9E-4272-9AA9-53811379EDFB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_21" ID="{0A322639-4A04-4222-B7BC-12497EB6270B}" ShortID="610211004" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_21" ID="{A9DA90F1-D29C-4E51-838A-75A0946F4FB2}" ShortID="2877773">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_21.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_21" ID="{A9DA90F1-D29C-4E51-838A-75A0946F4FB2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_22" ID="{D79FFDBB-DDB7-494D-BE0A-3068A1B103EE}" ShortID="379089795" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_22" ID="{D0991927-1B60-4764-9AAF-0E630429E1B5}" ShortID="655499507">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_22.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_22" ID="{D0991927-1B60-4764-9AAF-0E630429E1B5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_23" ID="{93A996EF-AC1C-4B8B-913E-A083C7ACE5CB}" ShortID="41442155" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_23" ID="{16363B46-27A6-463F-B94C-70E2CB796FF1}" ShortID="460072628">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_23.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_23" ID="{16363B46-27A6-463F-B94C-70E2CB796FF1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_24" ID="{C364438D-53FD-4808-B4DD-586B4F7A0C18}" ShortID="328497330" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_24" ID="{6D4EEC0B-086D-4103-ADF8-9CC174B3FE55}" ShortID="327044172">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_24.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_24" ID="{6D4EEC0B-086D-4103-ADF8-9CC174B3FE55}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_25" ID="{F499D2FA-CA9C-43DB-949B-2E49297A9545}" ShortID="717839614" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_25" ID="{4FA57830-0EBF-4E39-A80D-2B204E00AC08}" ShortID="736128489">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_25.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_25" ID="{4FA57830-0EBF-4E39-A80D-2B204E00AC08}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_26" ID="{A1828338-64B3-43D3-A418-334384F182A8}" ShortID="348311579" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_26" ID="{96BA9A81-DFE7-4611-8520-7196072CD6E4}" ShortID="679972742">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_26.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_26" ID="{96BA9A81-DFE7-4611-8520-7196072CD6E4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_27" ID="{0D33C470-D33F-4F08-B5ED-F4F2C7DD9412}" ShortID="534410719" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_27" ID="{BE432974-419E-4614-BE34-4A2FDA321984}" ShortID="100503375">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_27.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_27" ID="{BE432974-419E-4614-BE34-4A2FDA321984}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_28" ID="{8B18745E-16B9-4B98-BA7D-4783464C0A09}" ShortID="1017575887" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_28" ID="{5AEE0C4F-5B86-49FC-BED9-8320DB6EF00D}" ShortID="392755562">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_28.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_28" ID="{5AEE0C4F-5B86-49FC-BED9-8320DB6EF00D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Negative_29" ID="{93804C69-7ACD-47EE-989B-6A14DBE1272D}" ShortID="591936386" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Negative_29" ID="{41B14359-404E-4CBD-AA39-C451BE8BFCE3}" ShortID="1001458483">
+											<Language>SFX</Language>
+											<AudioFile>Man_Negative_29.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Negative_29" ID="{41B14359-404E-4CBD-AA39-C451BE8BFCE3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="People_Negative_Reaction" ID="{479F1DE1-BA61-47C3-9129-543D0B45A1BB}" ShortID="204749957">
+						<RandomSequenceContainer Name="Man_Positive" ID="{479F1DE1-BA61-47C3-9129-543D0B45A1BB}" ShortID="204749957">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="25"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
@@ -449,6 +989,749 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Man_Positive_01" ID="{51299BB9-C2C7-4494-A39A-C7609FC25BE5}" ShortID="311365889" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_01" ID="{527FD716-8D64-4E11-939D-66AB666021B7}" ShortID="683242344">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_01" ID="{527FD716-8D64-4E11-939D-66AB666021B7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_02" ID="{B1438822-ACFE-4A4B-A177-D309956E0ADC}" ShortID="1063570655" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_02" ID="{02ACDBAC-7092-4B3A-B67C-6ECAAA031277}" ShortID="96964520">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_02" ID="{02ACDBAC-7092-4B3A-B67C-6ECAAA031277}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_03" ID="{7C42BE02-2CD6-40D2-AE4A-EB2C1197D517}" ShortID="566883644" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_03" ID="{02B5720A-D3F8-400F-B022-8A4310CD4533}" ShortID="46350043">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_03" ID="{02B5720A-D3F8-400F-B022-8A4310CD4533}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_04" ID="{857872CA-DF81-4363-BD26-53274A6727CD}" ShortID="114681247" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_04" ID="{8B490C62-4E30-45C2-BD13-04206F86FAF9}" ShortID="176602625">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_04" ID="{8B490C62-4E30-45C2-BD13-04206F86FAF9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_05" ID="{DD555417-676A-4F99-A32F-DE25E479BEA4}" ShortID="97945094" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_05" ID="{C61376CF-52A6-4ABE-80A6-2A0F44B053EB}" ShortID="96849887">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_05" ID="{C61376CF-52A6-4ABE-80A6-2A0F44B053EB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_06" ID="{191E81EF-3DB8-49E0-853D-E6FBCD1AAEF6}" ShortID="862925745" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_06" ID="{C03A960F-F1DC-45A8-9B3D-DCA43A859E12}" ShortID="512670497">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_06" ID="{C03A960F-F1DC-45A8-9B3D-DCA43A859E12}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_07" ID="{80A16F85-2A50-4CE5-9B73-31847B2FF137}" ShortID="886822334" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_07" ID="{781DC4AB-9366-4BF5-839F-E9870A9CA66B}" ShortID="409910108">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_07" ID="{781DC4AB-9366-4BF5-839F-E9870A9CA66B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_08" ID="{1C747A71-6BCC-48C8-8B0A-0C17F78AD961}" ShortID="801598491" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_08" ID="{69E2D75D-25F0-4126-98F5-7A0E4E78CE1D}" ShortID="619435837">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_08" ID="{69E2D75D-25F0-4126-98F5-7A0E4E78CE1D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_09" ID="{7FC97B68-8AF7-4714-A6F5-74D9692C5AD6}" ShortID="485213071" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_09" ID="{6A18ED5F-21B1-4EC2-A1E2-C238032EC69C}" ShortID="453139586">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_09" ID="{6A18ED5F-21B1-4EC2-A1E2-C238032EC69C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_10" ID="{55C0A658-9DC1-48E9-A243-6C18BA6FCA42}" ShortID="609385147" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_10" ID="{E47FF537-FAE7-4F72-AB1C-EDF37A165270}" ShortID="1062365134">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_10.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_10" ID="{E47FF537-FAE7-4F72-AB1C-EDF37A165270}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_11" ID="{835C74C2-583A-458B-9704-583335FA646C}" ShortID="142405593" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_11" ID="{DE6112FE-EC67-4C8F-A6D3-162F1EC830A8}" ShortID="904827553">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_11.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_11" ID="{DE6112FE-EC67-4C8F-A6D3-162F1EC830A8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_12" ID="{2161E7AB-9B94-4F0A-8133-CC99CC4BE1E3}" ShortID="863493065" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_12" ID="{2D7C34B8-6CE2-4EB9-90AB-C97E8284A105}" ShortID="735669844">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_12.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_12" ID="{2D7C34B8-6CE2-4EB9-90AB-C97E8284A105}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_13" ID="{26BD488E-1C04-4102-8EBC-68D6208D7138}" ShortID="644747878" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_13" ID="{DA6E95AB-0C9A-41DA-926E-57FA2A4DEB94}" ShortID="904301245">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_13.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_13" ID="{DA6E95AB-0C9A-41DA-926E-57FA2A4DEB94}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_14" ID="{FB33560E-D744-4FD6-8AD2-53B51235CBFB}" ShortID="930768271" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_14" ID="{ADCCC0CF-524F-4FA1-A98C-7D7B540AF8D2}" ShortID="770414880">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_14.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_14" ID="{ADCCC0CF-524F-4FA1-A98C-7D7B540AF8D2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_15" ID="{63213357-173B-4BCF-BD3A-4F737774B5AA}" ShortID="133401259" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_15" ID="{9F776193-9238-4C80-9784-3250638B67A2}" ShortID="1004326166">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_15.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_15" ID="{9F776193-9238-4C80-9784-3250638B67A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_16" ID="{9D769B97-4995-4D6D-A771-B60D08E538A6}" ShortID="431869866" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_16" ID="{DD751157-A06C-4BE7-8766-DE63349DBF57}" ShortID="793352588">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_16.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_16" ID="{DD751157-A06C-4BE7-8766-DE63349DBF57}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_17" ID="{8E43B1D2-A041-43DB-A61D-D7C3836385F5}" ShortID="781250521" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_17" ID="{443666B7-91F6-469F-A416-D9B103DEB8BC}" ShortID="190079811">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_17.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_17" ID="{443666B7-91F6-469F-A416-D9B103DEB8BC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_18" ID="{DD63FDE8-46D2-4E8B-BACD-7595D6E4ADA2}" ShortID="192415612" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_18" ID="{3504BB22-D1B2-4CCC-833B-8C4CB0AB34B1}" ShortID="445123628">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_18.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_18" ID="{3504BB22-D1B2-4CCC-833B-8C4CB0AB34B1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_19" ID="{31AEDED0-CE61-4E89-871D-790EE7E475C6}" ShortID="883999575" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_19" ID="{85F7B7CB-E697-48F9-83DC-6CF0F1CE090A}" ShortID="218140630">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_19.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_19" ID="{85F7B7CB-E697-48F9-83DC-6CF0F1CE090A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_20" ID="{B7D367B2-1F94-493D-8EB2-8EAB739E637C}" ShortID="379602416" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_20" ID="{09B0F793-F0F7-4E4B-A271-6AFD8849115D}" ShortID="810946531">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_20.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_20" ID="{09B0F793-F0F7-4E4B-A271-6AFD8849115D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_21" ID="{8BF9EC56-462A-4887-8CC1-12942E614351}" ShortID="111981099" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_21" ID="{D83910E6-6AF3-4C93-BBE3-167411F9CC2B}" ShortID="1032346443">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_21.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_21" ID="{D83910E6-6AF3-4C93-BBE3-167411F9CC2B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_22" ID="{33802617-8FEE-4675-80D9-489C28295330}" ShortID="407828841" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_22" ID="{337BF134-7435-49FC-A3E8-02A1DE8F4455}" ShortID="25210492">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_22.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_22" ID="{337BF134-7435-49FC-A3E8-02A1DE8F4455}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_23" ID="{32865FF4-FB81-416E-9610-BB2ED05454C7}" ShortID="744222635" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_23" ID="{9E110C8A-3B45-42C3-97F1-D64A3AF3FB71}" ShortID="778443801">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_23.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_23" ID="{9E110C8A-3B45-42C3-97F1-D64A3AF3FB71}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_24" ID="{E5851824-F4C5-406C-9316-9FEE7EECCB7B}" ShortID="200193537" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_24" ID="{92F7168F-DFD2-4A4E-B94D-6C955E49C919}" ShortID="726948466">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_24.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_24" ID="{92F7168F-DFD2-4A4E-B94D-6C955E49C919}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_25" ID="{31C39332-1CE6-463C-8EBB-3BB8F12C85E6}" ShortID="195545357" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_25" ID="{E857985B-78DD-4CD2-9F3B-009144CB1CFC}" ShortID="28841512">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_25.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_25" ID="{E857985B-78DD-4CD2-9F3B-009144CB1CFC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_26" ID="{A1950A7C-2890-42FD-92EE-9B55483F310C}" ShortID="635548995" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_26" ID="{16B031BA-319E-46CB-8646-B01426E30645}" ShortID="837088202">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_26.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_26" ID="{16B031BA-319E-46CB-8646-B01426E30645}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_27" ID="{6AC1AC2E-0B5E-47F8-A85B-1AEE3B454FD5}" ShortID="702448578" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_27" ID="{4F8EC162-A1C2-41F2-AC0D-D9E8ED816BCE}" ShortID="32597010">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_27.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_27" ID="{4F8EC162-A1C2-41F2-AC0D-D9E8ED816BCE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_28" ID="{3921A54B-0859-43EC-9850-B88CE7403786}" ShortID="819115451" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_28" ID="{2D04570E-E55C-4FE0-8532-E480D70BE85D}" ShortID="194525439">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_28.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_28" ID="{2D04570E-E55C-4FE0-8532-E480D70BE85D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_29" ID="{610BFD59-1516-4CED-A87C-886DCE6821BA}" ShortID="1070687786" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_29" ID="{8587351E-1B14-414B-9F59-253CF7BAD7F9}" ShortID="601293802">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_29.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_29" ID="{8587351E-1B14-414B-9F59-253CF7BAD7F9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_30" ID="{E6BC02FE-0B5B-463F-9DB7-11DDDE5839ED}" ShortID="521690321" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_30" ID="{56D13BA6-2891-4072-A514-4665E2DBC005}" ShortID="163546151">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_30.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_30" ID="{56D13BA6-2891-4072-A514-4665E2DBC005}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_31" ID="{460E8458-B743-4C95-948A-B423C805CEA7}" ShortID="870126261" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_31" ID="{BD23357C-075B-43BF-A39F-4C44DA0095D4}" ShortID="565099836">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_31.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_31" ID="{BD23357C-075B-43BF-A39F-4C44DA0095D4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_32" ID="{EB4C1511-D061-4870-8A47-86AAD30D2855}" ShortID="152066067" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_32" ID="{8ACA2A1F-7BD1-4C2C-A359-EB276BCB646F}" ShortID="226449550">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_32.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_32" ID="{8ACA2A1F-7BD1-4C2C-A359-EB276BCB646F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_33" ID="{AEE34074-0762-4DDA-8F0C-4EEC51AC33A5}" ShortID="46758824" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_33" ID="{9D647D92-2CA6-41A8-AD7B-BDDFF83827C6}" ShortID="909488199">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_33.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_33" ID="{9D647D92-2CA6-41A8-AD7B-BDDFF83827C6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_34" ID="{68A1D720-3DAB-4A78-ADDF-09C87043C480}" ShortID="573013077" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_34" ID="{8C3E9853-CE86-4126-8326-6D7C9868AE9F}" ShortID="385623564">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_34.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_34" ID="{8C3E9853-CE86-4126-8326-6D7C9868AE9F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_35" ID="{AB9E281C-BBBC-41FF-897D-0404C3DA258C}" ShortID="305974681" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_35" ID="{EF721B0F-CA19-43EA-880D-8C5603FFD945}" ShortID="399636309">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_35.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_35" ID="{EF721B0F-CA19-43EA-880D-8C5603FFD945}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_36" ID="{A22381C0-2F35-4A2D-A043-1D4E82477A2B}" ShortID="105700183" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_36" ID="{02FB4455-3DBC-4F72-8152-8E20084CAA52}" ShortID="819243105">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_36.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_36" ID="{02FB4455-3DBC-4F72-8152-8E20084CAA52}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_37" ID="{DB5C8D07-DAF1-49AA-8211-D112C5FE5D34}" ShortID="43223093" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_37" ID="{2C9FACFF-057D-4E6F-85FC-D5F7C8612B75}" ShortID="564434574">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_37.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_37" ID="{2C9FACFF-057D-4E6F-85FC-D5F7C8612B75}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_38" ID="{02E2A52B-C2CD-4B04-A4EF-6D3F53303A8E}" ShortID="772406314" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_38" ID="{7EB75751-7AA3-4013-99B7-909F7B384CAE}" ShortID="425196317">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_38.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_38" ID="{7EB75751-7AA3-4013-99B7-909F7B384CAE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Positive_39" ID="{A2FC81CE-9153-48FA-B91F-3EB50DF1291B}" ShortID="679198460" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Positive_39" ID="{84F2E81C-47C1-40A8-A066-7F2A04D07750}" ShortID="196229172">
+											<Language>SFX</Language>
+											<AudioFile>Man_Positive_39.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Positive_39" ID="{84F2E81C-47C1-40A8-A066-7F2A04D07750}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="People_Buuu" ID="{F2615CC0-1544-4193-A085-FB4E9DBE3BDB}" ShortID="1059809994">
 							<ReferenceList>
@@ -459,6 +1742,1869 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 								</Reference>
 							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Man_Very_Negative" ID="{43FB7D17-BAFA-4A4C-A46C-9084B93181B4}" ShortID="280561124">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Man_Very_Negative_01" ID="{9363B9C3-F994-4EBF-965C-5D1364EE22F1}" ShortID="1556179" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Very_Negative_01" ID="{8D8CF273-CE1E-4F6F-82C0-B77FC0005EB4}" ShortID="26825925">
+											<Language>SFX</Language>
+											<AudioFile>Man_Very_Negative_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Very_Negative_01" ID="{8D8CF273-CE1E-4F6F-82C0-B77FC0005EB4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Very_Negative_02" ID="{2C24D9EB-CED0-42EB-8D1B-C313704F97AB}" ShortID="963756386" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Very_Negative_02" ID="{846658E1-99A4-4745-BC3A-309BE9200AEF}" ShortID="847225438">
+											<Language>SFX</Language>
+											<AudioFile>Man_Very_Negative_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Very_Negative_02" ID="{846658E1-99A4-4745-BC3A-309BE9200AEF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Very_Negative_03" ID="{986667BB-D702-40D3-B688-CB93947E7512}" ShortID="375123396" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Very_Negative_03" ID="{10862EE2-6028-4A50-874E-FFA03C16F65C}" ShortID="331625486">
+											<Language>SFX</Language>
+											<AudioFile>Man_Very_Negative_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Very_Negative_03" ID="{10862EE2-6028-4A50-874E-FFA03C16F65C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Very_Negative_04" ID="{563386DB-E2C1-4651-8E7A-7F460A2CC08C}" ShortID="676620690" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Very_Negative_04" ID="{E582B437-B0B5-4144-AD6D-44ABA299465A}" ShortID="635240318">
+											<Language>SFX</Language>
+											<AudioFile>Man_Very_Negative_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Very_Negative_04" ID="{E582B437-B0B5-4144-AD6D-44ABA299465A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Very_Negative_05" ID="{F8D290B8-65B6-43A4-8B91-CC73343E4E2E}" ShortID="689451205" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Very_Negative_05" ID="{17297569-209B-4788-97DD-865AF204EEC9}" ShortID="764807767">
+											<Language>SFX</Language>
+											<AudioFile>Man_Very_Negative_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Very_Negative_05" ID="{17297569-209B-4788-97DD-865AF204EEC9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Man_Very_Negative_06" ID="{E577F282-1D70-4216-AE86-ECF95B218010}" ShortID="54058602" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Man_Very_Negative_06" ID="{20524245-BEAD-4883-88B8-3D19B4DE751F}" ShortID="760519151">
+											<Language>SFX</Language>
+											<AudioFile>Man_Very_Negative_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Man_Very_Negative_06" ID="{20524245-BEAD-4883-88B8-3D19B4DE751F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Woman_Positive" ID="{21C7C691-6EC1-4E81-990D-28662832E420}" ShortID="202222915">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Woman_Positive_01" ID="{30457FD3-0D82-4808-9F51-DC7292C83A6B}" ShortID="388343707" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_01" ID="{A5ED2E26-6788-4368-B873-395FE1065DC5}" ShortID="926117368">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_01" ID="{A5ED2E26-6788-4368-B873-395FE1065DC5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_02" ID="{F0141C24-1899-4386-BAD4-A243CF431D69}" ShortID="686873414" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_02" ID="{16448873-9F59-4897-9882-27146C58B3AC}" ShortID="188253069">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_02" ID="{16448873-9F59-4897-9882-27146C58B3AC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_03" ID="{435B73CE-97F2-4EF8-83BA-2D13616C4017}" ShortID="651906363" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_03" ID="{BA3D19EC-2776-4850-A122-F9CA671FF961}" ShortID="1072779749">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_03" ID="{BA3D19EC-2776-4850-A122-F9CA671FF961}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_04" ID="{DCDC6FA7-7F28-482F-9F92-25DF663D09EF}" ShortID="706372314" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_04" ID="{031BA98F-21F5-426A-B6F8-4E328E09E585}" ShortID="32297864">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_04" ID="{031BA98F-21F5-426A-B6F8-4E328E09E585}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_05" ID="{5968E9BA-36A6-4FBF-B3BE-309B745CFA30}" ShortID="578590287" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_05" ID="{C2824EF5-F7B0-4925-8252-AFD515954E17}" ShortID="510345298">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_05" ID="{C2824EF5-F7B0-4925-8252-AFD515954E17}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_06" ID="{348CB0F4-5986-4CEB-96E7-1390B190C6E6}" ShortID="739575854" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_06" ID="{F648D81F-AC04-4253-83B2-6A8B3695ED25}" ShortID="1001705612">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_06" ID="{F648D81F-AC04-4253-83B2-6A8B3695ED25}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_07" ID="{4CF3B1B1-0D0D-416C-B130-D526AE477865}" ShortID="91580847" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_07" ID="{2C971D8A-00F3-4EBB-BB64-74142DD15C95}" ShortID="972531880">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_07" ID="{2C971D8A-00F3-4EBB-BB64-74142DD15C95}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_08" ID="{D1886376-D08E-4A5A-B001-602BD9FA6731}" ShortID="239789535" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_08" ID="{C6EE6BAC-BAA0-47A9-A32C-2D85E8D5961B}" ShortID="130733422">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_08" ID="{C6EE6BAC-BAA0-47A9-A32C-2D85E8D5961B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_09" ID="{115EC812-8FA3-4AB2-8F4D-51C3EF193E97}" ShortID="630715204" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_09" ID="{51A06076-D0F4-4AC2-879A-53439CC38167}" ShortID="635039946">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_09" ID="{51A06076-D0F4-4AC2-879A-53439CC38167}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_10" ID="{B9ADFF8C-3CD7-440A-A350-90AC8A22AE5E}" ShortID="601117003" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_10" ID="{827090AA-279F-42A6-9BD0-D5877397993F}" ShortID="13714518">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_10.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_10" ID="{827090AA-279F-42A6-9BD0-D5877397993F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_11" ID="{2BAF7DDB-7AA4-49B1-A6C0-1811C10AA1FA}" ShortID="186761366" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_11" ID="{D8014561-1507-479F-B84E-B2224A573586}" ShortID="782890667">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_11.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_11" ID="{D8014561-1507-479F-B84E-B2224A573586}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_12" ID="{89E1AF92-B3C9-4E16-85E2-4F6EBA1F27D5}" ShortID="138931949" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_12" ID="{EEEB2DF6-876B-4176-92A3-E0FF7C0EBFF2}" ShortID="583894113">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_12.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_12" ID="{EEEB2DF6-876B-4176-92A3-E0FF7C0EBFF2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_13" ID="{1E5B3152-F0BB-455B-B78F-032A7A2C09F3}" ShortID="859377491" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_13" ID="{D19B0006-513A-4968-BAA5-DB693436AC0B}" ShortID="1041395498">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_13.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_13" ID="{D19B0006-513A-4968-BAA5-DB693436AC0B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_14" ID="{3241A681-DF7F-4D2D-A700-E7E5F37B99F5}" ShortID="957157203" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_14" ID="{4D19DDC4-921B-413A-A424-C8186951BB53}" ShortID="445712786">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_14.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_14" ID="{4D19DDC4-921B-413A-A424-C8186951BB53}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_15" ID="{2D850F2F-4041-49AB-A633-D38062C57BF0}" ShortID="464608185" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_15" ID="{773E3648-1412-45D2-AB66-BCE1A9D12F99}" ShortID="609243779">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_15.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_15" ID="{773E3648-1412-45D2-AB66-BCE1A9D12F99}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_16" ID="{7B3FFAA7-5958-4482-B74D-2E7A16D8F24E}" ShortID="212035245" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_16" ID="{26C51E9D-23C8-436A-8501-A5F1023DDC9A}" ShortID="414521664">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_16.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_16" ID="{26C51E9D-23C8-436A-8501-A5F1023DDC9A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_17" ID="{D9EE429C-792F-4048-A633-C39647E3209F}" ShortID="505694169" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_17" ID="{A2842A49-F355-4F47-B1E4-B0EA8F9CA1C9}" ShortID="111152215">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_17.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_17" ID="{A2842A49-F355-4F47-B1E4-B0EA8F9CA1C9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_18" ID="{E1FE3116-65DF-4BD5-BCA2-A0D48005E24E}" ShortID="91874892" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_18" ID="{59DC5897-6550-4033-BC57-401FFF82F4D4}" ShortID="564181978">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_18.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_18" ID="{59DC5897-6550-4033-BC57-401FFF82F4D4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_19" ID="{24F43848-AC54-41A2-9AF9-1CBF2865DEFD}" ShortID="157411748" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_19" ID="{C1CDFF39-7235-45B5-A65D-9635984B97E9}" ShortID="167239402">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_19.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_19" ID="{C1CDFF39-7235-45B5-A65D-9635984B97E9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_20" ID="{38EE88EA-89FB-4546-B495-8DBF69BEB3A5}" ShortID="149634654" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_20" ID="{BD224FF2-1224-459D-A52D-B3F2D79CA010}" ShortID="910448495">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_20.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_20" ID="{BD224FF2-1224-459D-A52D-B3F2D79CA010}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_21" ID="{4CB316B4-1226-4FCC-92BD-329F6FFCBE21}" ShortID="266970196" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_21" ID="{29A27D81-FC80-496D-959E-B934BD4EB526}" ShortID="972357954">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_21.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_21" ID="{29A27D81-FC80-496D-959E-B934BD4EB526}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_22" ID="{1C47267D-CFCD-443B-89E3-94C769ABF417}" ShortID="589463032" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_22" ID="{EC3FED63-DE98-44F8-864F-9B029881EB82}" ShortID="973183993">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_22.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_22" ID="{EC3FED63-DE98-44F8-864F-9B029881EB82}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_23" ID="{72546092-4E98-401A-920B-0D3B2AC10581}" ShortID="566791305" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_23" ID="{B88FAA7A-3601-4DE2-9126-2B5F55AA1668}" ShortID="435288154">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_23.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_23" ID="{B88FAA7A-3601-4DE2-9126-2B5F55AA1668}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_24" ID="{EC4705FC-A4F4-4D68-AF56-4A5BF3E0FC99}" ShortID="505930202" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_24" ID="{AB84E122-4D78-41D7-906D-95DD5FFC8287}" ShortID="920785221">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_24.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_24" ID="{AB84E122-4D78-41D7-906D-95DD5FFC8287}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_25" ID="{8AA085E6-28AF-47C8-A4C0-E3A6C115EE7D}" ShortID="981558929" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_25" ID="{80A9A28F-8B26-4B0E-9FE3-DA300EE4AED8}" ShortID="155235816">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_25.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_25" ID="{80A9A28F-8B26-4B0E-9FE3-DA300EE4AED8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_26" ID="{EF31BBE2-49BD-4F91-9729-B7AF0A4FE339}" ShortID="58728768" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_26" ID="{8AC74E31-A1CF-4DBE-890D-809D2B5950FE}" ShortID="167224946">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_26.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_26" ID="{8AC74E31-A1CF-4DBE-890D-809D2B5950FE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_27" ID="{AA8ADF25-DE04-4D87-A4DE-77864CD14E23}" ShortID="175316614" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_27" ID="{72288770-060D-4561-B7BF-5C425137D977}" ShortID="1005477074">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_27.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_27" ID="{72288770-060D-4561-B7BF-5C425137D977}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_28" ID="{A0C51AB7-550D-4340-8730-B3D1AB4C305B}" ShortID="867542166" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_28" ID="{620B342B-8F5E-4288-8AF2-42F164BCFB4A}" ShortID="245493566">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_28.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_28" ID="{620B342B-8F5E-4288-8AF2-42F164BCFB4A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_29" ID="{B05FBD69-3E0D-4ECE-991B-5A5654283638}" ShortID="396561094" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_29" ID="{9ECD9BD4-F3BF-4263-AC64-0E1DB85FB1F0}" ShortID="960627835">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_29.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_29" ID="{9ECD9BD4-F3BF-4263-AC64-0E1DB85FB1F0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_30" ID="{DB36A252-EA54-481E-9BBB-571EB5C6FAAE}" ShortID="892306332" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_30" ID="{114F68B9-AABE-4E14-BCF1-C2EACDF6ED83}" ShortID="368276181">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_30.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_30" ID="{114F68B9-AABE-4E14-BCF1-C2EACDF6ED83}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_31" ID="{E7370C0E-4404-47E2-AD04-9E9DAC141C35}" ShortID="722319924" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_31" ID="{631180EA-1B41-4DEE-9793-1058500C9275}" ShortID="217688540">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_31.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_31" ID="{631180EA-1B41-4DEE-9793-1058500C9275}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Positive_32" ID="{C3C1EFE8-1734-4C8F-9A9B-F6B7E6034C6F}" ShortID="268320035" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Positive_32" ID="{A00AC1B3-25D9-4AEE-A4AB-51437CDA62F6}" ShortID="859785993">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Positive_32.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Positive_32" ID="{A00AC1B3-25D9-4AEE-A4AB-51437CDA62F6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Woman_Negative" ID="{5B2DCCB9-0992-40B4-9581-307C6DF85568}" ShortID="310529882">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Woman_Negative_01" ID="{4AB88523-4705-473F-BF4C-3846A59AD230}" ShortID="228380843" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_01" ID="{286DFAFB-535D-48C2-8FC7-59AB1E73427E}" ShortID="1003190969">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_01" ID="{286DFAFB-535D-48C2-8FC7-59AB1E73427E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_02" ID="{2C31AF91-37F7-4B4D-AA54-7DFD3ED5F276}" ShortID="1049655914" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_02" ID="{5E82D945-1F4C-49F1-9786-2359D2005EAA}" ShortID="261013136">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_02" ID="{5E82D945-1F4C-49F1-9786-2359D2005EAA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_03" ID="{14E90289-04F7-4261-BFC2-8713B85102A7}" ShortID="607659855" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_03" ID="{6020E121-E007-40A5-BF4B-810ED4707920}" ShortID="390958042">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_03" ID="{6020E121-E007-40A5-BF4B-810ED4707920}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_04" ID="{B2C40127-145A-44B5-89CB-BFACA71DBEDD}" ShortID="425540091" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_04" ID="{8FC8FE05-CA69-4C3D-8D3C-259516848D8F}" ShortID="79042650">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_04" ID="{8FC8FE05-CA69-4C3D-8D3C-259516848D8F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_05" ID="{AC86B186-44B0-4C98-AD13-B54E0C8F0811}" ShortID="62041354" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_05" ID="{8FE3295B-51E3-47DB-ACD0-CF03F8A7BAFD}" ShortID="436857299">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_05" ID="{8FE3295B-51E3-47DB-ACD0-CF03F8A7BAFD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_06" ID="{6621ABF3-4FFD-4CAD-80F2-837782991725}" ShortID="253490645" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_06" ID="{08FECCBF-66AE-4DAC-838E-20F5F6E23B90}" ShortID="245615378">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_06" ID="{08FECCBF-66AE-4DAC-838E-20F5F6E23B90}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_07" ID="{E6144C8B-12A6-4851-832B-96618634492D}" ShortID="556883534" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_07" ID="{ACA30545-AACA-4D31-84DB-AEEAC65F22C4}" ShortID="786199629">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_07" ID="{ACA30545-AACA-4D31-84DB-AEEAC65F22C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_08" ID="{0BBA426B-B0AD-4038-9E8C-4E25F9BDF8A7}" ShortID="621909105" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_08" ID="{050EADC1-8438-4F71-908C-D97267E4509C}" ShortID="600367830">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_08" ID="{050EADC1-8438-4F71-908C-D97267E4509C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_09" ID="{D797D6CE-4EB5-4A2A-AC7B-781BADD1AE57}" ShortID="59864051" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_09" ID="{8FEB938B-60E4-44ED-A609-538077831852}" ShortID="413198985">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_09" ID="{8FEB938B-60E4-44ED-A609-538077831852}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_10" ID="{857BBCCF-1CFF-4070-961E-89ECFF960E76}" ShortID="233504766" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_10" ID="{FFE0A6AE-4555-4BF9-AFDE-E189E69AE0CB}" ShortID="915981739">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_10.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_10" ID="{FFE0A6AE-4555-4BF9-AFDE-E189E69AE0CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_11" ID="{42747E2C-4F19-49FA-A2FD-570C97FA0275}" ShortID="873840362" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_11" ID="{989BCA74-2009-4A23-9F9C-5E15C8DF67A7}" ShortID="280362070">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_11.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_11" ID="{989BCA74-2009-4A23-9F9C-5E15C8DF67A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_12" ID="{16F79810-2242-489D-85F7-01D3DD7469A2}" ShortID="146259682" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_12" ID="{379697AC-00CB-444F-9D41-6293DA43E990}" ShortID="1021673524">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_12.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_12" ID="{379697AC-00CB-444F-9D41-6293DA43E990}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_13" ID="{5C075775-34A1-4515-ABC6-3F9D647C400F}" ShortID="591682320" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_13" ID="{FA81B846-D013-4499-9375-8EAC12C85176}" ShortID="413732248">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_13.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_13" ID="{FA81B846-D013-4499-9375-8EAC12C85176}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_14" ID="{7435D643-58D3-4A4E-A858-D63354CB4983}" ShortID="1013778900" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_14" ID="{DBB7585B-ABD4-4F05-9788-C6486704A81A}" ShortID="38564035">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_14.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_14" ID="{DBB7585B-ABD4-4F05-9788-C6486704A81A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_15" ID="{AA90C96D-35C3-461A-A8B0-C6104AF759C8}" ShortID="819826315" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_15" ID="{32B118B2-55B0-4736-A2A1-DDF118A4A3A9}" ShortID="940186583">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_15.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_15" ID="{32B118B2-55B0-4736-A2A1-DDF118A4A3A9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_16" ID="{72845335-447F-4CA3-9678-B2CD1B4E772B}" ShortID="552085465" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_16" ID="{75003599-829A-4B33-9531-AA17F896701E}" ShortID="39547621">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_16.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_16" ID="{75003599-829A-4B33-9531-AA17F896701E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_17" ID="{6724A689-4D17-4DAD-BEF2-36A2B5CE271B}" ShortID="732959146" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_17" ID="{91F8810D-4F28-4F30-ABBA-070CD5517BC3}" ShortID="123469264">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_17.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_17" ID="{91F8810D-4F28-4F30-ABBA-070CD5517BC3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_18" ID="{0109D7F5-E32D-40F3-B277-C715FE490532}" ShortID="1054407120" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_18" ID="{B905E7C3-8F0E-43B7-9F5F-C34CF5266ADD}" ShortID="975760493">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_18.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_18" ID="{B905E7C3-8F0E-43B7-9F5F-C34CF5266ADD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_19" ID="{879E97B7-7BB5-43B8-B921-E6E5E070A4F6}" ShortID="1046925130" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_19" ID="{BDDC5135-9214-4E38-AF54-5686EDE362B0}" ShortID="735934604">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_19.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_19" ID="{BDDC5135-9214-4E38-AF54-5686EDE362B0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_20" ID="{11423B44-312B-4322-BA18-00260A4FA201}" ShortID="947324351" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_20" ID="{6E845D1F-B73E-4F28-88E0-CEE2137EB9B3}" ShortID="76296967">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_20.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_20" ID="{6E845D1F-B73E-4F28-88E0-CEE2137EB9B3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Negative_21" ID="{247A9E09-1B27-4BE6-B006-7A379CB37A30}" ShortID="972171337" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Negative_21" ID="{8FBEFAFB-E1F1-404A-905B-8825713B54CF}" ShortID="613987304">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Negative_21.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Negative_21" ID="{8FBEFAFB-E1F1-404A-905B-8825713B54CF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Woman_Very_Negative" ID="{3CD35914-58C7-4D73-9586-31796FD197F4}" ShortID="659463980">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Woman_Very_Negative_01" ID="{55AEC08F-ABB3-47F0-8643-9D5B146A7AA7}" ShortID="72863328" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Very_Negative_01" ID="{2FEA706D-11D3-41A9-89F8-93163D0D040E}" ShortID="297534224">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Very_Negative_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Very_Negative_01" ID="{2FEA706D-11D3-41A9-89F8-93163D0D040E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Very_Negative_02" ID="{1B556991-6FE7-4963-BD98-56503098681A}" ShortID="197706579" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Very_Negative_02" ID="{054CA947-75C8-40A3-8123-F9B2D26AF041}" ShortID="766169375">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Very_Negative_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Very_Negative_02" ID="{054CA947-75C8-40A3-8123-F9B2D26AF041}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Very_Negative_03" ID="{EEC2CED3-A063-4D5C-966B-9377763CC6A6}" ShortID="27549628" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Very_Negative_03" ID="{EE944976-E170-4DC1-A204-4FDD15274512}" ShortID="403596000">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Very_Negative_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Very_Negative_03" ID="{EE944976-E170-4DC1-A204-4FDD15274512}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Very_Negative_04" ID="{08B2723F-A5B3-4E28-84B8-5D5D26220B35}" ShortID="960866433" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Very_Negative_04" ID="{85CCB51E-671F-4F77-8B07-C685BEA7773D}" ShortID="811978281">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Very_Negative_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Very_Negative_04" ID="{85CCB51E-671F-4F77-8B07-C685BEA7773D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Very_Negative_05" ID="{549591F6-5715-4EDD-9C82-8D00B13E3502}" ShortID="227131246" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Very_Negative_05" ID="{2F276C66-41FD-4516-BE02-99678D4ED6A0}" ShortID="1053394090">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Very_Negative_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Very_Negative_05" ID="{2F276C66-41FD-4516-BE02-99678D4ED6A0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Very_Negative_06" ID="{14BB32F6-1DAC-4A2C-91DB-8D302052273A}" ShortID="913648406" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Very_Negative_06" ID="{5562E921-D8B7-4835-B86B-F9D20FA0FEFA}" ShortID="251070189">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Very_Negative_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Very_Negative_06" ID="{5562E921-D8B7-4835-B86B-F9D20FA0FEFA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woman_Very_Negative_07" ID="{A4E9EDC6-B478-428B-BF85-6F1DE6B8193C}" ShortID="499222422" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woman_Very_Negative_07" ID="{FEA21C21-506D-4E64-8A18-BBAAFAD8E1A6}" ShortID="733111692">
+											<Language>SFX</Language>
+											<AudioFile>Woman_Very_Negative_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woman_Very_Negative_07" ID="{FEA21C21-506D-4E64-8A18-BBAAFAD8E1A6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Grandma_Positive" ID="{04EEADA6-7634-44B1-B64E-BFC7079C72A0}" ShortID="163556539">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Grandma_Positive_01" ID="{5B81A43C-5C4B-408F-8120-F31C65D615CB}" ShortID="716096455" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Positive_01" ID="{5C08D6BE-4F12-42F6-9520-18CA052C4B4D}" ShortID="489415607">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Positive_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Positive_01" ID="{5C08D6BE-4F12-42F6-9520-18CA052C4B4D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Positive_02" ID="{6CE24B1C-D768-4C67-B789-CA0CA46B117E}" ShortID="765491969" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Positive_02" ID="{CA46F6C3-3375-4480-83FD-11BBEECDFD73}" ShortID="124560204">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Positive_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Positive_02" ID="{CA46F6C3-3375-4480-83FD-11BBEECDFD73}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Positive_03" ID="{10A53600-D374-4D5A-B93D-61AC425212C0}" ShortID="670012601" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Positive_03" ID="{D3C37D93-FB12-4E25-A9FE-899A2C1C65F4}" ShortID="109703742">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Positive_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Positive_03" ID="{D3C37D93-FB12-4E25-A9FE-899A2C1C65F4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Positive_04" ID="{CDABB888-1CB7-4DB5-AD2C-951BEEE3658B}" ShortID="919577877" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Positive_04" ID="{FF9318AA-27E1-44D7-B0E5-90B9F8B21C71}" ShortID="506170271">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Positive_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Positive_04" ID="{FF9318AA-27E1-44D7-B0E5-90B9F8B21C71}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Positive_05" ID="{7D045CDA-89F8-4C1B-8725-B0DFB7A25B25}" ShortID="931759983" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Positive_05" ID="{985F390A-94B6-408E-B1E5-D4D8B4A7C49D}" ShortID="779251898">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Positive_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Positive_05" ID="{985F390A-94B6-408E-B1E5-D4D8B4A7C49D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Positive_06" ID="{668A5558-9676-4757-BB0C-95B584D8C464}" ShortID="985443219" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Positive_06" ID="{D2F06E05-5745-41B4-AE59-70F72583C96F}" ShortID="312319032">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Positive_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Positive_06" ID="{D2F06E05-5745-41B4-AE59-70F72583C96F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Positive_07" ID="{B9F23D6E-A2A2-401F-85EE-9C1EFD710945}" ShortID="526322929" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Positive_07" ID="{7C1D2BF2-23E7-4748-9F62-6E681B17D1E9}" ShortID="980195099">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Positive_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Positive_07" ID="{7C1D2BF2-23E7-4748-9F62-6E681B17D1E9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Positive_08" ID="{9A571889-991A-40EC-9FB4-D23B5417A2C6}" ShortID="984374487" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Positive_08" ID="{F0B77C5D-BEF8-4A0F-880E-99ECC008D351}" ShortID="929235477">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Positive_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Positive_08" ID="{F0B77C5D-BEF8-4A0F-880E-99ECC008D351}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Positive_09" ID="{A21E6672-8B95-400C-B09A-9A91B6B2710B}" ShortID="849694715" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Positive_09" ID="{C62E66BA-5F56-4111-84F5-5E630BD8FC2E}" ShortID="428058345">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Positive_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Positive_09" ID="{C62E66BA-5F56-4111-84F5-5E630BD8FC2E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Positive_10" ID="{BEA84F9A-6657-44A6-9F4A-14F24C1A98E5}" ShortID="616758333" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Positive_10" ID="{0684D978-A986-440E-A376-7E651F9B0552}" ShortID="379661194">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Positive_10.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Positive_10" ID="{0684D978-A986-440E-A376-7E651F9B0552}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Positive_11" ID="{AD2C655E-BFE5-4E79-B4ED-96B2F57E1436}" ShortID="264000060" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Positive_11" ID="{FD999ADB-913D-40DD-838F-284675BB746A}" ShortID="300029830">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Positive_11.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Positive_11" ID="{FD999ADB-913D-40DD-838F-284675BB746A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Grandma_Negative" ID="{9AB92EF0-3017-4C0E-99C4-8B4559C54122}" ShortID="836490000">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Grandma_Negative_01" ID="{56EFFB1E-9CAE-4280-954B-E769169B587A}" ShortID="134264706" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Negative_01" ID="{8FD12CD5-3E6B-49DC-9A8A-D108CA40CE15}" ShortID="717955849">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Negative_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Negative_01" ID="{8FD12CD5-3E6B-49DC-9A8A-D108CA40CE15}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Negative_02" ID="{85FFEDD7-DB2E-4F61-A4A9-659EC0590B8F}" ShortID="263372432" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Negative_02" ID="{69A2A939-A726-46B6-919B-EFC9693F7FFD}" ShortID="1070108821">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Negative_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Negative_02" ID="{69A2A939-A726-46B6-919B-EFC9693F7FFD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Negative_03" ID="{67B06455-AC8D-45B1-A113-1328000E7962}" ShortID="312030807" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Negative_03" ID="{42DFE0F5-EE6C-4296-9C2C-2C5E571801A2}" ShortID="227935623">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Negative_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Negative_03" ID="{42DFE0F5-EE6C-4296-9C2C-2C5E571801A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Negative_04" ID="{0ECAC84D-F50C-4588-B5E6-30D77066CF68}" ShortID="142220798" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Negative_04" ID="{B9ADE782-0D4E-4A4B-8DE1-AC411875C95A}" ShortID="1001511955">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Negative_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Negative_04" ID="{B9ADE782-0D4E-4A4B-8DE1-AC411875C95A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Negative_05" ID="{0AEA5626-A509-4D20-BCCF-973FC99DC6A5}" ShortID="1031775838" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Negative_05" ID="{C806CC59-EFB1-477B-A4CA-542F585B38C2}" ShortID="128859049">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Negative_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Negative_05" ID="{C806CC59-EFB1-477B-A4CA-542F585B38C2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Negative_06" ID="{249EBBAB-D1D2-4FB6-9726-6755B1C549D3}" ShortID="1009815684" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Negative_06" ID="{4A8C12CB-5F51-45C0-AE37-949EA072F5C8}" ShortID="258576021">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Negative_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Negative_06" ID="{4A8C12CB-5F51-45C0-AE37-949EA072F5C8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Negative_07" ID="{490478F3-AC39-4340-BF1B-FB1C9B1DF9D4}" ShortID="232815973" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Negative_07" ID="{6BEE249A-C514-4CD3-AE06-F31AC733F3E4}" ShortID="865093304">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Negative_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Negative_07" ID="{6BEE249A-C514-4CD3-AE06-F31AC733F3E4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Negative_08" ID="{A6512886-B440-43B3-995B-01D58CEE7531}" ShortID="314923660" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Negative_08" ID="{3D455AEC-9A26-4D80-B870-247D8C10871F}" ShortID="27076988">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Negative_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Negative_08" ID="{3D455AEC-9A26-4D80-B870-247D8C10871F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Negative_09" ID="{779C1012-EE99-4174-861B-10C905C67FFF}" ShortID="377654396" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Negative_09" ID="{192481AA-AF57-4028-9439-2DB0DF7D0533}" ShortID="85411660">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Negative_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Negative_09" ID="{192481AA-AF57-4028-9439-2DB0DF7D0533}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Negative_10" ID="{98160B6D-6D59-4DD0-BD98-8388F9C5218C}" ShortID="654547846" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Negative_10" ID="{D1E08C21-62A3-4838-BB1E-B34F741A174B}" ShortID="927327976">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Negative_10.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Negative_10" ID="{D1E08C21-62A3-4838-BB1E-B34F741A174B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Grandma_Very_Negative" ID="{E7257210-C308-4944-8F3B-E870DDE8FEA1}" ShortID="320289834">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Grandma_Very_Negative_01" ID="{7DAF3C3E-FAE5-4AF9-80F6-C53948113F45}" ShortID="814984288" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Very_Negative_01" ID="{B48D3DEB-5981-4578-9FE4-3D4641DB807F}" ShortID="134168759">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Very_Negative_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Very_Negative_01" ID="{B48D3DEB-5981-4578-9FE4-3D4641DB807F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Very_Negative_02" ID="{04CC85B8-D739-4568-B85C-293323AE93E8}" ShortID="952966729" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Very_Negative_02" ID="{ED1E6612-2A0E-47E3-9680-E8F9566F7FD7}" ShortID="626661951">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Very_Negative_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Very_Negative_02" ID="{ED1E6612-2A0E-47E3-9680-E8F9566F7FD7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Very_Negative_03" ID="{94C310DA-52B4-4EC4-AC5B-5656270A85A3}" ShortID="973078408" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Very_Negative_03" ID="{3A090954-251E-43A6-A7F3-B01E73F8064D}" ShortID="405826405">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Very_Negative_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Very_Negative_03" ID="{3A090954-251E-43A6-A7F3-B01E73F8064D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Very_Negative_04" ID="{ACC6C389-56A8-4CB1-A52D-522BFB64AF54}" ShortID="269436211" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Very_Negative_04" ID="{F95E8413-10C2-4726-90B3-AB13EEB60FAC}" ShortID="392631589">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Very_Negative_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Very_Negative_04" ID="{F95E8413-10C2-4726-90B3-AB13EEB60FAC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Very_Negative_05" ID="{4D94BD13-4889-4CAA-8B12-17B6CFD0A1B9}" ShortID="228494925" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Very_Negative_05" ID="{A8FABD22-C513-41D0-B300-4884D4588B58}" ShortID="849623946">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Very_Negative_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Very_Negative_05" ID="{A8FABD22-C513-41D0-B300-4884D4588B58}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grandma_Very_Negative_06" ID="{9464FE22-9029-4C19-9F48-52EBB4248282}" ShortID="289734956" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grandma_Very_Negative_06" ID="{6B12B82C-09F8-44CB-99BE-FF719914BE66}" ShortID="809786432">
+											<Language>SFX</Language>
+											<AudioFile>Grandma_Very_Negative_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grandma_Very_Negative_06" ID="{6B12B82C-09F8-44CB-99BE-FF719914BE66}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>

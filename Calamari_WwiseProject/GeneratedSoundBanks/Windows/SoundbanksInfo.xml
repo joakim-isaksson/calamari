@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2228651116" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main_SoundBank</ObjectPath>
+			<ShortName>Main_SoundBank</ShortName>
+			<Path>Main_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4142440576" Name="Car_PassBy" ObjectPath="\Events\Atmo\Cars\Car_PassBy"/>
+				<Event Id="3032610195" Name="Grandma_Negative" ObjectPath="\Events\Dialogue\People\Grandma_Negative"/>
+				<Event Id="3544995775" Name="Grandma_Positive" ObjectPath="\Events\Dialogue\People\Grandma_Positive"/>
+				<Event Id="1911024840" Name="Grandma_Very_Negative" ObjectPath="\Events\Dialogue\People\Grandma_Very_Negative"/>
+				<Event Id="911506639" Name="Man_Negative" ObjectPath="\Events\Dialogue\People\Man_Negative"/>
+				<Event Id="666034363" Name="Man_Positive" ObjectPath="\Events\Dialogue\People\Man_Positive"/>
+				<Event Id="889047188" Name="Man_Very_Negative" ObjectPath="\Events\Dialogue\People\Man_Very_Negative"/>
+				<Event Id="2474639067" Name="Narrator_Go" ObjectPath="\Events\Dialogue\Narrator\Narrator_Go"/>
+				<Event Id="2862836492" Name="Narrator_Negative" ObjectPath="\Events\Dialogue\Narrator\Narrator_Negative"/>
+				<Event Id="645232014" Name="Narrator_Neutral" ObjectPath="\Events\Dialogue\Narrator\Narrator_Neutral"/>
+				<Event Id="3301552740" Name="Narrator_Positive" ObjectPath="\Events\Dialogue\Narrator\Narrator_Positive"/>
+				<Event Id="3640189846" Name="Narrator_Ready" ObjectPath="\Events\Dialogue\Narrator\Narrator_Ready"/>
+				<Event Id="347845317" Name="Play_InGame_Music" ObjectPath="\Events\Music\Play_InGame_Music"/>
+				<Event Id="3540843768" Name="Play_MenuAndCredits_Music" ObjectPath="\Events\Music\Play_MenuAndCredits_Music"/>
+				<Event Id="2890725208" Name="Play_StartLevel_Music" ObjectPath="\Events\Music\Play_StartLevel_Music"/>
+				<Event Id="1024076021" Name="Woman_Negative" ObjectPath="\Events\Dialogue\People\Woman_Negative"/>
+				<Event Id="2318958257" Name="Woman_Positive" ObjectPath="\Events\Dialogue\People\Woman_Positive"/>
+				<Event Id="3367768002" Name="Woman_Very_Negative" ObjectPath="\Events\Dialogue\People\Woman_Very_Negative"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="2877773" Language="SFX">
+					<ShortName>Man_Negative_21.wav</ShortName>
+					<Path>SFX\Man_Negative_21_9E69E797.wem</Path>
+				</File>
+				<File Id="9549458" Language="SFX">
+					<ShortName>narration_NEGATIVE_comeone.wav</ShortName>
+					<Path>SFX\narration_NEGATIVE_comeone_9E69E797.wem</Path>
+				</File>
+				<File Id="10625442" Language="SFX">
+					<ShortName>Man_Negative_13.wav</ShortName>
+					<Path>SFX\Man_Negative_13_9E69E797.wem</Path>
+				</File>
+				<File Id="13714518" Language="SFX">
+					<ShortName>Woman_Positive_10.wav</ShortName>
+					<Path>SFX\Woman_Positive_10_9E69E797.wem</Path>
+				</File>
+				<File Id="14062417" Language="SFX">
+					<ShortName>Man_Negative_18.wav</ShortName>
+					<Path>SFX\Man_Negative_18_9E69E797.wem</Path>
+				</File>
+				<File Id="14429959" Language="SFX">
+					<ShortName>narration_START_ready.wav</ShortName>
+					<Path>SFX\narration_START_ready_9E69E797.wem</Path>
+				</File>
+				<File Id="21487690" Language="SFX">
+					<ShortName>fx_car3.wav</ShortName>
+					<Path>SFX\fx_car3_9E69E797.wem</Path>
+				</File>
+				<File Id="25210492" Language="SFX">
+					<ShortName>Man_Positive_22.wav</ShortName>
+					<Path>SFX\Man_Positive_22_9E69E797.wem</Path>
+				</File>
+				<File Id="26825925" Language="SFX">
+					<ShortName>Man_Very_Negative_01.wav</ShortName>
+					<Path>SFX\Man_Very_Negative_01_9E69E797.wem</Path>
+				</File>
+				<File Id="27076988" Language="SFX">
+					<ShortName>Grandma_Negative_08.wav</ShortName>
+					<Path>SFX\Grandma_Negative_08_9E69E797.wem</Path>
+				</File>
+				<File Id="28841512" Language="SFX">
+					<ShortName>Man_Positive_25.wav</ShortName>
+					<Path>SFX\Man_Positive_25_9E69E797.wem</Path>
+				</File>
+				<File Id="32297864" Language="SFX">
+					<ShortName>Woman_Positive_04.wav</ShortName>
+					<Path>SFX\Woman_Positive_04_9E69E797.wem</Path>
+				</File>
+				<File Id="32597010" Language="SFX">
+					<ShortName>Man_Positive_27.wav</ShortName>
+					<Path>SFX\Man_Positive_27_9E69E797.wem</Path>
+				</File>
+				<File Id="38564035" Language="SFX">
+					<ShortName>Woman_Negative_14.wav</ShortName>
+					<Path>SFX\Woman_Negative_14_9E69E797.wem</Path>
+				</File>
+				<File Id="39547621" Language="SFX">
+					<ShortName>Woman_Negative_16.wav</ShortName>
+					<Path>SFX\Woman_Negative_16_9E69E797.wem</Path>
+				</File>
+				<File Id="46350043" Language="SFX">
+					<ShortName>Man_Positive_03.wav</ShortName>
+					<Path>SFX\Man_Positive_03_9E69E797.wem</Path>
+				</File>
+				<File Id="53735143" Language="SFX">
+					<ShortName>Man_Negative_02.wav</ShortName>
+					<Path>SFX\Man_Negative_02_9E69E797.wem</Path>
+				</File>
+				<File Id="76296967" Language="SFX">
+					<ShortName>Woman_Negative_20.wav</ShortName>
+					<Path>SFX\Woman_Negative_20_9E69E797.wem</Path>
+				</File>
+				<File Id="79042650" Language="SFX">
+					<ShortName>Woman_Negative_04.wav</ShortName>
+					<Path>SFX\Woman_Negative_04_9E69E797.wem</Path>
+				</File>
+				<File Id="85411660" Language="SFX">
+					<ShortName>Grandma_Negative_09.wav</ShortName>
+					<Path>SFX\Grandma_Negative_09_9E69E797.wem</Path>
+				</File>
+				<File Id="96849887" Language="SFX">
+					<ShortName>Man_Positive_05.wav</ShortName>
+					<Path>SFX\Man_Positive_05_9E69E797.wem</Path>
+				</File>
+				<File Id="96964520" Language="SFX">
+					<ShortName>Man_Positive_02.wav</ShortName>
+					<Path>SFX\Man_Positive_02_9E69E797.wem</Path>
+				</File>
+				<File Id="100503375" Language="SFX">
+					<ShortName>Man_Negative_27.wav</ShortName>
+					<Path>SFX\Man_Negative_27_9E69E797.wem</Path>
+				</File>
+				<File Id="109256533" Language="SFX">
+					<ShortName>Man_Negative_10.wav</ShortName>
+					<Path>SFX\Man_Negative_10_9E69E797.wem</Path>
+				</File>
+				<File Id="109703742" Language="SFX">
+					<ShortName>Grandma_Positive_03.wav</ShortName>
+					<Path>SFX\Grandma_Positive_03_9E69E797.wem</Path>
+				</File>
+				<File Id="111152215" Language="SFX">
+					<ShortName>Woman_Positive_17.wav</ShortName>
+					<Path>SFX\Woman_Positive_17_9E69E797.wem</Path>
+				</File>
+				<File Id="114133025" Language="SFX">
+					<ShortName>Man_Negative_17.wav</ShortName>
+					<Path>SFX\Man_Negative_17_9E69E797.wem</Path>
+				</File>
+				<File Id="119191464" Language="SFX">
+					<ShortName>fx_car1.wav</ShortName>
+					<Path>SFX\fx_car1_9E69E797.wem</Path>
+				</File>
+				<File Id="123469264" Language="SFX">
+					<ShortName>Woman_Negative_17.wav</ShortName>
+					<Path>SFX\Woman_Negative_17_9E69E797.wem</Path>
+				</File>
+				<File Id="124560204" Language="SFX">
+					<ShortName>Grandma_Positive_02.wav</ShortName>
+					<Path>SFX\Grandma_Positive_02_9E69E797.wem</Path>
+				</File>
+				<File Id="128859049" Language="SFX">
+					<ShortName>Grandma_Negative_05.wav</ShortName>
+					<Path>SFX\Grandma_Negative_05_9E69E797.wem</Path>
+				</File>
+				<File Id="130733422" Language="SFX">
+					<ShortName>Woman_Positive_08.wav</ShortName>
+					<Path>SFX\Woman_Positive_08_9E69E797.wem</Path>
+				</File>
+				<File Id="133826350" Language="SFX">
+					<ShortName>narration_NEUTRAL_good.wav</ShortName>
+					<Path>SFX\narration_NEUTRAL_good_9E69E797.wem</Path>
+				</File>
+				<File Id="134168759" Language="SFX">
+					<ShortName>Grandma_Very_Negative_01.wav</ShortName>
+					<Path>SFX\Grandma_Very_Negative_01_9E69E797.wem</Path>
+				</File>
+				<File Id="155235816" Language="SFX">
+					<ShortName>Woman_Positive_25.wav</ShortName>
+					<Path>SFX\Woman_Positive_25_9E69E797.wem</Path>
+				</File>
+				<File Id="161861598" Language="SFX">
+					<ShortName>Man_Negative_15.wav</ShortName>
+					<Path>SFX\Man_Negative_15_9E69E797.wem</Path>
+				</File>
+				<File Id="163546151" Language="SFX">
+					<ShortName>Man_Positive_30.wav</ShortName>
+					<Path>SFX\Man_Positive_30_9E69E797.wem</Path>
+				</File>
+				<File Id="167224946" Language="SFX">
+					<ShortName>Woman_Positive_26.wav</ShortName>
+					<Path>SFX\Woman_Positive_26_9E69E797.wem</Path>
+				</File>
+				<File Id="167239402" Language="SFX">
+					<ShortName>Woman_Positive_19.wav</ShortName>
+					<Path>SFX\Woman_Positive_19_9E69E797.wem</Path>
+				</File>
+				<File Id="176602625" Language="SFX">
+					<ShortName>Man_Positive_04.wav</ShortName>
+					<Path>SFX\Man_Positive_04_9E69E797.wem</Path>
+				</File>
+				<File Id="188253069" Language="SFX">
+					<ShortName>Woman_Positive_02.wav</ShortName>
+					<Path>SFX\Woman_Positive_02_9E69E797.wem</Path>
+				</File>
+				<File Id="188543519" Language="SFX">
+					<ShortName>Man_Negative_20.wav</ShortName>
+					<Path>SFX\Man_Negative_20_9E69E797.wem</Path>
+				</File>
+				<File Id="190079811" Language="SFX">
+					<ShortName>Man_Positive_17.wav</ShortName>
+					<Path>SFX\Man_Positive_17_9E69E797.wem</Path>
+				</File>
+				<File Id="194525439" Language="SFX">
+					<ShortName>Man_Positive_28.wav</ShortName>
+					<Path>SFX\Man_Positive_28_9E69E797.wem</Path>
+				</File>
+				<File Id="196229172" Language="SFX">
+					<ShortName>Man_Positive_39.wav</ShortName>
+					<Path>SFX\Man_Positive_39_9E69E797.wem</Path>
+				</File>
+				<File Id="207811198" Language="SFX">
+					<ShortName>music_level.wav</ShortName>
+					<Path>SFX\music_level_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="217688540" Language="SFX">
+					<ShortName>Woman_Positive_31.wav</ShortName>
+					<Path>SFX\Woman_Positive_31_9E69E797.wem</Path>
+				</File>
+				<File Id="218140630" Language="SFX">
+					<ShortName>Man_Positive_19.wav</ShortName>
+					<Path>SFX\Man_Positive_19_9E69E797.wem</Path>
+				</File>
+				<File Id="226449550" Language="SFX">
+					<ShortName>Man_Positive_32.wav</ShortName>
+					<Path>SFX\Man_Positive_32_9E69E797.wem</Path>
+				</File>
+				<File Id="227935623" Language="SFX">
+					<ShortName>Grandma_Negative_03.wav</ShortName>
+					<Path>SFX\Grandma_Negative_03_9E69E797.wem</Path>
+				</File>
+				<File Id="238118283" Language="SFX">
+					<ShortName>Man_Negative_19.wav</ShortName>
+					<Path>SFX\Man_Negative_19_9E69E797.wem</Path>
+				</File>
+				<File Id="245493566" Language="SFX">
+					<ShortName>Woman_Positive_28.wav</ShortName>
+					<Path>SFX\Woman_Positive_28_9E69E797.wem</Path>
+				</File>
+				<File Id="245615378" Language="SFX">
+					<ShortName>Woman_Negative_06.wav</ShortName>
+					<Path>SFX\Woman_Negative_06_9E69E797.wem</Path>
+				</File>
+				<File Id="251070189" Language="SFX">
+					<ShortName>Woman_Very_Negative_06.wav</ShortName>
+					<Path>SFX\Woman_Very_Negative_06_9E69E797.wem</Path>
+				</File>
+				<File Id="258576021" Language="SFX">
+					<ShortName>Grandma_Negative_06.wav</ShortName>
+					<Path>SFX\Grandma_Negative_06_9E69E797.wem</Path>
+				</File>
+				<File Id="261013136" Language="SFX">
+					<ShortName>Woman_Negative_02.wav</ShortName>
+					<Path>SFX\Woman_Negative_02_9E69E797.wem</Path>
+				</File>
+				<File Id="266643463" Language="SFX">
+					<ShortName>narration_NEGATIVE_pff.wav</ShortName>
+					<Path>SFX\narration_NEGATIVE_pff_9E69E797.wem</Path>
+				</File>
+				<File Id="280362070" Language="SFX">
+					<ShortName>Woman_Negative_11.wav</ShortName>
+					<Path>SFX\Woman_Negative_11_9E69E797.wem</Path>
+				</File>
+				<File Id="297534224" Language="SFX">
+					<ShortName>Woman_Very_Negative_01.wav</ShortName>
+					<Path>SFX\Woman_Very_Negative_01_9E69E797.wem</Path>
+				</File>
+				<File Id="300029830" Language="SFX">
+					<ShortName>Grandma_Positive_11.wav</ShortName>
+					<Path>SFX\Grandma_Positive_11_9E69E797.wem</Path>
+				</File>
+				<File Id="302346980" Language="SFX">
+					<ShortName>narration_NEGATIVE_really.wav</ShortName>
+					<Path>SFX\narration_NEGATIVE_really_9E69E797.wem</Path>
+				</File>
+				<File Id="311226976" Language="SFX">
+					<ShortName>Man_Negative_04.wav</ShortName>
+					<Path>SFX\Man_Negative_04_9E69E797.wem</Path>
+				</File>
+				<File Id="312319032" Language="SFX">
+					<ShortName>Grandma_Positive_06.wav</ShortName>
+					<Path>SFX\Grandma_Positive_06_9E69E797.wem</Path>
+				</File>
+				<File Id="327044172" Language="SFX">
+					<ShortName>Man_Negative_24.wav</ShortName>
+					<Path>SFX\Man_Negative_24_9E69E797.wem</Path>
+				</File>
+				<File Id="329911965" Language="SFX">
+					<ShortName>Man_Negative_12.wav</ShortName>
+					<Path>SFX\Man_Negative_12_9E69E797.wem</Path>
+				</File>
+				<File Id="331625486" Language="SFX">
+					<ShortName>Man_Very_Negative_03.wav</ShortName>
+					<Path>SFX\Man_Very_Negative_03_9E69E797.wem</Path>
+				</File>
+				<File Id="368276181" Language="SFX">
+					<ShortName>Woman_Positive_30.wav</ShortName>
+					<Path>SFX\Woman_Positive_30_9E69E797.wem</Path>
+				</File>
+				<File Id="379661194" Language="SFX">
+					<ShortName>Grandma_Positive_10.wav</ShortName>
+					<Path>SFX\Grandma_Positive_10_9E69E797.wem</Path>
+				</File>
+				<File Id="385623564" Language="SFX">
+					<ShortName>Man_Positive_34.wav</ShortName>
+					<Path>SFX\Man_Positive_34_9E69E797.wem</Path>
+				</File>
+				<File Id="390958042" Language="SFX">
+					<ShortName>Woman_Negative_03.wav</ShortName>
+					<Path>SFX\Woman_Negative_03_9E69E797.wem</Path>
+				</File>
+				<File Id="392631589" Language="SFX">
+					<ShortName>Grandma_Very_Negative_04.wav</ShortName>
+					<Path>SFX\Grandma_Very_Negative_04_9E69E797.wem</Path>
+				</File>
+				<File Id="392755562" Language="SFX">
+					<ShortName>Man_Negative_28.wav</ShortName>
+					<Path>SFX\Man_Negative_28_9E69E797.wem</Path>
+				</File>
+				<File Id="399268194" Language="SFX">
+					<ShortName>narration_NEUTRAL_hmm.wav</ShortName>
+					<Path>SFX\narration_NEUTRAL_hmm_9E69E797.wem</Path>
+				</File>
+				<File Id="399636309" Language="SFX">
+					<ShortName>Man_Positive_35.wav</ShortName>
+					<Path>SFX\Man_Positive_35_9E69E797.wem</Path>
+				</File>
+				<File Id="403596000" Language="SFX">
+					<ShortName>Woman_Very_Negative_03.wav</ShortName>
+					<Path>SFX\Woman_Very_Negative_03_9E69E797.wem</Path>
+				</File>
+				<File Id="405826405" Language="SFX">
+					<ShortName>Grandma_Very_Negative_03.wav</ShortName>
+					<Path>SFX\Grandma_Very_Negative_03_9E69E797.wem</Path>
+				</File>
+				<File Id="409910108" Language="SFX">
+					<ShortName>Man_Positive_07.wav</ShortName>
+					<Path>SFX\Man_Positive_07_9E69E797.wem</Path>
+				</File>
+				<File Id="413198985" Language="SFX">
+					<ShortName>Woman_Negative_09.wav</ShortName>
+					<Path>SFX\Woman_Negative_09_9E69E797.wem</Path>
+				</File>
+				<File Id="413732248" Language="SFX">
+					<ShortName>Woman_Negative_13.wav</ShortName>
+					<Path>SFX\Woman_Negative_13_9E69E797.wem</Path>
+				</File>
+				<File Id="414521664" Language="SFX">
+					<ShortName>Woman_Positive_16.wav</ShortName>
+					<Path>SFX\Woman_Positive_16_9E69E797.wem</Path>
+				</File>
+				<File Id="418302521" Language="SFX">
+					<ShortName>narration_POSITIVE_niceone.wav</ShortName>
+					<Path>SFX\narration_POSITIVE_niceone_9E69E797.wem</Path>
+				</File>
+				<File Id="425196317" Language="SFX">
+					<ShortName>Man_Positive_38.wav</ShortName>
+					<Path>SFX\Man_Positive_38_9E69E797.wem</Path>
+				</File>
+				<File Id="428058345" Language="SFX">
+					<ShortName>Grandma_Positive_09.wav</ShortName>
+					<Path>SFX\Grandma_Positive_09_9E69E797.wem</Path>
+				</File>
+				<File Id="432251244" Language="SFX">
+					<ShortName>narration_NEGATIVE_awkward.wav</ShortName>
+					<Path>SFX\narration_NEGATIVE_awkward_9E69E797.wem</Path>
+				</File>
+				<File Id="433258235" Language="SFX">
+					<ShortName>music_start.wav</ShortName>
+					<Path>SFX\music_start_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="435288154" Language="SFX">
+					<ShortName>Woman_Positive_23.wav</ShortName>
+					<Path>SFX\Woman_Positive_23_9E69E797.wem</Path>
+				</File>
+				<File Id="436857299" Language="SFX">
+					<ShortName>Woman_Negative_05.wav</ShortName>
+					<Path>SFX\Woman_Negative_05_9E69E797.wem</Path>
+				</File>
+				<File Id="445123628" Language="SFX">
+					<ShortName>Man_Positive_18.wav</ShortName>
+					<Path>SFX\Man_Positive_18_9E69E797.wem</Path>
+				</File>
+				<File Id="445712786" Language="SFX">
+					<ShortName>Woman_Positive_14.wav</ShortName>
+					<Path>SFX\Woman_Positive_14_9E69E797.wem</Path>
+				</File>
+				<File Id="453139586" Language="SFX">
+					<ShortName>Man_Positive_09.wav</ShortName>
+					<Path>SFX\Man_Positive_09_9E69E797.wem</Path>
+				</File>
+				<File Id="454069176" Language="SFX">
+					<ShortName>narration_NEGATIVE_whatwere.wav</ShortName>
+					<Path>SFX\narration_NEGATIVE_whatwere_9E69E797.wem</Path>
+				</File>
+				<File Id="460072628" Language="SFX">
+					<ShortName>Man_Negative_23.wav</ShortName>
+					<Path>SFX\Man_Negative_23_9E69E797.wem</Path>
+				</File>
+				<File Id="481146199" Language="SFX">
+					<ShortName>narration_NEGATIVE_howembarrasing.wav</ShortName>
+					<Path>SFX\narration_NEGATIVE_howembarrasing_9E69E797.wem</Path>
+				</File>
+				<File Id="489415607" Language="SFX">
+					<ShortName>Grandma_Positive_01.wav</ShortName>
+					<Path>SFX\Grandma_Positive_01_9E69E797.wem</Path>
+				</File>
+				<File Id="502447757" Language="SFX">
+					<ShortName>narration_POSITIVE_fantastic.wav</ShortName>
+					<Path>SFX\narration_POSITIVE_fantastic_9E69E797.wem</Path>
+				</File>
+				<File Id="505881422" Language="SFX">
+					<ShortName>narration_START_go.wav</ShortName>
+					<Path>SFX\narration_START_go_9E69E797.wem</Path>
+				</File>
+				<File Id="506170271" Language="SFX">
+					<ShortName>Grandma_Positive_04.wav</ShortName>
+					<Path>SFX\Grandma_Positive_04_9E69E797.wem</Path>
+				</File>
+				<File Id="510345298" Language="SFX">
+					<ShortName>Woman_Positive_05.wav</ShortName>
+					<Path>SFX\Woman_Positive_05_9E69E797.wem</Path>
+				</File>
+				<File Id="512670497" Language="SFX">
+					<ShortName>Man_Positive_06.wav</ShortName>
+					<Path>SFX\Man_Positive_06_9E69E797.wem</Path>
+				</File>
+				<File Id="533962747" Language="SFX">
+					<ShortName>narration_NEUTRAL_fine.wav</ShortName>
+					<Path>SFX\narration_NEUTRAL_fine_9E69E797.wem</Path>
+				</File>
+				<File Id="564181978" Language="SFX">
+					<ShortName>Woman_Positive_18.wav</ShortName>
+					<Path>SFX\Woman_Positive_18_9E69E797.wem</Path>
+				</File>
+				<File Id="564434574" Language="SFX">
+					<ShortName>Man_Positive_37.wav</ShortName>
+					<Path>SFX\Man_Positive_37_9E69E797.wem</Path>
+				</File>
+				<File Id="565099836" Language="SFX">
+					<ShortName>Man_Positive_31.wav</ShortName>
+					<Path>SFX\Man_Positive_31_9E69E797.wem</Path>
+				</File>
+				<File Id="583894113" Language="SFX">
+					<ShortName>Woman_Positive_12.wav</ShortName>
+					<Path>SFX\Woman_Positive_12_9E69E797.wem</Path>
+				</File>
+				<File Id="600367830" Language="SFX">
+					<ShortName>Woman_Negative_08.wav</ShortName>
+					<Path>SFX\Woman_Negative_08_9E69E797.wem</Path>
+				</File>
+				<File Id="601293802" Language="SFX">
+					<ShortName>Man_Positive_29.wav</ShortName>
+					<Path>SFX\Man_Positive_29_9E69E797.wem</Path>
+				</File>
+				<File Id="601874643" Language="SFX">
+					<ShortName>Man_Negative_16.wav</ShortName>
+					<Path>SFX\Man_Negative_16_9E69E797.wem</Path>
+				</File>
+				<File Id="609243779" Language="SFX">
+					<ShortName>Woman_Positive_15.wav</ShortName>
+					<Path>SFX\Woman_Positive_15_9E69E797.wem</Path>
+				</File>
+				<File Id="613987304" Language="SFX">
+					<ShortName>Woman_Negative_21.wav</ShortName>
+					<Path>SFX\Woman_Negative_21_9E69E797.wem</Path>
+				</File>
+				<File Id="619435837" Language="SFX">
+					<ShortName>Man_Positive_08.wav</ShortName>
+					<Path>SFX\Man_Positive_08_9E69E797.wem</Path>
+				</File>
+				<File Id="626661951" Language="SFX">
+					<ShortName>Grandma_Very_Negative_02.wav</ShortName>
+					<Path>SFX\Grandma_Very_Negative_02_9E69E797.wem</Path>
+				</File>
+				<File Id="635039946" Language="SFX">
+					<ShortName>Woman_Positive_09.wav</ShortName>
+					<Path>SFX\Woman_Positive_09_9E69E797.wem</Path>
+				</File>
+				<File Id="635240318" Language="SFX">
+					<ShortName>Man_Very_Negative_04.wav</ShortName>
+					<Path>SFX\Man_Very_Negative_04_9E69E797.wem</Path>
+				</File>
+				<File Id="655499507" Language="SFX">
+					<ShortName>Man_Negative_22.wav</ShortName>
+					<Path>SFX\Man_Negative_22_9E69E797.wem</Path>
+				</File>
+				<File Id="679972742" Language="SFX">
+					<ShortName>Man_Negative_26.wav</ShortName>
+					<Path>SFX\Man_Negative_26_9E69E797.wem</Path>
+				</File>
+				<File Id="680976898" Language="SFX">
+					<ShortName>Man_Negative_11.wav</ShortName>
+					<Path>SFX\Man_Negative_11_9E69E797.wem</Path>
+				</File>
+				<File Id="683242344" Language="SFX">
+					<ShortName>Man_Positive_01.wav</ShortName>
+					<Path>SFX\Man_Positive_01_9E69E797.wem</Path>
+				</File>
+				<File Id="701220709" Language="SFX">
+					<ShortName>narration_NEUTRAL_okayy.wav</ShortName>
+					<Path>SFX\narration_NEUTRAL_okayy_9E69E797.wem</Path>
+				</File>
+				<File Id="704211355" Language="SFX">
+					<ShortName>narration_NEUTRAL_ok.wav</ShortName>
+					<Path>SFX\narration_NEUTRAL_ok_9E69E797.wem</Path>
+				</File>
+				<File Id="717955849" Language="SFX">
+					<ShortName>Grandma_Negative_01.wav</ShortName>
+					<Path>SFX\Grandma_Negative_01_9E69E797.wem</Path>
+				</File>
+				<File Id="726545679" Language="SFX">
+					<ShortName>narration_NEGATIVE_doh.wav</ShortName>
+					<Path>SFX\narration_NEGATIVE_doh_9E69E797.wem</Path>
+				</File>
+				<File Id="726948466" Language="SFX">
+					<ShortName>Man_Positive_24.wav</ShortName>
+					<Path>SFX\Man_Positive_24_9E69E797.wem</Path>
+				</File>
+				<File Id="733111692" Language="SFX">
+					<ShortName>Woman_Very_Negative_07.wav</ShortName>
+					<Path>SFX\Woman_Very_Negative_07_9E69E797.wem</Path>
+				</File>
+				<File Id="735669844" Language="SFX">
+					<ShortName>Man_Positive_12.wav</ShortName>
+					<Path>SFX\Man_Positive_12_9E69E797.wem</Path>
+				</File>
+				<File Id="735934604" Language="SFX">
+					<ShortName>Woman_Negative_19.wav</ShortName>
+					<Path>SFX\Woman_Negative_19_9E69E797.wem</Path>
+				</File>
+				<File Id="736128489" Language="SFX">
+					<ShortName>Man_Negative_25.wav</ShortName>
+					<Path>SFX\Man_Negative_25_9E69E797.wem</Path>
+				</File>
+				<File Id="760519151" Language="SFX">
+					<ShortName>Man_Very_Negative_06.wav</ShortName>
+					<Path>SFX\Man_Very_Negative_06_9E69E797.wem</Path>
+				</File>
+				<File Id="764807767" Language="SFX">
+					<ShortName>Man_Very_Negative_05.wav</ShortName>
+					<Path>SFX\Man_Very_Negative_05_9E69E797.wem</Path>
+				</File>
+				<File Id="766169375" Language="SFX">
+					<ShortName>Woman_Very_Negative_02.wav</ShortName>
+					<Path>SFX\Woman_Very_Negative_02_9E69E797.wem</Path>
+				</File>
+				<File Id="770414880" Language="SFX">
+					<ShortName>Man_Positive_14.wav</ShortName>
+					<Path>SFX\Man_Positive_14_9E69E797.wem</Path>
+				</File>
+				<File Id="778443801" Language="SFX">
+					<ShortName>Man_Positive_23.wav</ShortName>
+					<Path>SFX\Man_Positive_23_9E69E797.wem</Path>
+				</File>
+				<File Id="779251898" Language="SFX">
+					<ShortName>Grandma_Positive_05.wav</ShortName>
+					<Path>SFX\Grandma_Positive_05_9E69E797.wem</Path>
+				</File>
+				<File Id="782366523" Language="SFX">
+					<ShortName>Man_Negative_07.wav</ShortName>
+					<Path>SFX\Man_Negative_07_9E69E797.wem</Path>
+				</File>
+				<File Id="782890667" Language="SFX">
+					<ShortName>Woman_Positive_11.wav</ShortName>
+					<Path>SFX\Woman_Positive_11_9E69E797.wem</Path>
+				</File>
+				<File Id="786199629" Language="SFX">
+					<ShortName>Woman_Negative_07.wav</ShortName>
+					<Path>SFX\Woman_Negative_07_9E69E797.wem</Path>
+				</File>
+				<File Id="793352588" Language="SFX">
+					<ShortName>Man_Positive_16.wav</ShortName>
+					<Path>SFX\Man_Positive_16_9E69E797.wem</Path>
+				</File>
+				<File Id="809786432" Language="SFX">
+					<ShortName>Grandma_Very_Negative_06.wav</ShortName>
+					<Path>SFX\Grandma_Very_Negative_06_9E69E797.wem</Path>
+				</File>
+				<File Id="810946531" Language="SFX">
+					<ShortName>Man_Positive_20.wav</ShortName>
+					<Path>SFX\Man_Positive_20_9E69E797.wem</Path>
+				</File>
+				<File Id="811978281" Language="SFX">
+					<ShortName>Woman_Very_Negative_04.wav</ShortName>
+					<Path>SFX\Woman_Very_Negative_04_9E69E797.wem</Path>
+				</File>
+				<File Id="819243105" Language="SFX">
+					<ShortName>Man_Positive_36.wav</ShortName>
+					<Path>SFX\Man_Positive_36_9E69E797.wem</Path>
+				</File>
+				<File Id="821489082" Language="SFX">
+					<ShortName>fx_car2.wav</ShortName>
+					<Path>SFX\fx_car2_9E69E797.wem</Path>
+				</File>
+				<File Id="823370847" Language="SFX">
+					<ShortName>Man_Negative_01.wav</ShortName>
+					<Path>SFX\Man_Negative_01_9E69E797.wem</Path>
+				</File>
+				<File Id="837088202" Language="SFX">
+					<ShortName>Man_Positive_26.wav</ShortName>
+					<Path>SFX\Man_Positive_26_9E69E797.wem</Path>
+				</File>
+				<File Id="847225438" Language="SFX">
+					<ShortName>Man_Very_Negative_02.wav</ShortName>
+					<Path>SFX\Man_Very_Negative_02_9E69E797.wem</Path>
+				</File>
+				<File Id="849623946" Language="SFX">
+					<ShortName>Grandma_Very_Negative_05.wav</ShortName>
+					<Path>SFX\Grandma_Very_Negative_05_9E69E797.wem</Path>
+				</File>
+				<File Id="854945334" Language="SFX">
+					<ShortName>Man_Negative_08.wav</ShortName>
+					<Path>SFX\Man_Negative_08_9E69E797.wem</Path>
+				</File>
+				<File Id="855451501" Language="SFX">
+					<ShortName>narration_NEUTRAL_right.wav</ShortName>
+					<Path>SFX\narration_NEUTRAL_right_9E69E797.wem</Path>
+				</File>
+				<File Id="857526467" Language="SFX">
+					<ShortName>Man_Negative_03.wav</ShortName>
+					<Path>SFX\Man_Negative_03_9E69E797.wem</Path>
+				</File>
+				<File Id="859785993" Language="SFX">
+					<ShortName>Woman_Positive_32.wav</ShortName>
+					<Path>SFX\Woman_Positive_32_9E69E797.wem</Path>
+				</File>
+				<File Id="865093304" Language="SFX">
+					<ShortName>Grandma_Negative_07.wav</ShortName>
+					<Path>SFX\Grandma_Negative_07_9E69E797.wem</Path>
+				</File>
+				<File Id="873728625" Language="SFX">
+					<ShortName>Man_Negative_05.wav</ShortName>
+					<Path>SFX\Man_Negative_05_9E69E797.wem</Path>
+				</File>
+				<File Id="904301245" Language="SFX">
+					<ShortName>Man_Positive_13.wav</ShortName>
+					<Path>SFX\Man_Positive_13_9E69E797.wem</Path>
+				</File>
+				<File Id="904827553" Language="SFX">
+					<ShortName>Man_Positive_11.wav</ShortName>
+					<Path>SFX\Man_Positive_11_9E69E797.wem</Path>
+				</File>
+				<File Id="905445822" Language="SFX">
+					<ShortName>Man_Negative_09.wav</ShortName>
+					<Path>SFX\Man_Negative_09_9E69E797.wem</Path>
+				</File>
+				<File Id="907880064" Language="SFX">
+					<ShortName>music_menu.wav</ShortName>
+					<Path>SFX\music_menu_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="909488199" Language="SFX">
+					<ShortName>Man_Positive_33.wav</ShortName>
+					<Path>SFX\Man_Positive_33_9E69E797.wem</Path>
+				</File>
+				<File Id="910448495" Language="SFX">
+					<ShortName>Woman_Positive_20.wav</ShortName>
+					<Path>SFX\Woman_Positive_20_9E69E797.wem</Path>
+				</File>
+				<File Id="915981739" Language="SFX">
+					<ShortName>Woman_Negative_10.wav</ShortName>
+					<Path>SFX\Woman_Negative_10_9E69E797.wem</Path>
+				</File>
+				<File Id="920785221" Language="SFX">
+					<ShortName>Woman_Positive_24.wav</ShortName>
+					<Path>SFX\Woman_Positive_24_9E69E797.wem</Path>
+				</File>
+				<File Id="926117368" Language="SFX">
+					<ShortName>Woman_Positive_01.wav</ShortName>
+					<Path>SFX\Woman_Positive_01_9E69E797.wem</Path>
+				</File>
+				<File Id="927327976" Language="SFX">
+					<ShortName>Grandma_Negative_10.wav</ShortName>
+					<Path>SFX\Grandma_Negative_10_9E69E797.wem</Path>
+				</File>
+				<File Id="929235477" Language="SFX">
+					<ShortName>Grandma_Positive_08.wav</ShortName>
+					<Path>SFX\Grandma_Positive_08_9E69E797.wem</Path>
+				</File>
+				<File Id="940186583" Language="SFX">
+					<ShortName>Woman_Negative_15.wav</ShortName>
+					<Path>SFX\Woman_Negative_15_9E69E797.wem</Path>
+				</File>
+				<File Id="953625436" Language="SFX">
+					<ShortName>narration_POSITIVE_perfect.wav</ShortName>
+					<Path>SFX\narration_POSITIVE_perfect_9E69E797.wem</Path>
+				</File>
+				<File Id="960627835" Language="SFX">
+					<ShortName>Woman_Positive_29.wav</ShortName>
+					<Path>SFX\Woman_Positive_29_9E69E797.wem</Path>
+				</File>
+				<File Id="972357954" Language="SFX">
+					<ShortName>Woman_Positive_21.wav</ShortName>
+					<Path>SFX\Woman_Positive_21_9E69E797.wem</Path>
+				</File>
+				<File Id="972531880" Language="SFX">
+					<ShortName>Woman_Positive_07.wav</ShortName>
+					<Path>SFX\Woman_Positive_07_9E69E797.wem</Path>
+				</File>
+				<File Id="973183993" Language="SFX">
+					<ShortName>Woman_Positive_22.wav</ShortName>
+					<Path>SFX\Woman_Positive_22_9E69E797.wem</Path>
+				</File>
+				<File Id="975760493" Language="SFX">
+					<ShortName>Woman_Negative_18.wav</ShortName>
+					<Path>SFX\Woman_Negative_18_9E69E797.wem</Path>
+				</File>
+				<File Id="980195099" Language="SFX">
+					<ShortName>Grandma_Positive_07.wav</ShortName>
+					<Path>SFX\Grandma_Positive_07_9E69E797.wem</Path>
+				</File>
+				<File Id="1001458483" Language="SFX">
+					<ShortName>Man_Negative_29.wav</ShortName>
+					<Path>SFX\Man_Negative_29_9E69E797.wem</Path>
+				</File>
+				<File Id="1001511955" Language="SFX">
+					<ShortName>Grandma_Negative_04.wav</ShortName>
+					<Path>SFX\Grandma_Negative_04_9E69E797.wem</Path>
+				</File>
+				<File Id="1001705612" Language="SFX">
+					<ShortName>Woman_Positive_06.wav</ShortName>
+					<Path>SFX\Woman_Positive_06_9E69E797.wem</Path>
+				</File>
+				<File Id="1003190969" Language="SFX">
+					<ShortName>Woman_Negative_01.wav</ShortName>
+					<Path>SFX\Woman_Negative_01_9E69E797.wem</Path>
+				</File>
+				<File Id="1004326166" Language="SFX">
+					<ShortName>Man_Positive_15.wav</ShortName>
+					<Path>SFX\Man_Positive_15_9E69E797.wem</Path>
+				</File>
+				<File Id="1005477074" Language="SFX">
+					<ShortName>Woman_Positive_27.wav</ShortName>
+					<Path>SFX\Woman_Positive_27_9E69E797.wem</Path>
+				</File>
+				<File Id="1017030701" Language="SFX">
+					<ShortName>Man_Negative_06.wav</ShortName>
+					<Path>SFX\Man_Negative_06_9E69E797.wem</Path>
+				</File>
+				<File Id="1021673524" Language="SFX">
+					<ShortName>Woman_Negative_12.wav</ShortName>
+					<Path>SFX\Woman_Negative_12_9E69E797.wem</Path>
+				</File>
+				<File Id="1032346443" Language="SFX">
+					<ShortName>Man_Positive_21.wav</ShortName>
+					<Path>SFX\Man_Positive_21_9E69E797.wem</Path>
+				</File>
+				<File Id="1033994117" Language="SFX">
+					<ShortName>Man_Negative_14.wav</ShortName>
+					<Path>SFX\Man_Negative_14_9E69E797.wem</Path>
+				</File>
+				<File Id="1041395498" Language="SFX">
+					<ShortName>Woman_Positive_13.wav</ShortName>
+					<Path>SFX\Woman_Positive_13_9E69E797.wem</Path>
+				</File>
+				<File Id="1053394090" Language="SFX">
+					<ShortName>Woman_Very_Negative_05.wav</ShortName>
+					<Path>SFX\Woman_Very_Negative_05_9E69E797.wem</Path>
+				</File>
+				<File Id="1062365134" Language="SFX">
+					<ShortName>Man_Positive_10.wav</ShortName>
+					<Path>SFX\Man_Positive_10_9E69E797.wem</Path>
+				</File>
+				<File Id="1063706577" Language="SFX">
+					<ShortName>narration_POSITIVE_great.wav</ShortName>
+					<Path>SFX\narration_POSITIVE_great_9E69E797.wem</Path>
+				</File>
+				<File Id="1070108821" Language="SFX">
+					<ShortName>Grandma_Negative_02.wav</ShortName>
+					<Path>SFX\Grandma_Negative_02_9E69E797.wem</Path>
+				</File>
+				<File Id="1072779749" Language="SFX">
+					<ShortName>Woman_Positive_03.wav</ShortName>
+					<Path>SFX\Woman_Positive_03_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

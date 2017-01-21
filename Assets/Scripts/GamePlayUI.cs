@@ -16,8 +16,10 @@ public class GamePlayUI : MonoBehaviour {
 
 	public GameObject ScorePanelsGood;
 	public GameObject ScorePanelsBad;
-	public GameObject ScorePanelsAverage;
-	public GameObject TotalScorePanel;
+	public GameObject ScorePanelsCombo;
+	public GameObject ScorePanelsTotal;
+	public GameObject RatingStamp;
+
 
 	private Camera mainCamera;
 
@@ -40,7 +42,7 @@ public class GamePlayUI : MonoBehaviour {
 		mainCamera = Camera.main;
 
 		//test
-		//ShowEndGamePanel ();
+		Invoke("ShowEndGamePanel", 10);
 		ChangeFaceImage (0);
 	}
 	
@@ -135,17 +137,32 @@ public class GamePlayUI : MonoBehaviour {
 		//TODO add the scores text from game controller
 		EndGamePanel.SetActive (true);
 		ScorePanelsGood.SetActive (false);
-		ScorePanelsAverage.SetActive (false);
+		ScorePanelsTotal.SetActive (false);
+		ScorePanelsCombo.SetActive (false);
 		ScorePanelsBad.SetActive (false);
-		TotalScorePanel.SetActive (false);
-		yield return new WaitForSeconds (1);
+		RatingStamp.SetActive (false);
+		yield return new WaitForSeconds (0.4f);
 		ScorePanelsGood.SetActive (true);
-		yield return new WaitForSeconds (1);
-		ScorePanelsAverage.SetActive (true);
-		yield return new WaitForSeconds (1);
+		ScorePanelsGood.GetComponent <ScoreTween>().TweenToScore (ScoreManager.instance.GoodWaveScores);
+
+		yield return new WaitForSeconds (1.3f);
 		ScorePanelsBad.SetActive (true);
-		yield return new WaitForSeconds (1);
-		TotalScorePanel.SetActive (true);
+		ScorePanelsBad.GetComponent <ScoreTween>().TweenToScore (ScoreManager.instance.BadWaveScores);
+
+		yield return new WaitForSeconds (1.3f);
+		ScorePanelsCombo.SetActive (true);
+		ScorePanelsCombo.GetComponent <ScoreTween>().TweenToScore (ScoreManager.instance.MaxCombo);
+
+		yield return new WaitForSeconds (1.3f);
+		ScorePanelsTotal.SetActive (true);
+		ScorePanelsTotal.GetComponent <ScoreTween>().TweenToScore (ScoreManager.TotalScore);
+
+		yield return new WaitForSeconds (1.5f);
+
+		ScoreManager.ScoreRating rating = ScoreManager.instance.GetScoreRating ();
+
+		RatingStamp.SetActive (true);
+
 	}
 
 }

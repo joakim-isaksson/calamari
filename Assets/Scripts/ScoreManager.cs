@@ -15,6 +15,32 @@ public class ScoreManager : MonoBehaviour
     [HideInInspector]
     public static int TotalScore;
 
+	[HideInInspector]
+	public int MaxCombo;
+
+	[HideInInspector]
+	public int BadWaveScores;
+
+	[HideInInspector]
+	public int GoodWaveScores;
+
+
+	public int PerfectRatingScore;
+	public int GoodRatingScore;
+	public int BadRatingScore;
+	public int TerribleRatingScore;
+
+
+
+	public enum ScoreRating
+	{
+		Perfect,
+		Good,
+		Bad,
+		Terrible
+	}
+
+
     public static void DestroySingleton()
     {
         Destroy(instance.gameObject);
@@ -31,7 +57,7 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
 	{
-		
+		Reset ();
 	}
 	
 	void Update()
@@ -39,11 +65,46 @@ public class ScoreManager : MonoBehaviour
 		
 	}
 
+	public void Reset(){
+		TotalScore = 0;
+		Combo = 0;
+		MaxCombo = 0;
+		BadWaveScores = 0;
+		GoodWaveScores = 0;
+	}
+
     public void Add(int amount)
     {
         if (amount > 0) Combo++;
         else Combo = 0;
 
-        TotalScore += amount + (int)Mathf.Round(Combo * ComboMultiplier * amount);
+		if (Combo > MaxCombo) {
+			MaxCombo = Combo;
+		}
+
+		int actualAmout = amount + (int)Mathf.Round(Combo * ComboMultiplier * amount);
+		TotalScore += actualAmout;
+		if (actualAmout > 0) {
+			GoodWaveScores += actualAmout;
+		} else {
+			BadWaveScores += actualAmout;
+		}
     }
+
+
+	/// <summary>
+	/// Gets the score rating.
+	/// </summary>
+	/// <returns>The score rating.</returns>
+	public ScoreRating GetScoreRating(){
+		if (TotalScore >= PerfectRatingScore) {
+			return ScoreRating.Perfect;
+		} else if (TotalScore >= GoodRatingScore) {
+			return ScoreRating.Good;
+		} else if (TotalScore >= BadRatingScore) {
+			return ScoreRating.Bad;
+		} else {
+			return ScoreRating.Terrible;
+		}
+	}
 }

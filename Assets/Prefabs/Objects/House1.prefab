@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4249020004691606}
   - component: {fileID: 33786313679604806}
   - component: {fileID: 23510844944985422}
+  - component: {fileID: 114584460662035662}
   m_Layer: 0
   m_Name: House1
   m_TagString: Untagged
@@ -79,3 +80,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1320085826109256}
   m_Mesh: {fileID: 4300002, guid: b8930083b948b5142ad5ffb8ac07f39d, type: 3}
+--- !u!114 &114584460662035662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1320085826109256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df28f9edf017ac242ac7a12952278f76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandomTextures:
+  - {fileID: 2800000, guid: f5c98f66b9efce54e845c0ab8437e04f, type: 3}
+  - {fileID: 2800000, guid: 679e07efbbf01fc4cafd11339bb52705, type: 3}
+  - {fileID: 2800000, guid: 31d8413101ba24940b8158b6e246da58, type: 3}
+  - {fileID: 2800000, guid: a47f9a90c2f2f0a4ba9e6c86b293e258, type: 3}
+  - {fileID: 2800000, guid: 361411fa3eda8ba4c8c1d5e1165b0771, type: 3}
+  - {fileID: 2800000, guid: 59cb7dd807f90b84ca794ad3d1885a39, type: 3}
+  ChosenTexture: 0
