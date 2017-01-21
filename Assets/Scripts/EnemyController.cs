@@ -29,6 +29,10 @@ public class EnemyController : MonoBehaviour
 
     public Animator Anim;
 
+	public string NegativeWwiseSfx;
+	public string PositiveWwiseSfx;
+	public string VeryNegativeWwiseSfx;
+
     GameObject Player;
     ScoreManager Score;
 
@@ -62,10 +66,12 @@ public class EnemyController : MonoBehaviour
                 if (Friendly)
                 {
                     Score.Add(ScoreNotGreetedFriendly);
+					AkSoundEngine.PostEvent (VeryNegativeWwiseSfx, this.gameObject);
                 }
                 else
                 {
                     Score.Add(ScoreNotGreetedHostile);
+					//AkSoundEngine.PostEvent (NegativeWwiseSfx, this.gameObject);
                 }
             }
 
@@ -90,6 +96,7 @@ public class EnemyController : MonoBehaviour
             wavingStartedTime = Time.realtimeSinceStartup;
             Anim.SetTrigger("Waving");
             Debug.Log("Waving");
+			StartCoroutine (AfterGreeting());
         }
     }
 
@@ -108,6 +115,8 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetHostile);
             Anim.SetTrigger("Angry");
+			AkSoundEngine.PostEvent (NegativeWwiseSfx, this.gameObject);
+			Invoke ("GreetNegativeSound", 0.5f);
 			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Bad);
         }
 
@@ -116,6 +125,8 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetHostile);
             Anim.SetTrigger("Angry");
+			AkSoundEngine.PostEvent ("Narrator_Negative", this.gameObject);
+			Invoke ("GreetNegativeSound", 0.5f);
 			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Average);
         }
 
@@ -124,6 +135,8 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetFriendlyOnTime);
             Anim.SetTrigger("Happy");
+			AkSoundEngine.PostEvent ("Narrator_Positive", this.gameObject);
+			Invoke ("GreetPositiveSound", 0.5f);
 			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Great);
         }
 
@@ -132,7 +145,27 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetFriendlyLate);
             Anim.SetTrigger("Angry");
+			AkSoundEngine.PostEvent ("Narrator_Neutral", this.gameObject);
+			Invoke ("GreetNegativeSound", 0.5f);
 			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Average);
         }
     }
+
+	private void GreetNegativeSound(){
+		AkSoundEngine.PostEvent (NegativeWwiseSfx, this.gameObject);
+	}
+	private void GreetPositiveSound(){
+		AkSoundEngine.PostEvent (PositiveWwiseSfx, this.gameObject);
+	}
+
+
+	private IEnumerator AfterGreeting(){
+		yield return new WaitForSeconds (MaxResponseTime);
+
+		if (!greeted) {
+			AkSoundEngine.PostEvent ("Narrator_Neutral", this.gameObject);
+		}
+
+	}
+
 }
