@@ -85,6 +85,7 @@ public class PlayerHand : MonoBehaviour {
 	IEnumerator PlayHandWaveAnimation(EnemyController enemyController){
 		//play animation
 		//...
+		AkSoundEngine.PostEvent ("Wave_Hit", gameObject);
 		handAnimator.SetTrigger ("Wave");
 		CamController.PauseFor (1.0f);
 		yield return new WaitForSeconds (0.4f);
@@ -100,6 +101,7 @@ public class PlayerHand : MonoBehaviour {
 	IEnumerator PlayHandNoWaveAnimation(){
 		//play animation
 		//...
+		AkSoundEngine.PostEvent ("Wave_Miss", gameObject);
 		handAnimator.SetTrigger ("WrongWave");
 		//CamController.PauseFor (0.7f);
 		yield return new WaitForSeconds (.5f);

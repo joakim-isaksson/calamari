@@ -147,14 +147,14 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="music_menu" ID="{C62A2E23-378A-43B2-B72A-2E2D08FAE28C}" ShortID="650575745">
+								<MusicTrack Name="music_menu" ID="{A2041672-044E-4EFD-AA85-D11FECDC0EEC}" ShortID="81547164">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="music_menu" ID="{7336EEC9-1812-4FA9-9A7D-0A8C5069E18D}" ShortID="585009600">
+										<AudioFileSource Name="music_menu" ID="{F4EBFBAA-C1F9-4ACE-8ED4-A2B7535C73A8}" ShortID="34251704">
 											<Language>SFX</Language>
 											<AudioFile>music_menu.wav</AudioFile>
 											<ConvertedFileIDList>
@@ -163,7 +163,7 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{87BE25E9-1618-46BF-A664-D70B9A3F97AE}">
+										<MusicTransition Name="Root" ID="{9A9B62C1-F050-49D5-86EC-BDD94D5D40A9}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -171,16 +171,15 @@
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{92281BB5-F674-428E-8AE6-BF138ACE8A90}">
+										<MusicTrackSequence Name="" ID="{5E39BAB8-F4DE-475E-9561-C535EB22D2E3}">
 											<ClipList>
-												<MusicClip Name="music_menu" ID="{43458BA9-0683-42CE-AE72-EA3FEE186873}">
+												<MusicClip Name="music_menu" ID="{56921A05-4BDE-4BC5-801C-B84D4A58F7A9}">
 													<PropertyList>
 														<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-														<Property Name="PlayAt" Type="Real64" Value="24000"/>
 													</PropertyList>
-													<AudioSourceRef Name="music_menu" ID="{7336EEC9-1812-4FA9-9A7D-0A8C5069E18D}"/>
+													<AudioSourceRef Name="music_menu" ID="{F4EBFBAA-C1F9-4ACE-8ED4-A2B7535C73A8}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>

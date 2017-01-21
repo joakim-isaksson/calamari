@@ -12,6 +12,8 @@ public class MenuUIController : MonoBehaviour {
 			ScreenFader.instance.FadeOut (Color.black,1, delegate {
 			});
 		};
+
+		AkSoundEngine.PostEvent ("Play_MenuAndCredits_Music", gameObject);
 	}
 	
 	// Update is called once per frame
