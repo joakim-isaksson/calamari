@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1a5e68d5d2a5d4b4c9b298449e57002d
-timeCreated: 1485023357
+timeCreated: 1485032246
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -39,7 +39,7 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapMode: 1
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 320
+  spritePixelsToUnits: 190
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -93,10 +93,10 @@ TextureImporter:
       name: Guy_Sprites_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 765
-        width: 281
-        height: 694
+        x: 23
+        y: 447
+        width: 142
+        height: 378
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,10 +106,23 @@ TextureImporter:
       name: Guy_Sprites_1
       rect:
         serializedVersion: 2
-        x: 336
-        y: 765
-        width: 251
-        height: 694
+        x: 197
+        y: 453
+        width: 126
+        height: 372
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Guy_Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 448
+        width: 172
+        height: 378
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,10 +132,10 @@ TextureImporter:
       name: Guy_Sprites_3
       rect:
         serializedVersion: 2
-        x: 742
-        y: 768
-        width: 316
-        height: 694
+        x: 639
+        y: 454
+        width: 154
+        height: 372
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,10 +145,23 @@ TextureImporter:
       name: Guy_Sprites_4
       rect:
         serializedVersion: 2
-        x: 1110
-        y: 768
-        width: 304
-        height: 694
+        x: 34
+        y: 22
+        width: 142
+        height: 378
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Guy_Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 28
+        width: 126
+        height: 372
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,10 +171,10 @@ TextureImporter:
       name: Guy_Sprites_6
       rect:
         serializedVersion: 2
-        x: 34
-        y: 12
-        width: 280
-        height: 694
+        x: 464
+        y: 21
+        width: 142
+        height: 378
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,36 +184,10 @@ TextureImporter:
       name: Guy_Sprites_7
       rect:
         serializedVersion: 2
-        x: 379
-        y: 12
-        width: 249
-        height: 694
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Guy_Sprites_9
-      rect:
-        serializedVersion: 2
-        x: 794
-        y: 10
-        width: 276
-        height: 694
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Guy_Sprites_10
-      rect:
-        serializedVersion: 2
-        x: 1172
-        y: 10
-        width: 276
-        height: 694
+        x: 681
+        y: 27
+        width: 126
+        height: 372
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
