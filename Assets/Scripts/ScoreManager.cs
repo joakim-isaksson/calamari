@@ -89,6 +89,8 @@ public class ScoreManager : MonoBehaviour
 		} else {
 			BadWaveScores += actualAmout;
 		}
+
+		GamePlayUI.gamePlayUI.ChangeFaceBasedOnScore (TotalScore);
     }
 
 
