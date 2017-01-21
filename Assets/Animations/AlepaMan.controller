@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Enemy
+  m_Name: AlepaMan
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Waving
@@ -198,7 +198,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3257c3d7cdb9c1d4ba7777b568964221, type: 2}
+  m_Motion: {fileID: 7400000, guid: 56da2654c1b94b149a2e0b14e9eea5ae, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -224,7 +224,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d2005f08243713b4da728877f3f6f43d, type: 2}
+  m_Motion: {fileID: 7400000, guid: c158b9bda812c414fa65b56be0193f27, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -250,7 +250,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a8c3a411430b89b499e1107e81f8e17c, type: 2}
+  m_Motion: {fileID: 7400000, guid: f956f70f6fe883d4b916a300aeaa4846, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -273,7 +273,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 8d70c3d7a6b10c24384aecdc506fdaf7, type: 2}
+  m_Motion: {fileID: 7400000, guid: 69014ff079429ee478adee3af27173f3, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
