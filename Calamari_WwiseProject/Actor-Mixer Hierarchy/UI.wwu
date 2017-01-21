@@ -3,7 +3,29 @@
 	<AudioObjects>
 		<WorkUnit Name="UI" ID="{5E8E5288-D206-403B-93D7-E1E9D1962C00}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Menu" ID="{18609E86-AF04-4807-A647-5FF1B22F04A3}" ShortID="754393050"/>
+				<Folder Name="Menu" ID="{18609E86-AF04-4807-A647-5FF1B22F04A3}" ShortID="754393050">
+					<ChildrenList>
+						<Sound Name="fx_menubutton" ID="{024654C1-DE7C-4003-96E1-FAF936CD2ECD}" ShortID="1011028513" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="fx_menubutton" ID="{7F46C273-D751-43F1-95F6-BDAA099C6546}" ShortID="259754369">
+									<Language>SFX</Language>
+									<AudioFile>fx_menubutton.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="fx_menubutton" ID="{7F46C273-D751-43F1-95F6-BDAA099C6546}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

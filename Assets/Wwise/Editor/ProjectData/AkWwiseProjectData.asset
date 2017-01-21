@@ -16,21 +16,105 @@ MonoBehaviour:
   - PhysicalPath: Events\Atmo.wwu
     ParentPhysicalPath: 
     Guid: '{EBAB7ACE-F075-4252-B78C-AD21E1D8CDDF}'
-    m_lastTimePsrt1: 1572639968
-    m_lastTimePart2: -1999355529
-    List: []
+    m_lastTimePsrt1: -40758432
+    m_lastTimePart2: -1999355357
+    List:
+    - Name: Car_PassBy
+      Path: Atmo\Cars\Car_PassBy
+      PathAndIcons:
+      - ElementName: Atmo
+        ObjectType: 12
+      - ElementName: Cars
+        ObjectType: 4
+      - ElementName: Car_PassBy
+        ObjectType: 3
+      ID: -152526720
+      Guid: 25c89d7ed002554daf36859dcf0fd053
+      maxAttenuation: 0
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{9578ABCE-040E-436B-9EA4-045F9B9FCA17}'
-    m_lastTimePsrt1: -732492542
-    m_lastTimePart2: -1999355543
+    m_lastTimePsrt1: -1351294519
+    m_lastTimePart2: -1999355529
     List: []
   - PhysicalPath: Events\Dialogue.wwu
     ParentPhysicalPath: 
     Guid: '{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}'
-    m_lastTimePsrt1: 1572675263
-    m_lastTimePart2: -1999355529
+    m_lastTimePsrt1: -40748432
+    m_lastTimePart2: -1999355357
     List:
+    - Name: Grandma_Negative
+      Path: Dialogue\People\Grandma_Negative
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: People
+        ObjectType: 4
+      - ElementName: Grandma_Negative
+        ObjectType: 3
+      ID: -1262357101
+      Guid: ed20459aba2b3741ac71a3affe19b760
+      maxAttenuation: 0
+    - Name: Grandma_Positive
+      Path: Dialogue\People\Grandma_Positive
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: People
+        ObjectType: 4
+      - ElementName: Grandma_Positive
+        ObjectType: 3
+      ID: -749971521
+      Guid: 3ac925c0d5304c4b860a07b03998f7f3
+      maxAttenuation: 0
+    - Name: Grandma_Very_Negative
+      Path: Dialogue\People\Grandma_Very_Negative
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: People
+        ObjectType: 4
+      - ElementName: Grandma_Very_Negative
+        ObjectType: 3
+      ID: 1911024840
+      Guid: a29d144a7ce8b3458258bff72a2d08f0
+      maxAttenuation: 0
+    - Name: Man_Negative
+      Path: Dialogue\People\Man_Negative
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: People
+        ObjectType: 4
+      - ElementName: Man_Negative
+        ObjectType: 3
+      ID: 911506639
+      Guid: 1cf3c31b6f4ca040b07c117d83b01ecf
+      maxAttenuation: 0
+    - Name: Man_Positive
+      Path: Dialogue\People\Man_Positive
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: People
+        ObjectType: 4
+      - ElementName: Man_Positive
+        ObjectType: 3
+      ID: 666034363
+      Guid: 8546fc65af8b37499a02ba826cbe15e8
+      maxAttenuation: 0
+    - Name: Man_Very_Negative
+      Path: Dialogue\People\Man_Very_Negative
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: People
+        ObjectType: 4
+      - ElementName: Man_Very_Negative
+        ObjectType: 3
+      ID: 889047188
+      Guid: 76a5b8161a82e645b7afd419be343cba
+      maxAttenuation: 0
     - Name: Narrator_Go
       Path: Dialogue\Narrator\Narrator_Go
       PathAndIcons:
@@ -91,46 +175,48 @@ MonoBehaviour:
       ID: -654777450
       Guid: 3845b058175bd443bb2bcde905226601
       maxAttenuation: 0
-    - Name: People_Negative_Reaction
-      Path: Dialogue\People\People_Negative_Reaction
+    - Name: Woman_Negative
+      Path: Dialogue\People\Woman_Negative
       PathAndIcons:
       - ElementName: Dialogue
         ObjectType: 12
       - ElementName: People
         ObjectType: 4
-      - ElementName: People_Negative_Reaction
+      - ElementName: Woman_Negative
         ObjectType: 3
-      ID: -1955499320
-      Guid: 1cf3c31b6f4ca040b07c117d83b01ecf
+      ID: 1024076021
+      Guid: 4db4bc6e1b07cf468308dd09e4938bde
       maxAttenuation: 0
-    - Name: People_Positive_Reaction
-      Path: Dialogue\People\People_Positive_Reaction
+    - Name: Woman_Positive
+      Path: Dialogue\People\Woman_Positive
       PathAndIcons:
       - ElementName: Dialogue
         ObjectType: 12
       - ElementName: People
         ObjectType: 4
-      - ElementName: People_Positive_Reaction
+      - ElementName: Woman_Positive
         ObjectType: 3
-      ID: 2100382536
-      Guid: 8546fc65af8b37499a02ba826cbe15e8
+      ID: -1976009039
+      Guid: c210ca9590cc5b4fb9ed2283227fa66b
+      maxAttenuation: 0
+    - Name: Woman_Very_Negative
+      Path: Dialogue\People\Woman_Very_Negative
+      PathAndIcons:
+      - ElementName: Dialogue
+        ObjectType: 12
+      - ElementName: People
+        ObjectType: 4
+      - ElementName: Woman_Very_Negative
+        ObjectType: 3
+      ID: -927199294
+      Guid: bb9aa4f0840a8e4e9f2849303e1de0e3
       maxAttenuation: 0
   - PhysicalPath: Events\Music.wwu
     ParentPhysicalPath: 
     Guid: '{2AB8BC12-B398-4B6E-8851-7861A56CC893}'
-    m_lastTimePsrt1: 1572705457
-    m_lastTimePart2: -1999355529
+    m_lastTimePsrt1: 1004564898
+    m_lastTimePart2: -1999355374
     List:
-    - Name: Play_EndGame_Music
-      Path: Music\Play_EndGame_Music
-      PathAndIcons:
-      - ElementName: Music
-        ObjectType: 12
-      - ElementName: Play_EndGame_Music
-        ObjectType: 3
-      ID: -1366768573
-      Guid: f2dfd4fb38618b4b8a5f54a528350a42
-      maxAttenuation: 0
     - Name: Play_InGame_Music
       Path: Music\Play_InGame_Music
       PathAndIcons:
@@ -139,22 +225,32 @@ MonoBehaviour:
       - ElementName: Play_InGame_Music
         ObjectType: 3
       ID: 347845317
-      Guid: 6829960b095b974193acac2706764aa9
+      Guid: 5842e645cad5e542b7cb9d50e495ca61
       maxAttenuation: 0
-    - Name: Play_Menu_Music
-      Path: Music\Play_Menu_Music
+    - Name: Play_MenuAndCredits_Music
+      Path: Music\Play_MenuAndCredits_Music
       PathAndIcons:
       - ElementName: Music
         ObjectType: 12
-      - ElementName: Play_Menu_Music
+      - ElementName: Play_MenuAndCredits_Music
         ObjectType: 3
-      ID: -2066813397
-      Guid: 5842e645cad5e542b7cb9d50e495ca61
+      ID: -754123528
+      Guid: f2dfd4fb38618b4b8a5f54a528350a42
+      maxAttenuation: 0
+    - Name: Play_StartLevel_Music
+      Path: Music\Play_StartLevel_Music
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_StartLevel_Music
+        ObjectType: 3
+      ID: -1404242088
+      Guid: 6829960b095b974193acac2706764aa9
       maxAttenuation: 0
   - PhysicalPath: Events\SFX.wwu
     ParentPhysicalPath: 
     Guid: '{90A53CA4-E6D7-4B50-8BEC-7BE3239AB797}'
-    m_lastTimePsrt1: 1572735529
+    m_lastTimePsrt1: -1351284519
     m_lastTimePart2: -1999355529
     List:
     - Name: Main_Character_Pain
@@ -196,7 +292,7 @@ MonoBehaviour:
   - PhysicalPath: Events\UI.wwu
     ParentPhysicalPath: 
     Guid: '{7D9028B3-6809-4D42-9EA1-BDA8FF6D0CE6}'
-    m_lastTimePsrt1: 1572765617
+    m_lastTimePsrt1: -1351274519
     m_lastTimePart2: -1999355529
     List:
     - Name: Menu_Click
@@ -215,30 +311,39 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}'
-    m_lastTimePsrt1: -732237554
-    m_lastTimePart2: -1999355543
+    m_lastTimePsrt1: -1351254519
+    m_lastTimePart2: -1999355529
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{0AF3B907-A941-400E-A7CA-3059590C5FBE}'
-    m_lastTimePsrt1: -731955487
-    m_lastTimePart2: -1999355543
+    m_lastTimePsrt1: -1351214519
+    m_lastTimePart2: -1999355529
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AF663CE9-E20D-43FC-A51E-2FDB9E081EA8}'
-    m_lastTimePsrt1: -731930425
-    m_lastTimePart2: -1999355543
+    m_lastTimePsrt1: -1351204519
+    m_lastTimePart2: -1999355529
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{50A95469-C110-4823-8F90-41D1A370D747}'
-    m_lastTimePsrt1: -732010638
-    m_lastTimePart2: -1999355543
-    List: []
+    m_lastTimePsrt1: -31098432
+    m_lastTimePart2: -1999355357
+    List:
+    - Name: Main_SoundBank
+      Path: Default Work Unit\Main_SoundBank
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main_SoundBank
+        ObjectType: 7
+      ID: -2066316180
+      Guid: 350ce74ee2de494493fd7c746ecb019c
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
