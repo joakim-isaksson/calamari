@@ -10,6 +10,8 @@ public class GamePlayUI : MonoBehaviour {
 
 
 	public Sprite[] FaceSprites;
+	public int[] faceScoreThresholds;
+
 	public Image FaceImage;
 	public GameObject EndGamePanel;
 	public GameObject WaveTextUIPref;
@@ -18,7 +20,7 @@ public class GamePlayUI : MonoBehaviour {
 	public GameObject ScorePanelsBad;
 	public GameObject ScorePanelsCombo;
 	public GameObject ScorePanelsTotal;
-	public GameObject RatingStamp;
+	public GameObject RatingBadge;
 
 
 	private Camera mainCamera;
@@ -41,20 +43,35 @@ public class GamePlayUI : MonoBehaviour {
 	void Start () {
 		mainCamera = Camera.main;
 
-		//test
-		Invoke("ShowEndGamePanel", 10);
-		ChangeFaceImage (0);
+		ChangeFaceImage (2);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	}
 
+
+
+	public void ChangeFaceBasedOnScore(int currentScore){
+		if (currentScore < faceScoreThresholds [0]) {
+			ChangeFaceImage (0);
+		} else if (currentScore < faceScoreThresholds [1]) {
+			ChangeFaceImage (1);
+		} else if (currentScore < faceScoreThresholds [2]) {
+			ChangeFaceImage (2);
+		} else if (currentScore < faceScoreThresholds [3]) {
+			ChangeFaceImage (3);
+		} else {
+			ChangeFaceImage (4);
+		}
+	}
+
+
 	/// <summary>
 	/// Changes the face image. Current use index  for dfferent faces.
 	/// </summary>
 	/// <param name="index">Index.</param>
-	public void ChangeFaceImage(int index){
+	private void ChangeFaceImage(int index){
 		//change the image based on the index
 		if (index >= 0 && index < FaceSprites.Length) {
 			FaceImage.sprite = FaceSprites [index];
@@ -140,7 +157,7 @@ public class GamePlayUI : MonoBehaviour {
 		ScorePanelsTotal.SetActive (false);
 		ScorePanelsCombo.SetActive (false);
 		ScorePanelsBad.SetActive (false);
-		RatingStamp.SetActive (false);
+		RatingBadge.SetActive (false);
 		yield return new WaitForSeconds (0.4f);
 		ScorePanelsGood.SetActive (true);
 		ScorePanelsGood.GetComponent <ScoreTween>().TweenToScore (ScoreManager.instance.GoodWaveScores);
@@ -161,7 +178,21 @@ public class GamePlayUI : MonoBehaviour {
 
 		ScoreManager.ScoreRating rating = ScoreManager.instance.GetScoreRating ();
 
-		RatingStamp.SetActive (true);
+		switch (rating) {
+		case ScoreManager.ScoreRating.Bad:
+			RatingBadge.GetComponentInChildren <Text>().text = "B";
+			break;
+		case ScoreManager.ScoreRating.Good:
+			RatingBadge.GetComponentInChildren <Text>().text = "A";
+			break;
+		case ScoreManager.ScoreRating.Perfect:
+			RatingBadge.GetComponentInChildren <Text>().text = "A+";
+			break;
+		case ScoreManager.ScoreRating.Terrible:
+			RatingBadge.GetComponentInChildren <Text>().text = "F";
+			break;
+		}
+		RatingBadge.SetActive (true);
 
 	}
 

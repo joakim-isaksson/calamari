@@ -52,3 +52,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ComboMultiplier: 1
+  MaxCombo: 0
+  BadWaveScores: 0
+  GoodWaveScores: 0
+  PerfectRatingScore: 10000
+  GoodRatingScore: 6000
+  BadRatingScore: 0
+  TerribleRatingScore: -5000

@@ -67,7 +67,7 @@
 					<ChildrenList>
 						<MusicSegment Name="music_level" ID="{09E5F8BB-BAE7-46FE-A8AC-B3606147A2B5}" ShortID="448165378">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="54857.1428571429"/>
+								<Property Name="EndPosition" Type="Real64" Value="64000"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -108,6 +108,44 @@
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
 													<AudioSourceRef Name="music_level" ID="{179A8FED-A3A7-4D90-8D9C-EC2D3DD6CB1F}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="music_level_01" ID="{F889F709-8CA2-462C-9A8E-EDA1B83DA9D1}" ShortID="673285331">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="music_level" ID="{12126A9A-BD28-497D-8594-6E3AA7F16C12}" ShortID="560705613">
+											<Language>SFX</Language>
+											<AudioFile>music_level.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="207811198"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{B8378792-D607-419D-82FC-B37B45651704}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{5C32A857-119E-4786-B77A-2AE962A4015A}">
+											<ClipList>
+												<MusicClip Name="music_level" ID="{5027AAAF-9DBB-4056-83F8-1D8E9D572633}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="music_level" ID="{12126A9A-BD28-497D-8594-6E3AA7F16C12}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>

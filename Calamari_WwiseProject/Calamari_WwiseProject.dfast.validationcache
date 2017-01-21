@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
-	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Actor-Mixer Hierarchy\Atmo.wwu" DateLow="2365348649" DateHigh="30569312"/>
+	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Actor-Mixer Hierarchy\Atmo.wwu" DateLow="3675934736" DateHigh="30569484"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2365358649" DateHigh="30569312"/>
-	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Actor-Mixer Hierarchy\Dialogue.wwu" DateLow="2365358649" DateHigh="30569312"/>
+	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Actor-Mixer Hierarchy\Dialogue.wwu" DateLow="3675954736" DateHigh="30569484"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="2365368649" DateHigh="30569312"/>
-	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="2365368649" DateHigh="30569312"/>
+	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="1081242848" DateHigh="30569487"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="2365378649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="2365378649" DateHigh="30569312"/>
-	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Calamari_WwiseProject.dfast.wsettings" DateLow="2186334057" DateHigh="30569314"/>
+	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Calamari_WwiseProject.dfast.wsettings" DateLow="1175122848" DateHigh="30569487"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Calamari_WwiseProject.wproj" DateLow="2365408649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="2365418649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="2365418649" DateHigh="30569312"/>
@@ -15,22 +15,22 @@
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="2365428649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Effects\Default Work Unit.wwu" DateLow="2365438649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Effects\Factory Effects.wwu" DateLow="2365438649" DateHigh="30569312"/>
-	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Events\Atmo.wwu" DateLow="2365448649" DateHigh="30569312"/>
+	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Events\Atmo.wwu" DateLow="3675984736" DateHigh="30569484"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Events\Default Work Unit.wwu" DateLow="2365448649" DateHigh="30569312"/>
-	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Events\Dialogue.wwu" DateLow="2365448649" DateHigh="30569312"/>
-	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Events\Music.wwu" DateLow="2365458649" DateHigh="30569312"/>
+	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Events\Dialogue.wwu" DateLow="3675994736" DateHigh="30569484"/>
+	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Events\Music.wwu" DateLow="426340770" DateHigh="30569467"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Events\SFX.wwu" DateLow="2365458649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Events\UI.wwu" DateLow="2365468649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="2365468649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="2365478649" DateHigh="30569312"/>
-	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Interactive Music Hierarchy\Music.wwu" DateLow="2365478649" DateHigh="30569312"/>
+	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Interactive Music Hierarchy\Music.wwu" DateLow="1081302848" DateHigh="30569487"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2365488649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="2365488649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="2365498649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Presets\Default Work Unit.wwu" DateLow="2365498649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Queries\Default Work Unit.wwu" DateLow="2365508649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Queries\Factory Queries.wwu" DateLow="2365508649" DateHigh="30569312"/>
-	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="2365518649" DateHigh="30569312"/>
+	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="3685644736" DateHigh="30569484"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="2365518649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\States\Default Work Unit.wwu" DateLow="2365528649" DateHigh="30569312"/>
 	<ValidationCacheItem File="C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\Switches\Default Work Unit.wwu" DateLow="2365538649" DateHigh="30569312"/>

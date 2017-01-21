@@ -292,9 +292,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementSpeed: 2
-  CameraBobbingSpeed: 4
-  CameraBobbingScaleX: 0.1
-  CameraBobbingScaleY: 0.15
+  CameraBobbingSpeed: 6.282
+  CameraBobbingScaleX: 0.06
+  CameraBobbingScaleY: 0.1
 --- !u!124 &124187136928182690
 Behaviour:
   m_ObjectHideFlags: 1
