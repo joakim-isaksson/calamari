@@ -29,6 +29,8 @@ public class FloatingImage : MonoBehaviour {
 		Text.text = textToShow;
 	}
 
-
+	public void SetColor(Color color){
+		Text.color = color;
+	}
 
 }

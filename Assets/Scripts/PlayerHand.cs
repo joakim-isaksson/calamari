@@ -21,7 +21,8 @@ public class PlayerHand : MonoBehaviour {
 
 	public enum HandState{
 		Resting,
-		Waving
+		Waving,
+		WrongWaving
 	}
 
 
@@ -51,44 +52,62 @@ public class PlayerHand : MonoBehaviour {
 
 		//Debug.Log ("Player clicked");
 
-		if (handState == HandState.Waving || stamina <= 0)
+		if (handState != HandState.Resting || stamina <= 0)
 			return;
 
 
 		Ray mouseRay = mainCamera.ScreenPointToRay (Input.mousePosition);
 		RaycastHit hit;
-		Physics.Raycast(mouseRay,out hit,100,RaycastLayer);
+		Physics.Raycast(mouseRay,out hit,35,RaycastLayer);
 
 
-		handState = HandState.Waving;
-		StartCoroutine (PlayHandAnimation());
-		Debug.Log ("Wave");
 
 		if (hit.collider != null) {
 			Debug.Log ("Player hit something");
 			EnemyController enemyController = hit.collider.GetComponent <EnemyController> ();
 			if (enemyController != null) {
-				enemyController.Greet ();
+				//hit the enemy, wave back
+				handState = HandState.Waving;
+				StartCoroutine (PlayHandWaveAnimation(enemyController));
+
+				return;
 			}
 		}
 
+		//not hit the enemy
+		//other animatinon
+		handState = HandState.WrongWaving;
+		StartCoroutine (PlayHandNoWaveAnimation());
 	}
 
 
 	/// <summary>
 	/// Play the wave animation
 	/// </summary>
-	IEnumerator PlayHandAnimation(){
+	IEnumerator PlayHandWaveAnimation(EnemyController enemyController){
 		//play animation
 		//...
 		handAnimator.SetTrigger ("Wave");
 		CamController.PauseFor (0.7f);
-		yield return new WaitForSeconds (1.0f);
+		yield return new WaitForSeconds (0.4f);
+		enemyController.Greet ();
+		yield return new WaitForSeconds (0.6f);
 
 		handState = HandState.Resting;
 	}
 
+	/// <summary>
+	/// Play the wrong wave wave animation
+	/// </summary>
+	IEnumerator PlayHandNoWaveAnimation(){
+		//play animation
+		//...
+		handAnimator.SetTrigger ("WrongWave");
+		//CamController.PauseFor (0.7f);
+		yield return new WaitForSeconds (.5f);
 
+		handState = HandState.Resting;
+	}
 
 
 }

@@ -85,13 +85,16 @@ public class GamePlayUI : MonoBehaviour {
 
 		switch (textType) {
 		case WaveQualityText.Average:
-			waveText.GetComponent <FloatingImage>().SetText ("OK");
+			waveText.GetComponent <FloatingImage> ().SetText ("OK");
+			waveText.GetComponent <FloatingImage> ().SetColor (Color.yellow);
 			break;
 		case WaveQualityText.Bad:
 			waveText.GetComponent <FloatingImage>().SetText ("Bad");
+			waveText.GetComponent <FloatingImage> ().SetColor (Color.red);
 			break;
 		case WaveQualityText.Great:
 			waveText.GetComponent <FloatingImage>().SetText ("Great");
+			waveText.GetComponent <FloatingImage> ().SetColor (Color.green);
 			break;
 		}
 
