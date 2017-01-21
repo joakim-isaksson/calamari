@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 93e638434efe8044ab041970f27bed3e
-timeCreated: 1485012190
+timeCreated: 1485035157
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -69,7 +69,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 130
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -107,13 +107,65 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: Grandma_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 271
+        width: 132
+        height: 225
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Grandma_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 271
+        width: 133
+        height: 222
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Grandma_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 271
+        width: 132
+        height: 225
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
       name: Grandma_sprites_3
       rect:
         serializedVersion: 2
-        x: 32
-        y: 628
-        width: 328
-        height: 517
+        x: 612
+        y: 271
+        width: 132
+        height: 222
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Grandma_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 19
+        width: 161
+        height: 225
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,10 +175,10 @@ TextureImporter:
       name: Grandma_sprites_5
       rect:
         serializedVersion: 2
-        x: 418
-        y: 631
-        width: 319
-        height: 516
+        x: 190
+        y: 19
+        width: 152
+        height: 222
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,75 +188,23 @@ TextureImporter:
       name: Grandma_sprites_6
       rect:
         serializedVersion: 2
-        x: 1010
-        y: 628
-        width: 328
-        height: 519
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grandma_sprites_8
-      rect:
-        serializedVersion: 2
-        x: 1422
-        y: 632
-        width: 319
-        height: 515
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grandma_sprites_19
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 47
-        width: 377
-        height: 519
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grandma_sprites_21
-      rect:
-        serializedVersion: 2
         x: 445
-        y: 50
-        width: 373
-        height: 516
+        y: 19
+        width: 132
+        height: 225
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_22
+      name: Grandma_sprites_7
       rect:
         serializedVersion: 2
-        x: 1027
-        y: 45
-        width: 328
-        height: 520
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grandma_sprites_24
-      rect:
-        serializedVersion: 2
-        x: 1461
-        y: 49
-        width: 319
-        height: 516
+        x: 628
+        y: 19
+        width: 132
+        height: 222
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

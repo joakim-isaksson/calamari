@@ -250,6 +250,13 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114322421961423594, guid: f34ecde7d43eca9448081a3386188054,
+        type: 2}
+      propertyPath: m_Text
+      value: "Credits\n+++\nSpecial Thanks\n+++\nChristian Cardin\r\nJere Lounia\r\nJuha
+        Eskonen\r\nKathy Wodushek-Horton\r\nLaura Horton\r\nLaura Meskanen-Kundu\r\nLauri
+        Saikkonen\r\nMaya Pillai\r\nSourya Sen\r\nVille Vainio"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f34ecde7d43eca9448081a3386188054, type: 2}
   m_IsPrefabParent: 0
