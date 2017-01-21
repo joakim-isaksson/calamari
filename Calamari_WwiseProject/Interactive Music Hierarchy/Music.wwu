@@ -15,20 +15,23 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="music_start" ID="{1927BA91-A0A2-4649-B554-810C908EFEFE}" ShortID="724804587">
+								<MusicTrack Name="music_start" ID="{7B225EDB-CFF1-43DB-A168-B78D1ACCE584}" ShortID="165067460">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="music_start" ID="{FD1F5075-CC2D-451A-8FAA-FDAA22A405F1}" ShortID="433258235">
+										<AudioFileSource Name="music_start" ID="{80157E12-86D1-427C-9ED8-22296CE37781}" ShortID="383436869">
 											<Language>SFX</Language>
 											<AudioFile>music_start.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="433258235"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{48F21E27-CBC9-4E64-8BAF-FF039BF14044}">
+										<MusicTransition Name="Root" ID="{00D60D77-BAFC-4CA1-A4F0-657F5165DA1D}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -36,15 +39,15 @@
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{B3BDC48D-0D5A-4D74-93CD-16C0722ECEC9}">
+										<MusicTrackSequence Name="" ID="{BA18E45B-D346-4EB8-8BE2-991B54B9655B}">
 											<ClipList>
-												<MusicClip Name="music_start" ID="{B376F8FA-4B81-4396-941D-38C3FDF13CB0}">
+												<MusicClip Name="music_start" ID="{83792B78-6DDB-410F-9763-D9A96F4A0AAE}">
 													<PropertyList>
 														<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="music_start" ID="{FD1F5075-CC2D-451A-8FAA-FDAA22A405F1}"/>
+													<AudioSourceRef Name="music_start" ID="{80157E12-86D1-427C-9ED8-22296CE37781}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
@@ -67,7 +70,7 @@
 					<ChildrenList>
 						<MusicSegment Name="music_level" ID="{09E5F8BB-BAE7-46FE-A8AC-B3606147A2B5}" ShortID="448165378">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="64000"/>
+								<Property Name="EndPosition" Type="Real64" Value="72000"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -78,49 +81,14 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="music_level" ID="{4B237AFF-31EC-4E51-A3C5-B73805C679E8}" ShortID="677494389">
+								<MusicTrack Name="music_level" ID="{2C6B9FB5-6C7D-47DA-A5A8-55377F0194EE}" ShortID="550194521">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="music_level" ID="{179A8FED-A3A7-4D90-8D9C-EC2D3DD6CB1F}" ShortID="207811198">
-											<Language>SFX</Language>
-											<AudioFile>music_level.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{F5893076-A3DB-494E-B3DB-52DE810FB99D}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<SequenceList>
-										<MusicTrackSequence Name="" ID="{F87FE33E-C4B8-436D-8EF2-C17C191CF9A6}">
-											<ClipList>
-												<MusicClip Name="music_level" ID="{CC9F92CE-84F6-4720-BB87-39008CE28DE8}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="54857.1428571429"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="music_level" ID="{179A8FED-A3A7-4D90-8D9C-EC2D3DD6CB1F}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-									</SequenceList>
-								</MusicTrack>
-								<MusicTrack Name="music_level_01" ID="{F889F709-8CA2-462C-9A8E-EDA1B83DA9D1}" ShortID="673285331">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="music_level" ID="{12126A9A-BD28-497D-8594-6E3AA7F16C12}" ShortID="560705613">
+										<AudioFileSource Name="music_level" ID="{5F4CEFF1-209B-477C-8184-2520DA1276D1}" ShortID="336134886">
 											<Language>SFX</Language>
 											<AudioFile>music_level.wav</AudioFile>
 											<ConvertedFileIDList>
@@ -129,7 +97,7 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{B8378792-D607-419D-82FC-B37B45651704}">
+										<MusicTransition Name="Root" ID="{E071C06B-6C5C-4FD4-BC3C-54B4A502BDAF}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -137,15 +105,15 @@
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{5C32A857-119E-4786-B77A-2AE962A4015A}">
+										<MusicTrackSequence Name="" ID="{4DFA8134-D7DC-4112-92E1-AD4F405B627B}">
 											<ClipList>
-												<MusicClip Name="music_level" ID="{5027AAAF-9DBB-4056-83F8-1D8E9D572633}">
+												<MusicClip Name="music_level" ID="{0B9E182A-3171-4E75-B03E-ADD3030833FF}">
 													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="72000"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="music_level" ID="{12126A9A-BD28-497D-8594-6E3AA7F16C12}"/>
+													<AudioSourceRef Name="music_level" ID="{5F4CEFF1-209B-477C-8184-2520DA1276D1}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
@@ -179,20 +147,23 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="music_menu" ID="{77EC9A0D-F37E-46BE-B7DE-E7D2C2EA1F40}" ShortID="117915211">
+								<MusicTrack Name="music_menu" ID="{C62A2E23-378A-43B2-B72A-2E2D08FAE28C}" ShortID="650575745">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="music_menu" ID="{57518CEC-51BC-4BFC-8ED4-7C1EE1891544}" ShortID="907880064">
+										<AudioFileSource Name="music_menu" ID="{54424E39-A702-43B6-8D68-395167584A67}" ShortID="244074015">
 											<Language>SFX</Language>
 											<AudioFile>music_menu.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="907880064"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{EA89045A-7DE2-4BF1-82EC-6F2EEC166EC1}">
+										<MusicTransition Name="Root" ID="{87BE25E9-1618-46BF-A664-D70B9A3F97AE}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -200,15 +171,15 @@
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{17EE0F6C-879E-4F78-B078-DE726B1764F5}">
+										<MusicTrackSequence Name="" ID="{92281BB5-F674-428E-8AE6-BF138ACE8A90}">
 											<ClipList>
-												<MusicClip Name="music_menu" ID="{57DAF525-D8F6-454F-B37D-B73316A686B5}">
+												<MusicClip Name="music_menu" ID="{BE2776BB-A74C-408B-9FF2-F420F88700FB}">
 													<PropertyList>
 														<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="music_menu" ID="{57518CEC-51BC-4BFC-8ED4-7C1EE1891544}"/>
+													<AudioSourceRef Name="music_menu" ID="{54424E39-A702-43B6-8D68-395167584A67}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>

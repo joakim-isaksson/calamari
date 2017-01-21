@@ -64,7 +64,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	190079811	Man_Positive_17	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_17_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_17		67054
 	194525439	Man_Positive_28	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_28_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_28		33214
 	196229172	Man_Positive_39	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_39_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_39		43870
-	207811198	music_level	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\music_level_4B8CC0C5.wem		\Interactive Music Hierarchy\Music\InGame_Music\music_level\music_level		11289856
+	207811198	music_level	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\music_level_4B8CC0C5.wem		\Interactive Music Hierarchy\Music\InGame_Music\music_level\music_level		12701088
 	217688540	Woman_Positive_31	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Positive_31_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Positive\Woman_Positive_31		48564
 	218140630	Man_Positive_19	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_19_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_19		84132
 	226449550	Man_Positive_32	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_32_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_32		50936
