@@ -44,10 +44,11 @@ Shader "Hidden/DownSample" {
 		fixed4 fragDownsample ( v2f_tap i ) : SV_Target
 		{				
 			fixed4 color = tex2D (_MainTex, i.uv20);
-			color += tex2D (_MainTex, i.uv21);
-			color += tex2D (_MainTex, i.uv22);
-			color += tex2D (_MainTex, i.uv23);
-			return color / 4;
+			//color += tex2D (_MainTex, i.uv21);
+			//color += tex2D (_MainTex, i.uv22);
+			//color += tex2D (_MainTex, i.uv23);
+			//return color / 4;
+			return color;
 		}
 	
 		
