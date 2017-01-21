@@ -49,7 +49,7 @@ public class WorldController : MonoBehaviour
         // Enemy spawning. Uses zOffset as helper
         // Divide the enemy count into 5 sections, but randomize the position within the section
 
-        var enemySections = 5;
+        var enemySections = levelLength;
         var startOffset = 15f;
 
         var possibleStartXs = new List<float> {-1, -0.5f, 0.5f, 1};
