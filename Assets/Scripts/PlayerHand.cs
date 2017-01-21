@@ -66,9 +66,8 @@ public class PlayerHand : MonoBehaviour {
 
 		if (hit.collider != null) {
 			Debug.Log ("Player hit something");
-			if (hit.collider.gameObject.CompareTag (EnemyTag)) {
-				//TODO call the enemy stuff;
-				EnemyController enemyController = hit.collider.GetComponent <EnemyController> ();
+			EnemyController enemyController = hit.collider.GetComponent <EnemyController> ();
+			if (enemyController != null) {
 				enemyController.Greet ();
 			}
 		}
