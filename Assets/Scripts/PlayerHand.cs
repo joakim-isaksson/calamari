@@ -8,8 +8,11 @@ public class PlayerHand : MonoBehaviour {
 	public LayerMask RaycastLayer;
 
 
-	private Camera mainCamera;
 
+
+
+	private Camera mainCamera;
+	private Animator handAnimator;
 	//maybe not used
 	private float stamina = 1;
 
@@ -22,6 +25,11 @@ public class PlayerHand : MonoBehaviour {
 
 
 	private HandState handState;
+
+	void Awake(){
+		handAnimator = GetComponent <Animator> ();
+	}
+
 
 	// Use this for initialization
 	void Start () {
@@ -50,6 +58,8 @@ public class PlayerHand : MonoBehaviour {
 		RaycastHit hit;
 		Physics.Raycast(mouseRay,out hit,100,RaycastLayer);
 
+
+		handState = HandState.Waving;
 		StartCoroutine (PlayHandAnimation());
 		Debug.Log ("Wave");
 
@@ -57,6 +67,8 @@ public class PlayerHand : MonoBehaviour {
 			Debug.Log ("Player hit something");
 			if (hit.collider.gameObject.CompareTag (EnemyTag)) {
 				//TODO call the enemy stuff;
+				EnemyController enemyController = hit.collider.GetComponent <EnemyController> ();
+				enemyController.Greet ();
 			}
 		}
 
@@ -67,10 +79,9 @@ public class PlayerHand : MonoBehaviour {
 	/// Play the wave animation
 	/// </summary>
 	IEnumerator PlayHandAnimation(){
-		handState = HandState.Waving;
-
 		//play animation
 		//...
+		handAnimator.SetTrigger ("Wave");
 
 		yield return new WaitForSeconds (1.0f);
 

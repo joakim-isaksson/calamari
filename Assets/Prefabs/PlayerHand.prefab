@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4427857729088354}
   - component: {fileID: 114481763103828622}
   - component: {fileID: 114468629470803332}
+  - component: {fileID: 95047226070237814}
   m_Layer: 0
   m_Name: PlayerHand
   m_TagString: Untagged
@@ -50,13 +51,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1421498071164150}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.5994547, w: 0.8004087}
+  m_LocalPosition: {x: 0.28, y: -0.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4427857729088354}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 73.662}
 --- !u!4 &4427857729088354
 Transform:
   m_ObjectHideFlags: 1
@@ -71,6 +72,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95047226070237814
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1351417976786908}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47c3b344cd9812e47816e7b5c7f26436, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114468629470803332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -94,8 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36626ffad92e404393fa8f0c54d9ef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyTag: Enemy
-  raycastLayer:
+  EnemyTag: Enemy
+  RaycastLayer:
     serializedVersion: 2
     m_Bits: 4294967295
 --- !u!212 &212720412493804180
