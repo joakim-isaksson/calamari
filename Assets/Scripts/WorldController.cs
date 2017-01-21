@@ -49,10 +49,10 @@ public class WorldController : MonoBehaviour
         // Enemy spawning. Uses zOffset as helper
         // Divide the enemy count into 5 sections, but randomize the position within the section
 
-        var enemySections = levelLength;
+        var enemySections = Mathf.Min(levelLength, enemies);
         var startOffset = 15f;
 
-        var possibleStartXs = new List<float> {-1, -0.5f, 0.5f, 1};
+        var possibleStartXs = new List<float> {-1.5f, -1, -0.5f, 0.5f, 1};
         var startZs = new List<float>();
 
         var sectionSize = (zOffset - startOffset) / enemySections;
@@ -80,7 +80,7 @@ public class WorldController : MonoBehaviour
             for (var j = 0; j < enemiesPerSection[i]; j++)
             {   
                 var spawnZ = startZs[i] + RandomFromDistribution.RandomFromStandardNormalDistribution() * TileOffset;
-                var spawnX = possibleStartXs[Random.Range(0, 4)];
+                var spawnX = possibleStartXs[Random.Range(0, 5)];
 
                 var randomEnemyPrefab = EnemyPrefabs[Random.Range(0, EnemyPrefabs.Length)];
 
