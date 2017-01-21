@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Atmo.wwu
     ParentPhysicalPath: 
     Guid: '{EBAB7ACE-F075-4252-B78C-AD21E1D8CDDF}'
-    m_lastTimePsrt1: -40758432
-    m_lastTimePart2: -1999355357
+    m_lastTimePsrt1: -1105605788
+    m_lastTimePart2: -1999355354
     List:
     - Name: Car_PassBy
       Path: Atmo\Cars\Car_PassBy
@@ -40,8 +40,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Dialogue.wwu
     ParentPhysicalPath: 
     Guid: '{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}'
-    m_lastTimePsrt1: -40748432
-    m_lastTimePart2: -1999355357
+    m_lastTimePsrt1: -1105565930
+    m_lastTimePart2: -1999355354
     List:
     - Name: Grandma_Negative
       Path: Dialogue\People\Grandma_Negative
@@ -250,8 +250,8 @@ MonoBehaviour:
   - PhysicalPath: Events\SFX.wwu
     ParentPhysicalPath: 
     Guid: '{90A53CA4-E6D7-4B50-8BEC-7BE3239AB797}'
-    m_lastTimePsrt1: -1351284519
-    m_lastTimePart2: -1999355529
+    m_lastTimePsrt1: -1834273233
+    m_lastTimePart2: -1999355344
     List:
     - Name: Main_Character_Pain
       Path: SFX\Main_Character\Main_Character_Pain
@@ -265,35 +265,23 @@ MonoBehaviour:
       ID: 1230095489
       Guid: cb4ef6337fcefc45bdd83c494991037b
       maxAttenuation: 0
-    - Name: Wave_Failed
-      Path: SFX\Foley\Wave_Failed
+    - Name: Wave
+      Path: SFX\Foley\Wave
       PathAndIcons:
       - ElementName: SFX
         ObjectType: 12
       - ElementName: Foley
         ObjectType: 4
-      - ElementName: Wave_Failed
+      - ElementName: Wave
         ObjectType: 3
-      ID: 335424322
-      Guid: 14d68dbe36db744e9b25fc1470e81432
-      maxAttenuation: 0
-    - Name: Wave_Success
-      Path: SFX\Foley\Wave_Success
-      PathAndIcons:
-      - ElementName: SFX
-        ObjectType: 12
-      - ElementName: Foley
-        ObjectType: 4
-      - ElementName: Wave_Success
-        ObjectType: 3
-      ID: -863687854
+      ID: 1941003890
       Guid: 219ebe537e2a8040a9f36ef40801fdd2
       maxAttenuation: 0
   - PhysicalPath: Events\UI.wwu
     ParentPhysicalPath: 
     Guid: '{7D9028B3-6809-4D42-9EA1-BDA8FF6D0CE6}'
-    m_lastTimePsrt1: -1351274519
-    m_lastTimePart2: -1999355529
+    m_lastTimePsrt1: -1834238143
+    m_lastTimePart2: -1999355344
     List:
     - Name: Menu_Click
       Path: UI\Menu\Menu_Click
@@ -311,8 +299,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}'
-    m_lastTimePsrt1: -1351254519
-    m_lastTimePart2: -1999355529
+    m_lastTimePsrt1: -1827033983
+    m_lastTimePart2: -1999355344
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -332,8 +320,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{50A95469-C110-4823-8F90-41D1A370D747}'
-    m_lastTimePsrt1: -31098432
-    m_lastTimePart2: -1999355357
+    m_lastTimePsrt1: -1826953770
+    m_lastTimePart2: -1999355344
     List:
     - Name: Main_SoundBank
       Path: Default Work Unit\Main_SoundBank
