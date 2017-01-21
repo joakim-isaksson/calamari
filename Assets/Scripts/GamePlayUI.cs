@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GamePlayUI : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class GamePlayUI : MonoBehaviour {
 
 	public Sprite[] FaceSprites;
 	public Image FaceImage;
+	public GameObject EndGamePanel;
 	//public Sprite goodWaveText;
 	//public Sprite averageWaveText;
 	public GameObject WaveTextUIPref;
@@ -37,9 +39,12 @@ public class GamePlayUI : MonoBehaviour {
 		mainCamera = Camera.main;
 
 		//test
-		ShowClickText (mainCamera.transform.position + Vector3.forward*10, WaveQualityText.Average);
+		//ShowClickText (mainCamera.transform.position + Vector3.forward*10, WaveQualityText.Average);
 
-		ShowClickText (mainCamera.transform.position + Vector3.right*10 + Vector3.forward*10, WaveQualityText.Average);
+		//ShowClickText (mainCamera.transform.position + Vector3.right*10 + Vector3.forward*10, WaveQualityText.Average);
+
+
+
 	}
 	
 	// Update is called once per frame
@@ -83,7 +88,29 @@ public class GamePlayUI : MonoBehaviour {
 
 	}
 
+	/// <summary>
+	/// Shows the end game panel.(score panel)
+	/// </summary>
+	public void ShowEndGamePanel(){
+		EndGamePanel.SetActive (true);
+	}
+
+	/// <summary>
+	/// The retry is clicked. Restart the game
+	/// </summary>
+	public void OnClickRetry(){
+	}
 
 
+	/// <summary>
+	/// When the quit button is clicked. Quit the game and back to menu
+	/// </summary>
+	public void OnClickQuit(){
+		//SceneManager.LoadScene ("TestScene_Xiaoxiao");
+		ScreenFader.instance.FadeIn (Color.black, 1, delegate {
+			SceneManager.LoadScene ("MenuScene");
+		});
+		
+	}
 
 }
