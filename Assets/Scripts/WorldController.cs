@@ -50,7 +50,7 @@ public class WorldController : MonoBehaviour
         // Divide the enemy count into 5 sections, but randomize the position within the section
 
         var enemySections = 5;
-        var startOffset = 10f;
+        var startOffset = 15f;
 
         var possibleStartXs = new List<float> {-1, -0.5f, 0.5f, 1};
         var startZs = new List<float>();

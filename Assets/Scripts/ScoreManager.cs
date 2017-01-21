@@ -75,14 +75,16 @@ public class ScoreManager : MonoBehaviour
 
     public void Add(int amount)
     {
-        if (amount > 0) Combo++;
-        else Combo = 0;
+        Debug.Log("add" + amount);
 
-		if (Combo > MaxCombo) {
+        if (amount > 0) Combo++;
+        else Combo = 1;
+
+		if (Combo > MaxCombo && amount > 0) {
 			MaxCombo = Combo;
 		}
 
-		int actualAmout = amount + (int)Mathf.Round(Combo * ComboMultiplier * amount);
+		int actualAmout = (int)Mathf.Round(Combo * ComboMultiplier * amount);
 		TotalScore += actualAmout;
 		if (actualAmout > 0) {
 			GoodWaveScores += actualAmout;
