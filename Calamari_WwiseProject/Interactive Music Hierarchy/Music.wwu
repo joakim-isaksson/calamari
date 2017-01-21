@@ -136,7 +136,7 @@
 					<ChildrenList>
 						<MusicSegment Name="music_menu" ID="{1F3BA351-843E-4211-A7B8-2DE1BF1D09C1}" ShortID="495706923">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="24000"/>
+								<Property Name="EndPosition" Type="Real64" Value="64000"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -154,7 +154,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="music_menu" ID="{54424E39-A702-43B6-8D68-395167584A67}" ShortID="244074015">
+										<AudioFileSource Name="music_menu" ID="{7336EEC9-1812-4FA9-9A7D-0A8C5069E18D}" ShortID="585009600">
 											<Language>SFX</Language>
 											<AudioFile>music_menu.wav</AudioFile>
 											<ConvertedFileIDList>
@@ -173,13 +173,14 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{92281BB5-F674-428E-8AE6-BF138ACE8A90}">
 											<ClipList>
-												<MusicClip Name="music_menu" ID="{BE2776BB-A74C-408B-9FF2-F420F88700FB}">
+												<MusicClip Name="music_menu" ID="{43458BA9-0683-42CE-AE72-EA3FEE186873}">
 													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="24000"/>
 													</PropertyList>
-													<AudioSourceRef Name="music_menu" ID="{54424E39-A702-43B6-8D68-395167584A67}"/>
+													<AudioSourceRef Name="music_menu" ID="{7336EEC9-1812-4FA9-9A7D-0A8C5069E18D}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
