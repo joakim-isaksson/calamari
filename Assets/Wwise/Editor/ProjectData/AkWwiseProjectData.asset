@@ -250,39 +250,63 @@ MonoBehaviour:
   - PhysicalPath: Events\SFX.wwu
     ParentPhysicalPath: 
     Guid: '{90A53CA4-E6D7-4B50-8BEC-7BE3239AB797}'
-    m_lastTimePsrt1: -805593944
-    m_lastTimePart2: -1999355339
+    m_lastTimePsrt1: 1135275363
+    m_lastTimePart2: -1999355337
     List:
-    - Name: Main_Character_Pain
-      Path: SFX\Main_Character\Main_Character_Pain
-      PathAndIcons:
-      - ElementName: SFX
-        ObjectType: 12
-      - ElementName: Main_Character
-        ObjectType: 4
-      - ElementName: Main_Character_Pain
-        ObjectType: 3
-      ID: 1230095489
-      Guid: cb4ef6337fcefc45bdd83c494991037b
-      maxAttenuation: 0
-    - Name: Wave
-      Path: SFX\Foley\Wave
+    - Name: Wave_Hit
+      Path: SFX\Foley\Wave_Hit
       PathAndIcons:
       - ElementName: SFX
         ObjectType: 12
       - ElementName: Foley
         ObjectType: 4
-      - ElementName: Wave
+      - ElementName: Wave_Hit
         ObjectType: 3
-      ID: 1941003890
+      ID: 756234724
       Guid: 219ebe537e2a8040a9f36ef40801fdd2
+      maxAttenuation: 0
+    - Name: Wave_Miss
+      Path: SFX\Foley\Wave_Miss
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Foley
+        ObjectType: 4
+      - ElementName: Wave_Miss
+        ObjectType: 3
+      ID: 543282405
+      Guid: 6cfe365c5ce5d84f9d12703e299a6e0c
       maxAttenuation: 0
   - PhysicalPath: Events\UI.wwu
     ParentPhysicalPath: 
     Guid: '{7D9028B3-6809-4D42-9EA1-BDA8FF6D0CE6}'
-    m_lastTimePsrt1: -805558833
-    m_lastTimePart2: -1999355339
+    m_lastTimePsrt1: 1135310456
+    m_lastTimePart2: -1999355337
     List:
+    - Name: Menu_Button_Hit
+      Path: UI\Menu\Menu_Button_Hit
+      PathAndIcons:
+      - ElementName: UI
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: Menu_Button_Hit
+        ObjectType: 3
+      ID: 126614945
+      Guid: afe30d09cb49d645b755cb5adad97e96
+      maxAttenuation: 0
+    - Name: Menu_Button_Release
+      Path: UI\Menu\Menu_Button_Release
+      PathAndIcons:
+      - ElementName: UI
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: Menu_Button_Release
+        ObjectType: 3
+      ID: 1540417201
+      Guid: a949731453c7664bb385731a7cc08586
+      maxAttenuation: 0
     - Name: Menu_Click
       Path: UI\Menu\Menu_Click
       PathAndIcons:
@@ -294,6 +318,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: 760777789
       Guid: 7d4e6459f9eb464da42edcccc1927579
+      maxAttenuation: 0
+    - Name: Menu_Start_Game
+      Path: UI\Menu\Menu_Start_Game
+      PathAndIcons:
+      - ElementName: UI
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: Menu_Start_Game
+        ObjectType: 3
+      ID: 1931074718
+      Guid: 43733c36bffcbb41a079ff32c1c1b3ec
       maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -320,8 +356,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{50A95469-C110-4823-8F90-41D1A370D747}'
-    m_lastTimePsrt1: -796068295
-    m_lastTimePart2: -1999355339
+    m_lastTimePsrt1: 1141679278
+    m_lastTimePart2: -1999355337
     List:
     - Name: Main_SoundBank
       Path: Default Work Unit\Main_SoundBank
