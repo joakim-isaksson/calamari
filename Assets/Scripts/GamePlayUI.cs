@@ -83,6 +83,19 @@ public class GamePlayUI : MonoBehaviour {
 		//now you can set the position of the ui element
 		trans.anchoredPosition=worldObjectScreenPosition;
 
+		switch (textType) {
+		case WaveQualityText.Average:
+			waveText.GetComponent <FloatingImage>().SetText ("OK");
+			break;
+		case WaveQualityText.Bad:
+			waveText.GetComponent <FloatingImage>().SetText ("Bad");
+			break;
+		case WaveQualityText.Great:
+			waveText.GetComponent <FloatingImage>().SetText ("Great");
+			break;
+		}
+
+
 	}
 
 	/// <summary>
