@@ -40,5 +40,10 @@ public class WorldController : MonoBehaviour
 
             zOffset += TileOffset;
         }
+
+        // Spawn level ending tile
+        GameObject endingTile = Instantiate(EndingTile);
+
+        endingTile.transform.position = new Vector3(0, 0, zOffset);
     }
 }

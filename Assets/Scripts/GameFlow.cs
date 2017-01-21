@@ -9,11 +9,13 @@ public class GameFlow : MonoBehaviour
     // when the controllers are implemented
     public GameObject WorldControllerReference;
     public GameObject CameraControllerReference;
+
+    public int LevelLength;
     
 
     void Awake()
     {
-        WorldControllerReference.GetComponent<WorldController>().GenerateLevel(10);
+        WorldControllerReference.GetComponent<WorldController>().GenerateLevel(LevelLength);
     }
 
 	void Start() {
