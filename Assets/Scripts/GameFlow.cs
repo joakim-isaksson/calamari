@@ -11,9 +11,9 @@ public class GameFlow : MonoBehaviour
     public GameObject CameraControllerReference;
     
 
-    void Init()
+    void Awake()
     {
-        
+        WorldControllerReference.GetComponent<WorldController>().GenerateLevel(10);
     }
 
 	void Start() {
