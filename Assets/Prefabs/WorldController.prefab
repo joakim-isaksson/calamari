@@ -56,6 +56,10 @@ MonoBehaviour:
   - {fileID: 1082626084690354, guid: 2c73ee56b3802d64fb5b41f237db38aa, type: 2}
   - {fileID: 1151986400384122, guid: 4a4ba1fdcee54fb498038daf98f8e56f, type: 2}
   - {fileID: 1975226849327568, guid: 3f1af3d359d215c44ae588a6e5e00f68, type: 2}
+  - {fileID: 1262692482054292, guid: bda8d7300131648449df0694c0be3ff7, type: 2}
+  - {fileID: 1490371893538466, guid: ecef599320b4e5b4bb259d969e040772, type: 2}
+  - {fileID: 1151986400384122, guid: 4a4ba1fdcee54fb498038daf98f8e56f, type: 2}
+  - {fileID: 1151986400384122, guid: 4a4ba1fdcee54fb498038daf98f8e56f, type: 2}
   EndingTile: {fileID: 1916484109743584, guid: ff10682fc96c7cd4795cb3ffaccccc2d, type: 2}
   EnemyPrefabs:
   - {fileID: 1201381543206692, guid: c3ed3c990b25b7b40818236f5d7e9661, type: 2}
