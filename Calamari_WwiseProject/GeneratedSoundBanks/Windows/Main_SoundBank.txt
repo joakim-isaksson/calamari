@@ -1,13 +1,17 @@
 Event	ID	Name			Wwise Object Path	Notes
+	126614945	Menu_Button_Hit			\UI\Menu\Menu_Button_Hit	
 	347845317	Play_InGame_Music			\Music\Play_InGame_Music	
+	543282405	Wave_Miss			\SFX\Foley\Wave_Miss	
 	645232014	Narrator_Neutral			\Dialogue\Narrator\Narrator_Neutral	
 	666034363	Man_Positive			\Dialogue\People\Man_Positive	
+	756234724	Wave_Hit			\SFX\Foley\Wave_Hit	
 	760777789	Menu_Click			\UI\Menu\Menu_Click	
 	889047188	Man_Very_Negative			\Dialogue\People\Man_Very_Negative	
 	911506639	Man_Negative			\Dialogue\People\Man_Negative	
 	1024076021	Woman_Negative			\Dialogue\People\Woman_Negative	
+	1540417201	Menu_Button_Release			\UI\Menu\Menu_Button_Release	
 	1911024840	Grandma_Very_Negative			\Dialogue\People\Grandma_Very_Negative	
-	1941003890	Wave			\SFX\Foley\Wave	
+	1931074718	Menu_Start_Game			\UI\Menu\Menu_Start_Game	
 	2318958257	Woman_Positive			\Dialogue\People\Woman_Positive	
 	2474639067	Narrator_Go			\Dialogue\Narrator\Narrator_Go	
 	2862836492	Narrator_Negative			\Dialogue\Narrator\Narrator_Negative	
@@ -26,6 +30,7 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	2877773	Man_Negative_21	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Negative_21_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_21		64258
+	5196065	Menu_Button_Release_01	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Menu_Button_Release_01_9E69E797.wem		\Actor-Mixer Hierarchy\UI\Menu\Menu_Button_Release_01		12782
 	9549458	narration_NEGATIVE_comeone	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\narration_NEGATIVE_comeone_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\Narrator\Narrator_Negative\narration_NEGATIVE_comeone		273200
 	10625442	Man_Negative_13	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Negative_13_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_13		34066
 	13714518	Woman_Positive_10	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Positive_10_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Positive\Woman_Positive_10		71004
@@ -53,6 +58,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	111152215	Woman_Positive_17	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Positive_17_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Positive\Woman_Positive_17		71152
 	114133025	Man_Negative_17	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Negative_17_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_17		91576
 	119191464	fx_car1	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\fx_car1_9E69E797.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car1		1209664
+	120168269	Wave_Hit_02	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Wave_Hit_02_9E69E797.wem		\Actor-Mixer Hierarchy\SFX\SFX\Foley\Wave_Hit\Wave_Hit_02		180430
 	123469264	Woman_Negative_17	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Negative_17_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Negative\Woman_Negative_17		77732
 	124560204	Grandma_Positive_02	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Grandma_Positive_02_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Grandma_Positive\Grandma_Positive_02		129424
 	128859049	Grandma_Negative_05	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Grandma_Negative_05_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Grandma_Negative\Grandma_Negative_05		51390
@@ -119,6 +125,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	454069176	narration_NEGATIVE_whatwere	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\narration_NEGATIVE_whatwere_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\Narrator\Narrator_Negative\narration_NEGATIVE_whatwere		341484
 	460072628	Man_Negative_23	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Negative_23_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_23		90278
 	481146199	narration_NEGATIVE_howembarrasing	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\narration_NEGATIVE_howembarrasing_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\Narrator\Narrator_Negative\narration_NEGATIVE_howembarrasing		341484
+	481351117	Menu_Button_Hit_01	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Menu_Button_Hit_01_9E69E797.wem		\Actor-Mixer Hierarchy\UI\Menu\Menu_Button_Hit_01		110480
 	489415607	Grandma_Positive_01	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Grandma_Positive_01_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Grandma_Positive\Grandma_Positive_01		60486
 	502447757	narration_POSITIVE_fantastic	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\narration_POSITIVE_fantastic_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\Narrator\Narrator_Positive\narration_POSITIVE_fantastic		273200
 	505881422	narration_START_go	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\narration_START_go_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\Narrator\narration_START_go		273200
@@ -126,6 +133,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	510345298	Woman_Positive_05	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Positive_05_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Positive\Woman_Positive_05		87580
 	512670497	Man_Positive_06	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_06_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_06		89384
 	533962747	narration_NEUTRAL_fine	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\narration_NEUTRAL_fine_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\Narrator\Narrator_Neutral\narration_NEUTRAL_fine		273200
+	561283307	Wave_Miss_01	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Wave_Miss_01_9E69E797.wem		\Actor-Mixer Hierarchy\SFX\SFX\Foley\Wave_Miss\Wave_Miss_01		63114
 	564181978	Woman_Positive_18	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Positive_18_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Positive\Woman_Positive_18		51656
 	564434574	Man_Positive_37	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_37_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_37		67892
 	565099836	Man_Positive_31	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_31_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_31		41986
@@ -137,6 +145,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	613987304	Woman_Negative_21	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Negative_21_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Negative\Woman_Negative_21		119396
 	619435837	Man_Positive_08	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_08_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_08		76248
 	626661951	Grandma_Very_Negative_02	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Grandma_Very_Negative_02_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Grandma_Very_Negative\Grandma_Very_Negative_02		245510
+	633845885	Wave_Miss_02	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Wave_Miss_02_9E69E797.wem		\Actor-Mixer Hierarchy\SFX\SFX\Foley\Wave_Miss\Wave_Miss_02		63114
 	635039946	Woman_Positive_09	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Positive_09_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Positive\Woman_Positive_09		36530
 	635240318	Man_Very_Negative_04	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Very_Negative_04_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Very_Negative\Man_Very_Negative_04		45238
 	655499507	Man_Negative_22	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Negative_22_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_22		46030
@@ -154,6 +163,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	736128489	Man_Negative_25	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Negative_25_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_25		209890
 	760519151	Man_Very_Negative_06	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Very_Negative_06_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Very_Negative\Man_Very_Negative_06		62280
 	764807767	Man_Very_Negative_05	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Very_Negative_05_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Very_Negative\Man_Very_Negative_05		61908
+	764982263	Wave_Hit_01	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Wave_Hit_01_9E69E797.wem		\Actor-Mixer Hierarchy\SFX\SFX\Foley\Wave_Hit\Wave_Hit_01		209604
 	766169375	Woman_Very_Negative_02	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Very_Negative_02_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Very_Negative\Woman_Very_Negative_02		71398
 	770414880	Man_Positive_14	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_14_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_14		76248
 	778443801	Man_Positive_23	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_23_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_23		109088
@@ -176,12 +186,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	857526467	Man_Negative_03	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Negative_03_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_03		171184
 	859785993	Woman_Positive_32	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Positive_32_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Positive\Woman_Positive_32		33846
 	865093304	Grandma_Negative_07	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Grandma_Negative_07_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Grandma_Negative\Grandma_Negative_07		214330
+	867681206	Wave_Miss_03	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Wave_Miss_03_9E69E797.wem		\Actor-Mixer Hierarchy\SFX\SFX\Foley\Wave_Miss\Wave_Miss_03		64428
 	873728625	Man_Negative_05	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Negative_05_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_05		73688
 	904301245	Man_Positive_13	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_13_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_13		68368
 	904827553	Man_Positive_11	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_11_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_11		62520
 	905445822	Man_Negative_09	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Negative_09_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_09		82486
 	907880064	music_menu	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\music_menu_4B8CC0C5.wem		\Interactive Music Hierarchy\Music\MenuAndCredits_Music\music_menu\music_menu		4233744
 	909488199	Man_Positive_33	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_33_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_33		32094
+	910447369	Menu_Start_Game_01	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Menu_Start_Game_01_9E69E797.wem		\Actor-Mixer Hierarchy\UI\Menu\Menu_Start_Game_01		93324
 	910448495	Woman_Positive_20	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Positive_20_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Positive\Woman_Positive_20		88506
 	915981739	Woman_Negative_10	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Negative_10_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Negative\Woman_Negative_10		98598
 	920785221	Woman_Positive_24	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Positive_24_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Positive\Woman_Positive_24		74954

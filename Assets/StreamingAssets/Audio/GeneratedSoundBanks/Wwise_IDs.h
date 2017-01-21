@@ -20,7 +20,10 @@ namespace AK
         static const AkUniqueID MAN_NEGATIVE = 911506639U;
         static const AkUniqueID MAN_POSITIVE = 666034363U;
         static const AkUniqueID MAN_VERY_NEGATIVE = 889047188U;
+        static const AkUniqueID MENU_BUTTON_HIT = 126614945U;
+        static const AkUniqueID MENU_BUTTON_RELEASE = 1540417201U;
         static const AkUniqueID MENU_CLICK = 760777789U;
+        static const AkUniqueID MENU_START_GAME = 1931074718U;
         static const AkUniqueID NARRATOR_GO = 2474639067U;
         static const AkUniqueID NARRATOR_NEGATIVE = 2862836492U;
         static const AkUniqueID NARRATOR_NEUTRAL = 645232014U;
@@ -29,7 +32,8 @@ namespace AK
         static const AkUniqueID PLAY_INGAME_MUSIC = 347845317U;
         static const AkUniqueID PLAY_MENUANDCREDITS_MUSIC = 3540843768U;
         static const AkUniqueID PLAY_STARTLEVEL_MUSIC = 2890725208U;
-        static const AkUniqueID WAVE = 1941003890U;
+        static const AkUniqueID WAVE_HIT = 756234724U;
+        static const AkUniqueID WAVE_MISS = 543282405U;
         static const AkUniqueID WOMAN_NEGATIVE = 1024076021U;
         static const AkUniqueID WOMAN_POSITIVE = 2318958257U;
         static const AkUniqueID WOMAN_VERY_NEGATIVE = 3367768002U;

@@ -13,23 +13,22 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Folder Name="EndGame" ID="{D0F956F5-E55F-4A48-B0E7-B4F760959E26}" ShortID="283502298">
-							<ChildrenList>
-								<RandomSequenceContainer Name="Points_Counting" ID="{FE8B6088-D152-4632-900E-D22457691B2E}" ShortID="238551241">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
-										</Reference>
-									</ReferenceList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</Folder>
 						<Folder Name="Foley" ID="{11117153-90CE-43A2-A57C-FF8664EDA100}" ShortID="150675972">
 							<ChildrenList>
-								<RandomSequenceContainer Name="Wave" ID="{F39E1B55-FC2F-4EA6-ADB6-4B98E323353F}" ShortID="708529628">
+								<RandomSequenceContainer Name="Wave_Miss" ID="{F39E1B55-FC2F-4EA6-ADB6-4B98E323353F}" ShortID="708529628">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-250</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
@@ -38,12 +37,85 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Wave_Miss_01" ID="{74EBDA82-7934-42EB-AF01-A305792DC99B}" ShortID="323015732" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wave_Miss_01" ID="{EC35E065-F63A-4E3A-96A9-D7D5DB40FBA1}" ShortID="561283307">
+													<Language>SFX</Language>
+													<AudioFile>Wave_Miss_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wave_Miss_01" ID="{EC35E065-F63A-4E3A-96A9-D7D5DB40FBA1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Wave_Miss_02" ID="{063F76A6-1A01-4E06-BA82-4DD9AFF2DB43}" ShortID="275138903" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wave_Miss_02" ID="{F3846D3E-C6A3-4073-86D9-149D07DA5D07}" ShortID="633845885">
+													<Language>SFX</Language>
+													<AudioFile>Wave_Miss_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wave_Miss_02" ID="{F3846D3E-C6A3-4073-86D9-149D07DA5D07}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Wave_Miss_03" ID="{8BC719BC-6785-401D-BDFE-931C5D5270C7}" ShortID="49273942" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wave_Miss_03" ID="{08E6FCBA-6181-4529-B598-DA92AB617D79}" ShortID="867681206">
+													<Language>SFX</Language>
+													<AudioFile>Wave_Miss_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wave_Miss_03" ID="{08E6FCBA-6181-4529-B598-DA92AB617D79}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Main_Character" ID="{4326E0F8-4C32-4084-8A62-A08BE2EC3C99}" ShortID="132624187">
-							<ChildrenList>
-								<RandomSequenceContainer Name="Main_Character_Pain" ID="{0A54A2B3-EDAA-45AE-886E-18CEDB1C4220}" ShortID="534086789">
+								<RandomSequenceContainer Name="Wave_Hit" ID="{EAE0A3DC-F8F0-4AC9-9D1E-B654250C2B81}" ShortID="493543262">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>45</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
@@ -52,6 +124,46 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Wave_Hit_01" ID="{3077B241-ACA4-4651-BA97-C0F23A11FFFB}" ShortID="974998314" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wave_Hit_01" ID="{3840E9FB-F9A0-45A0-979F-87423EC2AE4E}" ShortID="764982263">
+													<Language>SFX</Language>
+													<AudioFile>Wave_Hit_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wave_Hit_01" ID="{3840E9FB-F9A0-45A0-979F-87423EC2AE4E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Wave_Hit_02" ID="{C7DF4655-C347-49B9-BE25-AF584F4B73BA}" ShortID="754729881" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wave_Hit_02" ID="{12A4C4D4-A894-44B8-883F-9AA18AF06534}" ShortID="120168269">
+													<Language>SFX</Language>
+													<AudioFile>Wave_Hit_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wave_Hit_02" ID="{12A4C4D4-A894-44B8-883F-9AA18AF06534}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
