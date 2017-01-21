@@ -55,3 +55,4 @@ MonoBehaviour:
   TilePrefabs:
   - {fileID: 1082626084690354, guid: 2c73ee56b3802d64fb5b41f237db38aa, type: 2}
   - {fileID: 1151986400384122, guid: 4a4ba1fdcee54fb498038daf98f8e56f, type: 2}
+  - {fileID: 1975226849327568, guid: 3f1af3d359d215c44ae588a6e5e00f68, type: 2}

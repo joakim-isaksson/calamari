@@ -9,6 +9,18 @@ public class CameraController : MonoBehaviour
     private float pauseTimer;
     private float maxPauseTimer;
 
+    public float CameraBobbingSpeed;
+    public float CameraBobbingScaleX;
+    public float CameraBobbingScaleY;
+
+    private float cameraBobTimer;
+    private Vector3 cameraBobAnchor;
+
+    void Start()
+    {
+        cameraBobAnchor = transform.position;
+    }
+
 	void Update()
 	{
 	    float dt = Time.deltaTime;
@@ -21,7 +33,20 @@ public class CameraController : MonoBehaviour
 	        return;
 	    }
 
+        // Camera bobbing
+        cameraBobTimer += CameraBobbingSpeed * dt;
+
+        var cameraBobX = Mathf.Cos(cameraBobTimer);
+	    var cameraBobY = Mathf.Abs(Mathf.Sin(cameraBobTimer));
+
+        transform.position = new Vector3(cameraBobAnchor.x + cameraBobX * CameraBobbingScaleX,
+            cameraBobAnchor.y + cameraBobY * CameraBobbingScaleY, 
+            transform.position.z);
+
+        // Camera movement
         transform.position += new Vector3(0, 0, 1) * MovementSpeed * dt;
+
+
 	}
 
     /// <summary>
