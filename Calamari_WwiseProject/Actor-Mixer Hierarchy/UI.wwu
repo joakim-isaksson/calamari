@@ -3,7 +3,15 @@
 	<AudioObjects>
 		<WorkUnit Name="UI" ID="{5E8E5288-D206-403B-93D7-E1E9D1962C00}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Menu" ID="{18609E86-AF04-4807-A647-5FF1B22F04A3}" ShortID="754393050">
+				<ActorMixer Name="Menu" ID="{827BC3F3-AB66-4FB3-8889-729B5C7B8A84}" ShortID="904246175">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="UI" ID="{D14D3C7D-0972-4CBD-B78D-C7B4826FC761}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+						</Reference>
+					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="fx_menubutton" ID="{024654C1-DE7C-4003-96E1-FAF936CD2ECD}" ShortID="1011028513" Type="SoundFX">
 							<ReferenceList>
@@ -25,7 +33,7 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
-				</Folder>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

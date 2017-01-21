@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -22,12 +22,13 @@
 			<Path>Main_SoundBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="4142440576" Name="Car_PassBy" ObjectPath="\Events\Atmo\Cars\Car_PassBy"/>
-				<Event Id="3032610195" Name="Grandma_Negative" ObjectPath="\Events\Dialogue\People\Grandma_Negative"/>
-				<Event Id="3544995775" Name="Grandma_Positive" ObjectPath="\Events\Dialogue\People\Grandma_Positive"/>
-				<Event Id="1911024840" Name="Grandma_Very_Negative" ObjectPath="\Events\Dialogue\People\Grandma_Very_Negative"/>
-				<Event Id="911506639" Name="Man_Negative" ObjectPath="\Events\Dialogue\People\Man_Negative"/>
-				<Event Id="666034363" Name="Man_Positive" ObjectPath="\Events\Dialogue\People\Man_Positive"/>
-				<Event Id="889047188" Name="Man_Very_Negative" ObjectPath="\Events\Dialogue\People\Man_Very_Negative"/>
+				<Event Id="3032610195" Name="Grandma_Negative" ObjectPath="\Events\Dialogue\People\Grandma_Negative" MaxAttenuation="13.000000"/>
+				<Event Id="3544995775" Name="Grandma_Positive" ObjectPath="\Events\Dialogue\People\Grandma_Positive" MaxAttenuation="13.000000"/>
+				<Event Id="1911024840" Name="Grandma_Very_Negative" ObjectPath="\Events\Dialogue\People\Grandma_Very_Negative" MaxAttenuation="13.000000"/>
+				<Event Id="911506639" Name="Man_Negative" ObjectPath="\Events\Dialogue\People\Man_Negative" MaxAttenuation="18.000000"/>
+				<Event Id="666034363" Name="Man_Positive" ObjectPath="\Events\Dialogue\People\Man_Positive" MaxAttenuation="18.000000"/>
+				<Event Id="889047188" Name="Man_Very_Negative" ObjectPath="\Events\Dialogue\People\Man_Very_Negative" MaxAttenuation="18.000000"/>
+				<Event Id="760777789" Name="Menu_Click" ObjectPath="\Events\UI\Menu\Menu_Click"/>
 				<Event Id="2474639067" Name="Narrator_Go" ObjectPath="\Events\Dialogue\Narrator\Narrator_Go"/>
 				<Event Id="2862836492" Name="Narrator_Negative" ObjectPath="\Events\Dialogue\Narrator\Narrator_Negative"/>
 				<Event Id="645232014" Name="Narrator_Neutral" ObjectPath="\Events\Dialogue\Narrator\Narrator_Neutral"/>
@@ -36,9 +37,10 @@
 				<Event Id="347845317" Name="Play_InGame_Music" ObjectPath="\Events\Music\Play_InGame_Music"/>
 				<Event Id="3540843768" Name="Play_MenuAndCredits_Music" ObjectPath="\Events\Music\Play_MenuAndCredits_Music"/>
 				<Event Id="2890725208" Name="Play_StartLevel_Music" ObjectPath="\Events\Music\Play_StartLevel_Music"/>
-				<Event Id="1024076021" Name="Woman_Negative" ObjectPath="\Events\Dialogue\People\Woman_Negative"/>
-				<Event Id="2318958257" Name="Woman_Positive" ObjectPath="\Events\Dialogue\People\Woman_Positive"/>
-				<Event Id="3367768002" Name="Woman_Very_Negative" ObjectPath="\Events\Dialogue\People\Woman_Very_Negative"/>
+				<Event Id="1941003890" Name="Wave" ObjectPath="\Events\SFX\Foley\Wave" MaxAttenuation="0.000000"/>
+				<Event Id="1024076021" Name="Woman_Negative" ObjectPath="\Events\Dialogue\People\Woman_Negative" MaxAttenuation="15.000000"/>
+				<Event Id="2318958257" Name="Woman_Positive" ObjectPath="\Events\Dialogue\People\Woman_Positive" MaxAttenuation="15.000000"/>
+				<Event Id="3367768002" Name="Woman_Very_Negative" ObjectPath="\Events\Dialogue\People\Woman_Very_Negative" MaxAttenuation="15.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="2877773" Language="SFX">
@@ -260,6 +262,10 @@
 				<File Id="258576021" Language="SFX">
 					<ShortName>Grandma_Negative_06.wav</ShortName>
 					<Path>SFX\Grandma_Negative_06_9E69E797.wem</Path>
+				</File>
+				<File Id="259754369" Language="SFX">
+					<ShortName>fx_menubutton.wav</ShortName>
+					<Path>SFX\fx_menubutton_9E69E797.wem</Path>
 				</File>
 				<File Id="261013136" Language="SFX">
 					<ShortName>Woman_Negative_02.wav</ShortName>
