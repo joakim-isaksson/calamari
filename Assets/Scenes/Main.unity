@@ -96,24 +96,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1700352077137226, guid: 933ac8c5bacbfa14cbdec95e968ea2f3,
     type: 2}
   m_PrefabInternal: {fileID: 329371504}
---- !u!135 &187782012
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 187782011}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 32.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &187782014 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114783993721293404, guid: 933ac8c5bacbfa14cbdec95e968ea2f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 329371504}
-  m_Script: {fileID: 11500000, guid: ff2951ea8a775be499d198172205a55c, type: 3}
 --- !u!1 &254236913 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1137347614425444, guid: ec111b212271106498429e30e773ddc3,
@@ -200,19 +182,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114671725444007802, guid: 933ac8c5bacbfa14cbdec95e968ea2f3,
-        type: 2}
-      propertyPath: CamController
-      value: 
-      objectReference: {fileID: 187782014}
-    - target: {fileID: 114783993721293404, guid: 933ac8c5bacbfa14cbdec95e968ea2f3,
-        type: 2}
-      propertyPath: CameraBobbingSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 65050919790314164, guid: 933ac8c5bacbfa14cbdec95e968ea2f3, type: 2}
-    - {fileID: 54690018891749026, guid: 933ac8c5bacbfa14cbdec95e968ea2f3, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 933ac8c5bacbfa14cbdec95e968ea2f3, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &433895496
