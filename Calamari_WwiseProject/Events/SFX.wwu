@@ -5,14 +5,9 @@
 			<ChildrenList>
 				<Folder Name="Foley" ID="{979204A4-DB43-4699-8302-892218CAEF88}" ShortID="137029191">
 					<ChildrenList>
-						<Event Name="Wave_Success" ID="{53BE9E21-2A7E-4080-A9F3-6EF40801FDD2}">
+						<Event Name="Wave" ID="{53BE9E21-2A7E-4080-A9F3-6EF40801FDD2}">
 							<ChildrenList>
 								<Action Name="Play" ID="{5F4207E1-40CE-4B13-A3F9-94E0E36FA96D}" ShortID="737274061" Type="Play" Scope="One" Global="false"/>
-							</ChildrenList>
-						</Event>
-						<Event Name="Wave_Failed" ID="{BE8DD614-DB36-4E74-9B25-FC1470E81432}">
-							<ChildrenList>
-								<Action Name="Play" ID="{C4BA8F01-35CD-4EBD-B8F7-0C9F32D75D24}" ShortID="176015062" Type="Play" Scope="One" Global="false"/>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>

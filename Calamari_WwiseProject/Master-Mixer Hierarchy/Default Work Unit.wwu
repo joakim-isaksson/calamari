@@ -3,7 +3,16 @@
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}" PersistMode="Standalone">
 			<ChildrenList>
-				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ChildrenList>
+						<Bus Name="Narrator" ID="{DF953179-D2DF-4E43-947B-EBFFF216983A}"/>
+						<Bus Name="People" ID="{CC2850E7-45D1-4498-845D-1ED399199B00}"/>
+						<Bus Name="SFX" ID="{A4A8E592-7153-43E9-BCA0-13946EA75907}"/>
+						<Bus Name="Music" ID="{DB78BB22-DF94-49C0-A53E-AF4A9B890E12}"/>
+						<Bus Name="UI" ID="{D14D3C7D-0972-4CBD-B78D-C7B4826FC761}"/>
+						<Bus Name="Atmo" ID="{BCC789B1-2D3E-4570-9DE7-AAFDB2A3EE78}"/>
+					</ChildrenList>
+				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
 				<MotionBus Name="Master Motion Bus" ID="{20A630BA-3398-4676-B927-1004DFE41FD8}"/>
 			</ChildrenList>

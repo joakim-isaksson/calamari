@@ -7,7 +7,13 @@
 					<ChildrenList>
 						<Event Name="Menu_Click" ID="{59644E7D-EBF9-4D46-A42E-DCCCC1927579}">
 							<ChildrenList>
-								<Action Name="Play" ID="{5CDF40BF-B31A-492F-8423-A8DF5A37CD31}" ShortID="573111261" Type="Play" Scope="One" Global="false"/>
+								<Action Name="Play" ID="{5CDF40BF-B31A-492F-8423-A8DF5A37CD31}" ShortID="573111261" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{34C4D619-2F22-4FE1-898D-64A81DA2DBD8}" Global="false">
+											<ObjectRef Name="fx_menubutton" ID="{024654C1-DE7C-4003-96E1-FAF936CD2ECD}" WorkUnitID="{5E8E5288-D206-403B-93D7-E1E9D1962C00}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
