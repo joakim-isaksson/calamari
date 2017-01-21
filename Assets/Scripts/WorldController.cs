@@ -7,6 +7,8 @@ public class WorldController : MonoBehaviour
     public float TileOffset;
 
     public GameObject[] TilePrefabs;
+    public GameObject EndingTile;
+    public GameObject EnemySpawner;
 
 	void Start()
     {
