@@ -11,11 +11,12 @@ public class GameFlow : MonoBehaviour
     public GameObject CameraControllerReference;
 
     public int LevelLength;
+    public int EnemyCount;
     
 
     void Awake()
     {
-        WorldControllerReference.GetComponent<WorldController>().GenerateLevel(LevelLength);
+        WorldControllerReference.GetComponent<WorldController>().GenerateLevel(LevelLength, EnemyCount);
     }
 
 	void Start() {

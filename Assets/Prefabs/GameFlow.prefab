@@ -51,3 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb712746ff59c73418060e020a68054b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WorldControllerReference: {fileID: 0}
+  CameraControllerReference: {fileID: 0}
+  LevelLength: 4
+  EnemyCount: 5

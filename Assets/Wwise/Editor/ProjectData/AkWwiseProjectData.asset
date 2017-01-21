@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Atmo.wwu
     ParentPhysicalPath: 
     Guid: '{EBAB7ACE-F075-4252-B78C-AD21E1D8CDDF}'
-    m_lastTimePsrt1: -1105605788
-    m_lastTimePart2: -1999355354
+    m_lastTimePsrt1: -40758432
+    m_lastTimePart2: -1999355357
     List:
     - Name: Car_PassBy
       Path: Atmo\Cars\Car_PassBy
@@ -40,8 +40,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Dialogue.wwu
     ParentPhysicalPath: 
     Guid: '{FB6D5B60-7AB5-47D1-82B9-E6DA98221E6E}'
-    m_lastTimePsrt1: -1105565930
-    m_lastTimePart2: -1999355354
+    m_lastTimePsrt1: -40748432
+    m_lastTimePart2: -1999355357
     List:
     - Name: Grandma_Negative
       Path: Dialogue\People\Grandma_Negative
@@ -214,8 +214,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Music.wwu
     ParentPhysicalPath: 
     Guid: '{2AB8BC12-B398-4B6E-8851-7861A56CC893}'
-    m_lastTimePsrt1: -258107183
-    m_lastTimePart2: -1999355373
+    m_lastTimePsrt1: 72932431
+    m_lastTimePart2: -1999355372
     List:
     - Name: Play_InGame_Music
       Path: Music\Play_InGame_Music
@@ -332,8 +332,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{50A95469-C110-4823-8F90-41D1A370D747}'
-    m_lastTimePsrt1: -1083326155
-    m_lastTimePart2: -1999355354
+    m_lastTimePsrt1: -31098432
+    m_lastTimePart2: -1999355357
     List:
     - Name: Main_SoundBank
       Path: Default Work Unit\Main_SoundBank
