@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BankMemory>
-<<<<<<< HEAD
-	<Timestamp>131295012550000000</Timestamp>
-	<DataSize>38990616</DataSize>
-	<FileSize>39006321</FileSize>
-	<DecodedSize>38989386</DecodedSize>
-=======
-<<<<<<< HEAD
-	<Timestamp>131294994990000000</Timestamp>
-	<DataSize>39428072</DataSize>
-	<FileSize>39441935</FileSize>
-	<DecodedSize>39426878</DecodedSize>
-=======
-	<Timestamp>131294980370000000</Timestamp>
-	<DataSize>38193304</DataSize>
-	<FileSize>38208084</FileSize>
-	<DecodedSize>38192110</DecodedSize>
->>>>>>> f496089d8dba0012a7747c7cffdb7c71285dde65
->>>>>>> 792156ff01c824d3827f863d349f2d636b0f06a4
+	<Timestamp>131295048170000000</Timestamp>
+	<DataSize>43224296</DataSize>
+	<FileSize>43239884</FileSize>
+	<DecodedSize>43223066</DecodedSize>
 	<SFXPreFetchSize>0</SFXPreFetchSize>
 	<SFXInMemorySize>22760122</SFXInMemorySize>
 	<SFXMissingFiles>0</SFXMissingFiles>
 	<MusicPreFetchSize>0</MusicPreFetchSize>
-	<MusicInMemorySize>17640496</MusicInMemorySize>
+	<MusicInMemorySize>20462944</MusicInMemorySize>
 	<MusicMissingFiles>0</MusicMissingFiles>
 	<VoicePreFetchSize>0</VoicePreFetchSize>
 	<VoiceInMemorySize>0</VoiceInMemorySize>
