@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1a5e68d5d2a5d4b4c9b298449e57002d
-timeCreated: 1485011623
+timeCreated: 1485023357
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 320
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -116,19 +116,6 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Guy_Sprites_2
-      rect:
-        serializedVersion: 2
-        x: 494
-        y: 795
-        width: 13
-        height: 5
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: Guy_Sprites_3
       rect:
         serializedVersion: 2
@@ -149,19 +136,6 @@ TextureImporter:
         y: 768
         width: 304
         height: 694
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Guy_Sprites_5
-      rect:
-        serializedVersion: 2
-        x: 1324
-        y: 798
-        width: 13
-        height: 5
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,19 +168,6 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Guy_Sprites_8
-      rect:
-        serializedVersion: 2
-        x: 537
-        y: 42
-        width: 13
-        height: 5
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: Guy_Sprites_9
       rect:
         serializedVersion: 2
@@ -227,19 +188,6 @@ TextureImporter:
         y: 10
         width: 276
         height: 694
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Guy_Sprites_11
-      rect:
-        serializedVersion: 2
-        x: 1350
-        y: 40
-        width: 13
-        height: 5
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
