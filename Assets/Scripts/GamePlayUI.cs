@@ -131,6 +131,7 @@ public class GamePlayUI : MonoBehaviour {
 	/// The retry is clicked. Restart the game
 	/// </summary>
 	public void OnClickRetry(){
+		SceneManager.LoadScene ("Main");
 	}
 
 
@@ -140,7 +141,7 @@ public class GamePlayUI : MonoBehaviour {
 	public void OnClickQuit(){
 		//SceneManager.LoadScene ("TestScene_Xiaoxiao");
 		ScreenFader.instance.FadeIn (Color.black, 1, delegate {
-			SceneManager.LoadScene ("MenuScene");
+			SceneManager.LoadScene ("CreditsScene");
 		});
 		
 	}
