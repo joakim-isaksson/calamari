@@ -252,12 +252,12 @@ Prefab:
     - target: {fileID: 114701350769072622, guid: 62e05542944b3524a9efe7cdb0bea9dd,
         type: 2}
       propertyPath: EnemyCount
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114701350769072622, guid: 62e05542944b3524a9efe7cdb0bea9dd,
         type: 2}
       propertyPath: EnemyCount
-      value: 1
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 62e05542944b3524a9efe7cdb0bea9dd, type: 2}
