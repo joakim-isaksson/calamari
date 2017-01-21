@@ -88,7 +88,7 @@ public class PlayerHand : MonoBehaviour {
 		//play animation
 		//...
 		handAnimator.SetTrigger ("Wave");
-		CamController.PauseFor (0.7f);
+		CamController.PauseFor (1.0f);
 		yield return new WaitForSeconds (0.4f);
 		enemyController.Greet ();
 		yield return new WaitForSeconds (0.6f);
