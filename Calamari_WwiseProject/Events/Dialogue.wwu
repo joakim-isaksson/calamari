@@ -7,41 +7,160 @@
 					<ChildrenList>
 						<Event Name="Narrator_Negative" ID="{33724AB3-7C92-47DA-9BFF-C26C3B4609B6}">
 							<ChildrenList>
-								<Action Name="Play" ID="{9D3C959D-9A6F-4998-B9A3-BB9B8418D26F}" ShortID="830309292" Type="Play" Scope="One" Global="false"/>
+								<Action Name="Play" ID="{9D3C959D-9A6F-4998-B9A3-BB9B8418D26F}" ShortID="830309292" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{947B4A6C-700A-42E6-95D3-DDDF1C4C4BFE}" Global="false">
+											<ObjectRef Name="Narrator_Negative" ID="{B6A5EAD9-BC50-4932-A41D-C85A4522903E}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Narrator_Neutral" ID="{BAE30293-B784-48A5-9378-115E97E87CC1}">
 							<ChildrenList>
-								<Action Name="Play" ID="{6C6B26A7-26A3-4562-85C7-DDE8F00CE42A}" ShortID="621766987" Type="Play" Scope="One" Global="false"/>
+								<Action Name="Play" ID="{6C6B26A7-26A3-4562-85C7-DDE8F00CE42A}" ShortID="621766987" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{41D53B4C-A162-4036-923F-610CFFEE0C87}" Global="false">
+											<ObjectRef Name="Narrator_Neutral" ID="{7689E991-1A9E-488E-AB49-C5C3F01A2C9B}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Narrator_Positive" ID="{075ECBD2-9EFD-4EF2-AD82-A6D62854DD31}">
 							<ChildrenList>
-								<Action Name="Play" ID="{31EE86A2-A3A7-4C09-B35C-023ABD5C0D61}" ShortID="926136832" Type="Play" Scope="One" Global="false"/>
+								<Action Name="Play" ID="{31EE86A2-A3A7-4C09-B35C-023ABD5C0D61}" ShortID="926136832" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{3BA1AA86-57F2-4C8E-84AA-6ACFA3885478}" Global="false">
+											<ObjectRef Name="Narrator_Positive" ID="{339A42D9-3070-43E5-8954-0B325E118F73}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Narrator_Ready" ID="{58B04538-5B17-43D4-BB2B-CDE905226601}">
 							<ChildrenList>
-								<Action Name="Play" ID="{D6FA6AC8-B623-491A-928C-9F1BE1920549}" ShortID="97052749" Type="Play" Scope="One" Global="false"/>
+								<Action Name="Play" ID="{D6FA6AC8-B623-491A-928C-9F1BE1920549}" ShortID="97052749" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E0D02277-D899-4721-83BF-E6E6F6C14593}" Global="false">
+											<ObjectRef Name="narration_START_ready" ID="{A0936E86-0C4D-4C87-99D8-D35E2DC89EC3}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Narrator_Go" ID="{57FCD602-287A-47C7-BE0B-9EE689A3D040}">
 							<ChildrenList>
-								<Action Name="Play" ID="{04D1AF86-B7C4-49C6-8138-4BA639ECDFAB}" ShortID="1007753653" Type="Play" Scope="One" Global="false"/>
+								<Action Name="Play" ID="{04D1AF86-B7C4-49C6-8138-4BA639ECDFAB}" ShortID="1007753653" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{7941C177-6447-4542-88F4-E88049270712}" Global="false">
+											<ObjectRef Name="narration_START_go" ID="{78C6C4B2-B7F4-4819-8F0B-E8371E2817D3}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="People" ID="{F0120EEA-A40A-422E-8DC0-69217C578E29}" ShortID="247955968">
 					<ChildrenList>
-						<Event Name="People_Negative_Reaction" ID="{1BC3F31C-4C6F-40A0-B07C-117D83B01ECF}">
+						<Event Name="Man_Negative" ID="{1BC3F31C-4C6F-40A0-B07C-117D83B01ECF}">
 							<ChildrenList>
-								<Action Name="Play" ID="{B777BE31-5BD5-4738-8412-E5E03964A77C}" ShortID="486450530" Type="Play" Scope="One" Global="false"/>
+								<Action Name="Play" ID="{B777BE31-5BD5-4738-8412-E5E03964A77C}" ShortID="486450530" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{14517D42-5AA9-490C-8AAA-3C5F5381AA4A}" Global="false">
+											<ObjectRef Name="Man_Negative" ID="{F14E7D32-E917-4321-9C8B-3D5E9D7C226E}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="People_Positive_Reaction" ID="{65FC4685-8BAF-4937-9A02-BA826CBE15E8}">
+						<Event Name="Man_Positive" ID="{65FC4685-8BAF-4937-9A02-BA826CBE15E8}">
 							<ChildrenList>
-								<Action Name="Play" ID="{438BD1D7-E997-41FC-9F97-805EA66A7F21}" ShortID="1034076407" Type="Play" Scope="One" Global="false"/>
+								<Action Name="Play" ID="{438BD1D7-E997-41FC-9F97-805EA66A7F21}" ShortID="1034076407" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B7C79138-9DB9-4528-9846-70F230241192}" Global="false">
+											<ObjectRef Name="Man_Positive" ID="{479F1DE1-BA61-47C3-9129-543D0B45A1BB}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Man_Very_Negative" ID="{16B8A576-821A-45E6-B7AF-D419BE343CBA}">
+							<ChildrenList>
+								<Action Name="Play" ID="{3C733565-E68E-4503-97E5-A257CA4EB587}" ShortID="198140405" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{58728F5D-1E6A-4788-B436-5290FE22B762}" Global="false">
+											<ObjectRef Name="Man_Very_Negative" ID="{43FB7D17-BAFA-4A4C-A46C-9084B93181B4}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Woman_Negative" ID="{6EBCB44D-071B-46CF-8308-DD09E4938BDE}">
+							<ChildrenList>
+								<Action Name="Play" ID="{FAF475B7-B76B-4497-90F6-5DBFEE2F7668}" ShortID="251609098" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{A9600CEC-62A6-47BB-8410-66EEAF02FC7A}" Global="false">
+											<ObjectRef Name="Woman_Negative" ID="{5B2DCCB9-0992-40B4-9581-307C6DF85568}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Woman_Positive" ID="{95CA10C2-CC90-4F5B-B9ED-2283227FA66B}">
+							<ChildrenList>
+								<Action Name="Play" ID="{E0028B71-C12C-49A6-BC70-A4F620492114}" ShortID="978061376" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{221B08C9-63C5-4F36-9E74-07D8BF78C270}" Global="false">
+											<ObjectRef Name="Woman_Positive" ID="{21C7C691-6EC1-4E81-990D-28662832E420}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Woman_Very_Negative" ID="{F0A49ABB-0A84-4E8E-9F28-49303E1DE0E3}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6EE66C4C-0881-4D46-9512-B0A83E49A486}" ShortID="184506292" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{AEAFD8C9-8176-4A53-A83A-D926B53E960C}" Global="false">
+											<ObjectRef Name="Woman_Very_Negative" ID="{3CD35914-58C7-4D73-9586-31796FD197F4}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Grandma_Positive" ID="{C025C93A-30D5-4B4C-860A-07B03998F7F3}">
+							<ChildrenList>
+								<Action Name="Play" ID="{C0CF581F-DD49-4120-B18C-78E0947F11C5}" ShortID="847907750" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{2C1ADEFE-7CE4-4CC4-89D9-7B8E0A9EAE21}" Global="false">
+											<ObjectRef Name="Grandma_Positive" ID="{04EEADA6-7634-44B1-B64E-BFC7079C72A0}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Grandma_Negative" ID="{9A4520ED-2BBA-4137-AC71-A3AFFE19B760}">
+							<ChildrenList>
+								<Action Name="Play" ID="{96C81401-8302-4A59-B5FE-F17586AECA3C}" ShortID="757370173" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{95F95238-9B35-427F-9C77-2D298DCD85DF}" Global="false">
+											<ObjectRef Name="Grandma_Negative" ID="{9AB92EF0-3017-4C0E-99C4-8B4559C54122}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Grandma_Very_Negative" ID="{4A149DA2-E87C-45B3-8258-BFF72A2D08F0}">
+							<ChildrenList>
+								<Action Name="Play" ID="{3454C406-6C09-4656-8895-7CC97CE79E01}" ShortID="8607531" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{7B7BC119-4DB5-4B11-8B09-8110DBA1E654}" Global="false">
+											<ObjectRef Name="Grandma_Very_Negative" ID="{E7257210-C308-4944-8F3B-E870DDE8FEA1}" WorkUnitID="{CBFBED71-0B8B-471D-AA2F-1CB3E9D9F966}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>

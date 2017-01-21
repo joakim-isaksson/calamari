@@ -3,7 +3,21 @@
 	<Events>
 		<WorkUnit Name="Atmo" ID="{EBAB7ACE-F075-4252-B78C-AD21E1D8CDDF}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Cars" ID="{9A6A5969-9EBF-430B-999D-E6EF606A271D}" ShortID="446203838"/>
+				<Folder Name="Cars" ID="{9A6A5969-9EBF-430B-999D-E6EF606A271D}" ShortID="446203838">
+					<ChildrenList>
+						<Event Name="Car_PassBy" ID="{7E9DC825-02D0-4D55-AF36-859DCF0FD053}">
+							<ChildrenList>
+								<Action Name="Play" ID="{2C0BCF96-35D2-448F-A6AF-CC17856D4AC8}" ShortID="124718364" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{27243BB3-B556-41BB-8CA8-330659008E5E}" Global="false">
+											<ObjectRef Name="Cars" ID="{4F7A7D9C-ECC4-4741-86D2-F0CF280AEBD9}" WorkUnitID="{F3EE3F16-094D-4B1C-84F0-8447E5971D36}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="City" ID="{6FEDB336-E862-45AC-B916-CAD0ED15F859}" ShortID="538577077"/>
 			</ChildrenList>
 		</WorkUnit>

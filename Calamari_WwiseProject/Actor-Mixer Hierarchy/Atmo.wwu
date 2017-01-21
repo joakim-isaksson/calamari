@@ -3,27 +3,17 @@
 	<AudioObjects>
 		<WorkUnit Name="Atmo" ID="{F3EE3F16-094D-4B1C-84F0-8447E5971D36}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Cars" ID="{A7ACD215-723C-42E4-A312-B8AE9892EA6B}" ShortID="389597570">
+				<Folder Name="City" ID="{EB6D15A0-CF87-4C26-896B-FA9BF05FF580}" ShortID="176444625"/>
+				<RandomSequenceContainer Name="Cars" ID="{4F7A7D9C-ECC4-4741-86D2-F0CF280AEBD9}" ShortID="107662126">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+						</Reference>
+					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="fx_car1" ID="{9084C402-C7A6-47CA-B922-9E48C2D0D875}" ShortID="55558591" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="fx_car1" ID="{0BA48398-B27B-4734-9FB4-D827BCD04EFE}" ShortID="119191464">
-									<Language>SFX</Language>
-									<AudioFile>fx_car1.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="fx_car1" ID="{0BA48398-B27B-4734-9FB4-D827BCD04EFE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="fx_car2" ID="{BB5C0AB2-759E-4E79-957B-21BBC317030A}" ShortID="853706304" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -62,9 +52,27 @@
 								<ActiveSource Name="fx_car3" ID="{277762BE-9257-4A0B-8C6B-2DB1CCFE5989}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="fx_car1" ID="{9084C402-C7A6-47CA-B922-9E48C2D0D875}" ShortID="55558591" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="fx_car1" ID="{0BA48398-B27B-4734-9FB4-D827BCD04EFE}" ShortID="119191464">
+									<Language>SFX</Language>
+									<AudioFile>fx_car1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="fx_car1" ID="{0BA48398-B27B-4734-9FB4-D827BCD04EFE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-				</Folder>
-				<Folder Name="City" ID="{EB6D15A0-CF87-4C26-896B-FA9BF05FF580}" ShortID="176444625"/>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
