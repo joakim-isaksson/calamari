@@ -88,6 +88,8 @@ public class MenuUIController : MonoBehaviour {
 
 		image.color = new Color(1, 1, 1, 1.0f);
 		SplashScreen.SetActive(false);
-
+		ScreenFader.instance.FadeOut (Color.black, SplashFadeSecond, delegate {
+			AkSoundEngine.PostEvent ("Play_MenuAndCredits_Music", BgmController.Instance.gameObject);
+		});
 	}
 }

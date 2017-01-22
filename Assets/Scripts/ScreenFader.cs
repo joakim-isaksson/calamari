@@ -61,7 +61,7 @@ public class ScreenFader : MonoBehaviour
 	IEnumerator StartFadeOut(Color color, float seconds, Action callback)
 	{
 		Foreground.color = new Color(color.r, color.g, color.b, 1);
-
+		Foreground.gameObject.SetActive(true);
 		Debug.Log ("Fade out");
 
 		float progress = 0;

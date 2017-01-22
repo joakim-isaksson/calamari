@@ -6,10 +6,17 @@ using UnityEngine.SceneManagement;
 public class BgmController : MonoBehaviour {
 
 	private string currentSceneName = "";
+
+	public static BgmController Instance;
+
+	void Awake(){
+		Instance = this;
+	}
+
 	// Use this for initialization
 	void Start () {
 		SceneManager.sceneLoaded += CheckMusicToPlay;
-		AkSoundEngine.PostEvent ("Play_MenuAndCredits_Music", gameObject);
+		//AkSoundEngine.PostEvent ("Play_MenuAndCredits_Music", gameObject);
 	}
 	
 	// Update is called once per frame
