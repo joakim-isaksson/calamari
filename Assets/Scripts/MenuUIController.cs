@@ -13,7 +13,7 @@ public class MenuUIController : MonoBehaviour {
 			});
 		};
 
-		AkSoundEngine.PostEvent ("Play_MenuAndCredits_Music", gameObject);
+
 	}
 	
 	// Update is called once per frame
