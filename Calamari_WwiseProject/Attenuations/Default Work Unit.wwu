@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Attenuation Name="Grandma" ID="{AB1F8735-F61A-4C3C-AA3A-FFCA4E232D72}" ShortID="990293331">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="48"/>
+						<Property Name="RadiusMax" Type="Real64" Value="40"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -19,10 +19,10 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Log3</SegmentShape>
+											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>48</XPos>
+											<XPos>40</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -52,7 +52,7 @@
 				</Attenuation>
 				<Attenuation Name="Woman" ID="{9148D29C-E52B-4065-8460-9B7EB6676DFD}" ShortID="908117364">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="45"/>
+						<Property Name="RadiusMax" Type="Real64" Value="40"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -69,7 +69,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>45</XPos>
+											<XPos>40</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -146,7 +146,7 @@
 				</Attenuation>
 				<Attenuation Name="Car" ID="{B67C4416-A625-41C4-849D-52A277F69A75}" ShortID="347198700">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="20"/>
+						<Property Name="RadiusMax" Type="Real64" Value="30"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -163,7 +163,7 @@
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>30</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
