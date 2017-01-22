@@ -6,6 +6,13 @@
 				<Folder Name="StartLevel_Music" ID="{E2608360-2266-4716-9A49-9D5E393804BC}" ShortID="388153038">
 					<ChildrenList>
 						<MusicSegment Name="music_start" ID="{407140EB-DCFC-4943-BDE0-B11FA3023388}" ShortID="806339534">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
@@ -71,6 +78,11 @@
 						<MusicSegment Name="music_level" ID="{09E5F8BB-BAE7-46FE-A8AC-B3606147A2B5}" ShortID="448165378">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="72000"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -137,6 +149,11 @@
 						<MusicSegment Name="music_menu" ID="{1F3BA351-843E-4211-A7B8-2DE1BF1D09C1}" ShortID="495706923">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="64000"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

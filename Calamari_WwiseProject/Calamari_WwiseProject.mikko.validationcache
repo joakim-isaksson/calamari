@@ -3,11 +3,11 @@
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Actor-Mixer Hierarchy\Atmo.wwu" DateLow="2412968526" DateHigh="30569494"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1555718987" DateHigh="30569300"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Actor-Mixer Hierarchy\Dialogue.wwu" DateLow="940088861" DateHigh="30569494"/>
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="3593213640" DateHigh="30569501"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="3423699467" DateHigh="30569608"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="2072500569" DateHigh="30569502"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1656384526" DateHigh="30569492"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="3354893757" DateHigh="30569294"/>
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Calamari_WwiseProject.mikko.wsettings" DateLow="1370810113" DateHigh="30569502"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Calamari_WwiseProject.mikko.wsettings" DateLow="3649365491" DateHigh="30569608"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Calamari_WwiseProject.wproj" DateLow="2498838549" DateHigh="30569300"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="4287285822" DateHigh="30569295"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="3354838610" DateHigh="30569294"/>
@@ -18,7 +18,7 @@
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Events\Atmo.wwu" DateLow="4057271131" DateHigh="30569489"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Events\Default Work Unit.wwu" DateLow="3461105879" DateHigh="30569302"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Events\Dialogue.wwu" DateLow="3211973811" DateHigh="30569489"/>
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Events\Music.wwu" DateLow="547440610" DateHigh="30569469"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Events\Music.wwu" DateLow="3155525659" DateHigh="30569608"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Events\SFX.wwu" DateLow="223247549" DateHigh="30569502"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Events\UI.wwu" DateLow="4049259472" DateHigh="30569500"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="427597438" DateHigh="30569491"/>
