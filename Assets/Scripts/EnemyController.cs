@@ -66,7 +66,7 @@ public class EnemyController : MonoBehaviour
                 if (Friendly)
                 {
                     Score.Add(ScoreNotGreetedFriendly);
-					AkSoundEngine.PostEvent (VeryNegativeWwiseSfx, this.gameObject);
+
                 }
                 else
                 {
@@ -157,13 +157,17 @@ public class EnemyController : MonoBehaviour
 	private void GreetPositiveSound(){
 		AkSoundEngine.PostEvent (PositiveWwiseSfx, this.gameObject);
 	}
-
+	private void GreetVeryNegativeSound(){
+		AkSoundEngine.PostEvent (VeryNegativeWwiseSfx, this.gameObject);
+		Debug.Log ("Very negative played on" + gameObject.name);
+	}
 
 	private IEnumerator AfterGreeting(){
-		yield return new WaitForSeconds (MaxResponseTime);
+		yield return new WaitForSeconds (MaxResponseTime + 1);
 
 		if (!greeted) {
 			AkSoundEngine.PostEvent ("Narrator_Neutral", this.gameObject);
+			Invoke ("GreetVeryNegativeSound", 0.5f);
 		}
 
 	}
