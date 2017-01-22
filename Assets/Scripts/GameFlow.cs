@@ -18,9 +18,9 @@ public class GameFlow : MonoBehaviour
     }
 
 	void Start() {
-		CameraControllerReference.GetComponent <CameraController>().PauseFor (2);
+		CameraControllerReference.GetComponent <CameraController>().PauseFor (3f);
 		AkSoundEngine.PostEvent ("Narrator_Ready", gameObject);
-		Invoke ("PlayGoSound", 2);
+		Invoke ("PlayGoSound", 3f);
         //AkSoundEngine.PostEvent ("Play_StartLevel_Music", gameObject);
         //Invoke ("PlayIngameMusic", 2.5f);
 

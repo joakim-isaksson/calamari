@@ -87,7 +87,7 @@ public class PlayerHand : MonoBehaviour {
 		//...
 		AkSoundEngine.PostEvent ("Wave_Hit", gameObject);
 		handAnimator.SetTrigger ("Wave");
-		CamController.PauseFor (1.0f);
+		CamController.PauseFor (1.5f);
 		yield return new WaitForSeconds (0.4f);
 		enemyController.Greet ();
 		yield return new WaitForSeconds (0.6f);
