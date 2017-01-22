@@ -21,5 +21,12 @@ public class EnemyActivator : MonoBehaviour
             other.gameObject.GetComponent<EnemyController>().enabled = true;
             other.gameObject.transform.Find("Sprite").GetComponent<SpriteRenderer>().enabled = true;
         }
+
+        if (other.tag == "Car")
+        {
+            other.gameObject.GetComponent<Car>().enabled = true;
+            other.gameObject.transform.Find("pCube1").gameObject.SetActive(true);
+            other.gameObject.GetComponent<Car>().Activate(transform.position.z);
+        }
     }
 }
