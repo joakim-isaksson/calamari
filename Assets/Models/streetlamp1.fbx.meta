@@ -9,19 +9,34 @@ ModelImporter:
     100002: pCylinder10
     100004: pCylinder11
     100006: //RootNode
+    100008: pCube2
+    100010: pCube3
+    100012: pCylinder23
     400000: beam
     400002: pCylinder10
     400004: pCylinder11
     400006: //RootNode
+    400008: pCube2
+    400010: pCube3
+    400012: pCylinder23
     2300000: beam
     2300002: pCylinder10
     2300004: pCylinder11
+    2300006: pCube2
+    2300008: pCube3
+    2300010: pCylinder23
     3300000: beam
     3300002: pCylinder10
     3300004: pCylinder11
+    3300006: pCube2
+    3300008: pCube3
+    3300010: pCylinder23
     4300000: beam
     4300002: pCylinder11
     4300004: pCylinder10
+    4300006: pCylinder23
+    4300008: pCube3
+    4300010: pCube2
   materials:
     importMaterials: 1
     materialName: 0
