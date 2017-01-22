@@ -126,6 +126,7 @@ public class GamePlayUI : MonoBehaviour {
 	public void ShowEndGamePanel(){
 		StartCoroutine (ShowScoreCoroutine());
 		HandInput.enabled = false;
+        transform.Find("Crosshair").gameObject.SetActive(false);
 	}
 
 	/// <summary>
