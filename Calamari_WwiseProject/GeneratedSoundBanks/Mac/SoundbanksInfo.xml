@@ -109,7 +109,7 @@
 				</File>
 				<File Id="45462410" Language="SFX">
 					<ShortName>fx_car3.wav</ShortName>
-					<Path>SFX\fx_car3_1729CC15.wem</Path>
+					<Path>SFX\fx_car3_E3F52FA9.wem</Path>
 				</File>
 				<File Id="46350043" Language="SFX">
 					<ShortName>Man_Positive_03.wav</ShortName>
@@ -161,7 +161,7 @@
 				</File>
 				<File Id="119191464" Language="SFX">
 					<ShortName>fx_car1.wav</ShortName>
-					<Path>SFX\fx_car1_E6F15064.wem</Path>
+					<Path>SFX\fx_car1_CAA20569.wem</Path>
 				</File>
 				<File Id="120168269" Language="SFX">
 					<ShortName>Wave_Hit_02.wav</ShortName>
@@ -637,7 +637,7 @@
 				</File>
 				<File Id="821489082" Language="SFX">
 					<ShortName>fx_car2.wav</ShortName>
-					<Path>SFX\fx_car2_46D83A85.wem</Path>
+					<Path>SFX\fx_car2_2A820C30.wem</Path>
 				</File>
 				<File Id="823370847" Language="SFX">
 					<ShortName>Man_Negative_01.wav</ShortName>

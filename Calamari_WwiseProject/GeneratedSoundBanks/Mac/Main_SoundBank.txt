@@ -44,7 +44,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	32597010	Man_Positive_27	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Man_Positive_27_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_27		72332
 	38564035	Woman_Negative_14	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Woman_Negative_14_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Negative\Woman_Negative_14		71008
 	39547621	Woman_Negative_16	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Woman_Negative_16_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Negative\Woman_Negative_16		39690
-	45462410	fx_car3	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\fx_car3_1729CC15.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car3		936408
+	45462410	fx_car3	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\fx_car3_E3F52FA9.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car3		936408
 	46350043	Man_Positive_03	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Man_Positive_03_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_03		61060
 	53735143	Man_Negative_02	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Man_Negative_02_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_02		29386
 	76296967	Woman_Negative_20	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Woman_Negative_20_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Negative\Woman_Negative_20		101576
@@ -57,7 +57,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	109703742	Grandma_Positive_03	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Grandma_Positive_03_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Grandma_Positive\Grandma_Positive_03		163370
 	111152215	Woman_Positive_17	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Woman_Positive_17_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Positive\Woman_Positive_17		71152
 	114133025	Man_Negative_17	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Man_Negative_17_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_17		91576
-	119191464	fx_car1	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\fx_car1_E6F15064.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car1		521072
+	119191464	fx_car1	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\fx_car1_CAA20569.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car1		521072
 	120168269	Wave_Hit_02	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Wave_Hit_02_61657093.wem		\Actor-Mixer Hierarchy\SFX\SFX\Foley\Wave_Hit\Wave_Hit_02		100730
 	123469264	Woman_Negative_17	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Woman_Negative_17_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Negative\Woman_Negative_17		77732
 	124560204	Grandma_Positive_02	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Grandma_Positive_02_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Grandma_Positive\Grandma_Positive_02		129424
@@ -176,7 +176,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	810946531	Man_Positive_20	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Man_Positive_20_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_20		72308
 	811978281	Woman_Very_Negative_04	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Woman_Very_Negative_04_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Very_Negative\Woman_Very_Negative_04		90412
 	819243105	Man_Positive_36	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Man_Positive_36_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_36		45754
-	821489082	fx_car2	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\fx_car2_46D83A85.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car2		1189792
+	821489082	fx_car2	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\fx_car2_2A820C30.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car2		1189792
 	823370847	Man_Negative_01	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Man_Negative_01_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_01		42440
 	837088202	Man_Positive_26	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Man_Positive_26_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_26		44486
 	847225438	Man_Very_Negative_02	C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Mac\SFX\Man_Very_Negative_02_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Very_Negative\Man_Very_Negative_02		77082

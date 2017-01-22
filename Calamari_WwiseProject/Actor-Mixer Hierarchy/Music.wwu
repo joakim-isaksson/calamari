@@ -23,6 +23,11 @@
 						<Sound Name="music_level" ID="{5AA200C1-690C-449D-AD01-DF2311934C21}" ShortID="230974832" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
