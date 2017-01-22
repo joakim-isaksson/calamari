@@ -178,7 +178,13 @@
 							<ChildrenList>
 								<MusicPlaylistItem Name="" ID="{898FB8B2-B68C-4E37-B46C-89F02EFDA525}" ShortID="864875165">
 									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="LoopCount" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{62EBF8F0-EDF4-4531-BB72-8EEAD85ABD36}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 									</PropertyList>
 									<SegmentRef Name="music_level" ID="{09E5F8BB-BAE7-46FE-A8AC-B3606147A2B5}"/>
@@ -345,7 +351,6 @@
 							<ChildrenList>
 								<MusicPlaylistItem Name="" ID="{E61B1068-7E9F-43B3-95EA-64FA214F07C7}" ShortID="104546002">
 									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
 										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 									</PropertyList>
 									<SegmentRef Name="music_menu" ID="{1F3BA351-843E-4211-A7B8-2DE1BF1D09C1}"/>

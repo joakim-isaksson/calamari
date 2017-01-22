@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Attenuation Name="Grandma" ID="{AB1F8735-F61A-4C3C-AA3A-FFCA4E232D72}" ShortID="990293331">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="13"/>
+						<Property Name="RadiusMax" Type="Real64" Value="48"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -22,7 +22,7 @@
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>13</XPos>
+											<XPos>48</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -52,7 +52,7 @@
 				</Attenuation>
 				<Attenuation Name="Woman" ID="{9148D29C-E52B-4065-8460-9B7EB6676DFD}" ShortID="908117364">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="15"/>
+						<Property Name="RadiusMax" Type="Real64" Value="45"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -69,7 +69,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>15</XPos>
+											<XPos>45</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -99,7 +99,7 @@
 				</Attenuation>
 				<Attenuation Name="Man" ID="{7884D5E5-06C0-4670-A887-B0254AC6EA7D}" ShortID="412042462">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="18"/>
+						<Property Name="RadiusMax" Type="Real64" Value="48"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -116,7 +116,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>18</XPos>
+											<XPos>48</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -160,7 +160,7 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Log1</SegmentShape>
+											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>20</XPos>
