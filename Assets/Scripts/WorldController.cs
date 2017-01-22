@@ -78,8 +78,11 @@ public class WorldController : MonoBehaviour
         for (var i = 0; i < enemySections; ++i)
         {
             for (var j = 0; j < enemiesPerSection[i]; j++)
-            {   
-                var spawnZ = startZs[i] + RandomFromDistribution.RandomFromStandardNormalDistribution() * TileOffset;
+            {
+                var randNormal = RandomFromDistribution.RandomRangeNormalDistribution(0.25f, 0.75f,
+                    RandomFromDistribution.ConfidenceLevel_e._99);
+
+                var spawnZ = startZs[i] + randNormal * TileOffset;
                 var spawnX = possibleStartXs[Random.Range(0, 5)];
 
                 var randomEnemyPrefab = EnemyPrefabs[Random.Range(0, EnemyPrefabs.Length)];
