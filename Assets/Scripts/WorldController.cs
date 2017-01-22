@@ -52,50 +52,27 @@ public class WorldController : MonoBehaviour
         // Enemy spawning. Uses zOffset as helper
         // Divide the enemy count into 5 sections, but randomize the position within the section
 
-        var enemySections = Mathf.Min(levelLength, enemies);
         var startOffset = 15f;
 
         var possibleStartXs = new List<float> {-1.5f, -1, -0.5f, 0.5f, 1};
-        var startZs = new List<float>();
+        var sectionSize = (zOffset - startOffset) / enemies;
 
-        var sectionSize = (zOffset - startOffset) / enemySections;
-
-        for (var i = 0; i < enemySections; ++i)
+        for (var i = 0; i < enemies; ++i)
         {
-            startZs.Add(startOffset + sectionSize * i);
-        }
+            var randNormal = RandomFromDistribution.RandomRangeNormalDistribution(0.25f, 0.75f,
+                RandomFromDistribution.ConfidenceLevel_e._99);
 
-        var enemiesPerSection = new List<int>();
-        for (var i = 0; i < enemySections; ++i)
-        {
-            enemiesPerSection.Add(0);
-        }
+            var spawnZ = startOffset + sectionSize*(i + randNormal);
+            var spawnX = possibleStartXs[Random.Range(0, 5)];
 
-        var enemiesAdded = 0;
-        while (enemiesAdded < enemies)
-        {
-            enemiesPerSection[enemiesAdded % enemySections]++;
-            enemiesAdded++;
-        }
+            var randomEnemyPrefab = EnemyPrefabs[Random.Range(0, EnemyPrefabs.Length)];
 
-        for (var i = 0; i < enemySections; ++i)
-        {
-            for (var j = 0; j < enemiesPerSection[i]; j++)
-            {
-                var randNormal = RandomFromDistribution.RandomRangeNormalDistribution(0.25f, 0.75f,
-                    RandomFromDistribution.ConfidenceLevel_e._99);
+            var enemy = Instantiate(randomEnemyPrefab);
+            enemy.transform.position = new Vector3(spawnX, 0f, spawnZ);
 
-                var spawnZ = startZs[i] + randNormal * TileOffset;
-                var spawnX = possibleStartXs[Random.Range(0, 5)];
-
-                var randomEnemyPrefab = EnemyPrefabs[Random.Range(0, EnemyPrefabs.Length)];
-
-                var enemy = Instantiate(randomEnemyPrefab);
-                enemy.transform.position = new Vector3(spawnX, 0f, spawnZ);
-
-                enemy.GetComponent<EnemyController>().enabled = false;
-                enemy.transform.Find("Sprite").GetComponent<SpriteRenderer>().enabled = false;
-            }
+            enemy.GetComponent<EnemyController>().enabled = false;
+            enemy.transform.Find("Sprite").GetComponent<SpriteRenderer>().enabled = false;
+            
         }
 
         // Car spawning
