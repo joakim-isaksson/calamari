@@ -64,3 +64,4 @@ MonoBehaviour:
   EnemyPrefabs:
   - {fileID: 1201381543206692, guid: c3ed3c990b25b7b40818236f5d7e9661, type: 2}
   - {fileID: 1506829926591840, guid: 6372e366d20852048b5c40771f4203d6, type: 2}
+  CarPrefab: {fileID: 1583434171872894, guid: ca3f9fab856a53b4ebbc95e869a87b48, type: 2}

@@ -9,6 +9,7 @@ public class WorldController : MonoBehaviour
     public GameObject[] TilePrefabs;
     public GameObject EndingTile;
     public GameObject[] EnemyPrefabs;
+    public GameObject CarPrefab;
 
 	void Start()
     {
@@ -24,7 +25,9 @@ public class WorldController : MonoBehaviour
     /// Generate the level, given the number of tiles.
     /// </summary>
     /// <param name="levelLength"></param>
-    public void GenerateLevel(int levelLength, int enemies)
+    /// <param name="enemies"></param>
+    /// <param name="cars"></param>
+    public void GenerateLevel(int levelLength, int enemies, int cars)
     {
         float zOffset = 0;
 
@@ -93,6 +96,33 @@ public class WorldController : MonoBehaviour
                 enemy.GetComponent<EnemyController>().enabled = false;
                 enemy.transform.Find("Sprite").GetComponent<SpriteRenderer>().enabled = false;
             }
+        }
+
+        // Car spawning
+        // Divide active area into equal chunks
+        // Place cars on normal distributions along the chunk
+
+        var carSectionSize = (zOffset - startOffset) / cars;
+        
+        var startXPerSide = new Dictionary<int, float>();
+        startXPerSide[1] = 17.5f;
+        startXPerSide[-1] = 8.5f;
+
+        for (var i = 0; i < cars; ++i)
+        {
+            var randStart = RandomFromDistribution.RandomRangeNormalDistribution(0.25f, 0.75f,
+                RandomFromDistribution.ConfidenceLevel_e._99);
+            var startZ = startOffset + carSectionSize * (i + randStart);
+            var randDirection = Random.Range(0, 2)*2 -1; // -1 or 1
+
+            var car = Instantiate(CarPrefab);
+
+            car.transform.position += new Vector3(startXPerSide[randDirection], 0f, startZ);
+
+            car.GetComponent<Car>().Direction = randDirection;
+
+            car.GetComponent<Car>().enabled = false;
+            car.transform.Find("pCube1").gameObject.SetActive(false);
         }
     }
 }
