@@ -1,38 +1,17 @@
 fileFormatVersion: 2
-guid: 93e638434efe8044ab041970f27bed3e
-timeCreated: 1485035157
+guid: 300b8acaad7d6784786f7adac86fb417
+timeCreated: 1485085491
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Grandma_sprites_0
-    21300002: Grandma_sprites_1
-    21300004: Grandma_sprites_2
-    21300006: Grandma_sprites_3
-    21300008: Grandma_sprites_4
-    21300010: Grandma_sprites_5
-    21300012: Grandma_sprites_6
-    21300014: Grandma_sprites_8
-    21300016: Grandma_sprites_9
-    21300018: Grandma_sprites_11
-    21300020: Grandma_sprites_12
-    21300022: Grandma_sprites_13
-    21300024: Grandma_sprites_14
-    21300026: Grandma_sprites_19
-    21300028: Grandma_sprites_20
-    21300030: Grandma_sprites_21
-    21300032: Grandma_sprites_22
-    21300034: Grandma_sprites_23
-    21300036: Grandma_sprites_24
-    21300038: Grandma_sprites_25
-    21300040: Grandma_sprites_26
-    21300042: Grandma_sprites_27
-    21300044: Grandma_sprites_28
-    21300046: Grandma_sprites_7
-    21300048: Grandma_sprites_10
-    21300050: Grandma_sprites_15
-    21300052: Grandma_sprites_16
-    21300054: Grandma_sprites_17
-    21300056: Grandma_sprites_18
+    21300000: Grandma_sprites_02_0
+    21300002: Grandma_sprites_02_1
+    21300004: Grandma_sprites_02_2
+    21300006: Grandma_sprites_02_3
+    21300008: Grandma_sprites_02_4
+    21300010: Grandma_sprites_02_5
+    21300012: Grandma_sprites_02_6
+    21300014: Grandma_sprites_02_7
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -107,7 +86,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grandma_sprites_0
+      name: Grandma_sprites_02_0
       rect:
         serializedVersion: 2
         x: 17
@@ -120,7 +99,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_1
+      name: Grandma_sprites_02_1
       rect:
         serializedVersion: 2
         x: 179
@@ -133,7 +112,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_2
+      name: Grandma_sprites_02_2
       rect:
         serializedVersion: 2
         x: 437
@@ -146,7 +125,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_3
+      name: Grandma_sprites_02_3
       rect:
         serializedVersion: 2
         x: 612
@@ -159,7 +138,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_4
+      name: Grandma_sprites_02_4
       rect:
         serializedVersion: 2
         x: 12
@@ -172,7 +151,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_5
+      name: Grandma_sprites_02_5
       rect:
         serializedVersion: 2
         x: 190
@@ -185,7 +164,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_6
+      name: Grandma_sprites_02_6
       rect:
         serializedVersion: 2
         x: 445
@@ -198,7 +177,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_7
+      name: Grandma_sprites_02_7
       rect:
         serializedVersion: 2
         x: 628

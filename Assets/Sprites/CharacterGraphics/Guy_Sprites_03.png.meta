@@ -1,38 +1,18 @@
 fileFormatVersion: 2
-guid: 93e638434efe8044ab041970f27bed3e
-timeCreated: 1485035157
+guid: 5de1801213bd33d49ab72722034f5131
+timeCreated: 1485085542
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Grandma_sprites_0
-    21300002: Grandma_sprites_1
-    21300004: Grandma_sprites_2
-    21300006: Grandma_sprites_3
-    21300008: Grandma_sprites_4
-    21300010: Grandma_sprites_5
-    21300012: Grandma_sprites_6
-    21300014: Grandma_sprites_8
-    21300016: Grandma_sprites_9
-    21300018: Grandma_sprites_11
-    21300020: Grandma_sprites_12
-    21300022: Grandma_sprites_13
-    21300024: Grandma_sprites_14
-    21300026: Grandma_sprites_19
-    21300028: Grandma_sprites_20
-    21300030: Grandma_sprites_21
-    21300032: Grandma_sprites_22
-    21300034: Grandma_sprites_23
-    21300036: Grandma_sprites_24
-    21300038: Grandma_sprites_25
-    21300040: Grandma_sprites_26
-    21300042: Grandma_sprites_27
-    21300044: Grandma_sprites_28
-    21300046: Grandma_sprites_7
-    21300048: Grandma_sprites_10
-    21300050: Grandma_sprites_15
-    21300052: Grandma_sprites_16
-    21300054: Grandma_sprites_17
-    21300056: Grandma_sprites_18
+    21300000: Guy_Sprites_03_0
+    21300002: Guy_Sprites_03_1
+    21300004: Guy_Sprites_03_2
+    21300006: Guy_Sprites_03_3
+    21300008: Guy_Sprites_03_4
+    21300010: Guy_Sprites_03_5
+    21300012: Guy_Sprites_03_6
+    21300014: Guy_Sprites_03_7
+    21300016: Guy_Sprites_03_8
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -69,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 130
+  spritePixelsToUnits: 190
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -107,104 +87,104 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grandma_sprites_0
+      name: Guy_Sprites_03_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 271
-        width: 132
-        height: 225
+        x: 23
+        y: 447
+        width: 128
+        height: 370
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_1
+      name: Guy_Sprites_03_1
       rect:
         serializedVersion: 2
-        x: 179
-        y: 271
-        width: 133
-        height: 222
+        x: 197
+        y: 453
+        width: 118
+        height: 365
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_2
+      name: Guy_Sprites_03_2
       rect:
         serializedVersion: 2
-        x: 437
-        y: 271
-        width: 132
-        height: 225
+        x: 424
+        y: 448
+        width: 172
+        height: 370
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_3
+      name: Guy_Sprites_03_3
       rect:
         serializedVersion: 2
-        x: 612
-        y: 271
-        width: 132
-        height: 222
+        x: 639
+        y: 454
+        width: 146
+        height: 363
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_4
+      name: Guy_Sprites_03_4
       rect:
         serializedVersion: 2
-        x: 12
-        y: 19
-        width: 161
-        height: 225
+        x: 34
+        y: 22
+        width: 139
+        height: 370
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_5
+      name: Guy_Sprites_03_5
       rect:
         serializedVersion: 2
-        x: 190
-        y: 19
-        width: 152
-        height: 222
+        x: 220
+        y: 28
+        width: 118
+        height: 364
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_6
+      name: Guy_Sprites_03_6
       rect:
         serializedVersion: 2
-        x: 445
-        y: 19
-        width: 132
-        height: 225
+        x: 464
+        y: 21
+        width: 124
+        height: 369
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grandma_sprites_7
+      name: Guy_Sprites_03_8
       rect:
         serializedVersion: 2
-        x: 628
-        y: 19
-        width: 132
-        height: 222
+        x: 681
+        y: 27
+        width: 118
+        height: 364
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
