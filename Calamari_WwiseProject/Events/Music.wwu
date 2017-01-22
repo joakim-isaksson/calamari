@@ -8,7 +8,7 @@
 						<Action Name="Play" ID="{DF2BA3BE-D362-4094-92E3-2BF786BF664C}" ShortID="629488979" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{8BC3BE9F-BE7C-41B4-80FD-51F125718A14}" Global="false">
-									<ObjectRef Name="music_level" ID="{09E5F8BB-BAE7-46FE-A8AC-B3606147A2B5}" WorkUnitID="{55A3D991-FCA0-4AC9-8509-9A25F89CE836}"/>
+									<ObjectRef Name="music_level" ID="{5AA200C1-690C-449D-AD01-DF2311934C21}" WorkUnitID="{D5433385-3CBC-4362-807D-7458262DBEAE}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -19,21 +19,21 @@
 						<Action Name="Play" ID="{366D5C8D-D3E4-4390-9F1E-251CC68C9C4B}" ShortID="311631553" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{A7852363-C04F-41B0-83BA-512F07950858}" Global="false">
-									<ObjectRef Name="music_start" ID="{407140EB-DCFC-4943-BDE0-B11FA3023388}" WorkUnitID="{55A3D991-FCA0-4AC9-8509-9A25F89CE836}"/>
+									<ObjectRef Name="music_start" ID="{72F42052-DCBD-4AA4-9EF2-6ED3FDCF7F18}" WorkUnitID="{D5433385-3CBC-4362-807D-7458262DBEAE}"/>
 								</Element>
 							</ElementList>
 						</Action>
 						<Action Name="Stop" ID="{08136916-A5A4-4AD7-8C4E-5DAA946A9950}" ShortID="600568039" Type="Stop" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{0812F465-66BA-4138-ABC1-02BD06AB7954}" Global="false">
-									<ObjectRef Name="music_menu" ID="{1F3BA351-843E-4211-A7B8-2DE1BF1D09C1}" WorkUnitID="{55A3D991-FCA0-4AC9-8509-9A25F89CE836}"/>
+									<ObjectRef Name="music_menu" ID="{41E96679-3DDD-4A91-B5A1-070F641AEEF4}" WorkUnitID="{D5433385-3CBC-4362-807D-7458262DBEAE}"/>
 								</Element>
 							</ElementList>
 						</Action>
 						<Action Name="Stop" ID="{E10E9380-DFC0-4337-9BAD-ED8B68AA8A36}" ShortID="363084616" Type="Stop" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{6A6A90D7-D37B-4075-8515-24693EFC3938}" Global="false">
-									<ObjectRef Name="music_level" ID="{09E5F8BB-BAE7-46FE-A8AC-B3606147A2B5}" WorkUnitID="{55A3D991-FCA0-4AC9-8509-9A25F89CE836}"/>
+									<ObjectRef Name="music_level" ID="{5AA200C1-690C-449D-AD01-DF2311934C21}" WorkUnitID="{D5433385-3CBC-4362-807D-7458262DBEAE}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -44,14 +44,14 @@
 						<Action Name="Play" ID="{632C4347-162F-4084-A858-51622FBBF6C8}" ShortID="468491664" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{334A81DF-292B-46CB-BD00-6797D22E1544}" Global="false">
-									<ObjectRef Name="music_menu" ID="{1F3BA351-843E-4211-A7B8-2DE1BF1D09C1}" WorkUnitID="{55A3D991-FCA0-4AC9-8509-9A25F89CE836}"/>
+									<ObjectRef Name="music_menu" ID="{41E96679-3DDD-4A91-B5A1-070F641AEEF4}" WorkUnitID="{D5433385-3CBC-4362-807D-7458262DBEAE}"/>
 								</Element>
 							</ElementList>
 						</Action>
 						<Action Name="Stop" ID="{E998A610-4E26-4C7D-9EDC-CB0B21741789}" ShortID="841539591" Type="Stop" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{DAD58D6A-76EF-491F-8A67-432C4440BDAD}" Global="false">
-									<ObjectRef Name="music_level" ID="{09E5F8BB-BAE7-46FE-A8AC-B3606147A2B5}" WorkUnitID="{55A3D991-FCA0-4AC9-8509-9A25F89CE836}"/>
+									<ObjectRef Name="music_level" ID="{5AA200C1-690C-449D-AD01-DF2311934C21}" WorkUnitID="{D5433385-3CBC-4362-807D-7458262DBEAE}"/>
 								</Element>
 							</ElementList>
 						</Action>
