@@ -141,9 +141,9 @@ MonoBehaviour:
   ScoreGreetFriendlyOnTime: 10000
   ScoreGreetFriendlyLate: -500
   Anim: {fileID: 95024572413062432}
-  NegativeWwiseSfx: Man_Negative
-  PositiveWwiseSfx: Man_Positive
-  VeryNegativeWwiseSfx: Man_Very_Negative
+  NegativeWwiseSfx: Woman_Negative
+  PositiveWwiseSfx: Woman_Positive
+  VeryNegativeWwiseSfx: Woman_Very_Negative
 --- !u!212 &212788128709371906
 SpriteRenderer:
   m_ObjectHideFlags: 1
