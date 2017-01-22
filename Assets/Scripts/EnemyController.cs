@@ -41,8 +41,11 @@ public class EnemyController : MonoBehaviour
     bool greeted;
     bool running;
 
+    private SpriteRenderer spriteRenderer;
+
     void Awake()
-	{
+    {
+        spriteRenderer = transform.Find("Sprite").GetComponent<SpriteRenderer>();
         Player = GameObject.FindGameObjectWithTag("Player");
 
 	    Friendly = Random.value > 0.3;
@@ -116,7 +119,10 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetHostile);
             Anim.SetTrigger("Angry");
-			AkSoundEngine.PostEvent (NegativeWwiseSfx, this.gameObject);
+
+            StartCoroutine(FlashEnemy(Color.red));
+
+            AkSoundEngine.PostEvent (NegativeWwiseSfx, this.gameObject);
 			Invoke ("GreetNegativeSound", 0.9f);
 			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Bad);
         }
@@ -126,7 +132,10 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetHostile);
             Anim.SetTrigger("Angry");
-			AkSoundEngine.PostEvent ("Narrator_Negative", this.gameObject);
+
+            StartCoroutine(FlashEnemy(Color.red));
+
+            AkSoundEngine.PostEvent ("Narrator_Negative", this.gameObject);
 			Invoke ("GreetNegativeSound", 0.9f);
 			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Average);
         }
@@ -136,7 +145,10 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetFriendlyOnTime);
             Anim.SetTrigger("Happy");
-			AkSoundEngine.PostEvent ("Narrator_Positive", this.gameObject);
+
+            StartCoroutine(FlashEnemy(Color.green));
+
+            AkSoundEngine.PostEvent ("Narrator_Positive", this.gameObject);
 			Invoke ("GreetPositiveSound", 0.9f);
 			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Great);
         }
@@ -146,7 +158,10 @@ public class EnemyController : MonoBehaviour
         {
             Score.Add(ScoreGreetFriendlyLate);
             Anim.SetTrigger("Angry");
-			AkSoundEngine.PostEvent ("Narrator_Neutral", this.gameObject);
+
+            StartCoroutine(FlashEnemy(Color.red));
+
+            AkSoundEngine.PostEvent ("Narrator_Neutral", this.gameObject);
 			Invoke ("GreetNegativeSound", 0.9f);
 			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Average);
         }
@@ -172,5 +187,18 @@ public class EnemyController : MonoBehaviour
 		}
 
 	}
+
+    private IEnumerator FlashEnemy(Color newColor)
+    {
+        var oldColor = spriteRenderer.color;
+
+        spriteRenderer.color = newColor;
+        yield return new WaitForSeconds(0.15f);
+        spriteRenderer.color = oldColor;
+        yield return new WaitForSeconds(0.15f);
+        spriteRenderer.color = newColor;
+        yield return new WaitForSeconds(0.15f);
+        spriteRenderer.color = oldColor;
+    }
 
 }
