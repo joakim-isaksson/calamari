@@ -16,20 +16,32 @@ MonoBehaviour:
   - PhysicalPath: Events\Atmo.wwu
     ParentPhysicalPath: 
     Guid: '{EBAB7ACE-F075-4252-B78C-AD21E1D8CDDF}'
-    m_lastTimePsrt1: -231650892
-    m_lastTimePart2: -1999355350
+    m_lastTimePsrt1: -140909166
+    m_lastTimePart2: -1999355216
     List:
-    - Name: Car_PassBy
-      Path: Atmo\Cars\Car_PassBy
+    - Name: Car_Play
+      Path: Atmo\Cars\Car_Play
       PathAndIcons:
       - ElementName: Atmo
         ObjectType: 12
       - ElementName: Cars
         ObjectType: 4
-      - ElementName: Car_PassBy
+      - ElementName: Car_Play
         ObjectType: 3
-      ID: -152526720
+      ID: 422348590
       Guid: 25c89d7ed002554daf36859dcf0fd053
+      maxAttenuation: 0
+    - Name: Car_Stop
+      Path: Atmo\Cars\Car_Stop
+      PathAndIcons:
+      - ElementName: Atmo
+        ObjectType: 12
+      - ElementName: Cars
+        ObjectType: 4
+      - ElementName: Car_Stop
+        ObjectType: 3
+      ID: 1465464336
+      Guid: 75462b9ddac8bb4ba1f1bb9831f2c4d9
       maxAttenuation: 0
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -214,8 +226,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Music.wwu
     ParentPhysicalPath: 
     Guid: '{2AB8BC12-B398-4B6E-8851-7861A56CC893}'
-    m_lastTimePsrt1: 72932431
-    m_lastTimePart2: -1999355372
+    m_lastTimePsrt1: -140788518
+    m_lastTimePart2: -1999355216
     List:
     - Name: Play_InGame_Music
       Path: Music\Play_InGame_Music
@@ -356,8 +368,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{50A95469-C110-4823-8F90-41D1A370D747}'
-    m_lastTimePsrt1: 1141679278
-    m_lastTimePart2: -1999355337
+    m_lastTimePsrt1: -105061425
+    m_lastTimePart2: -1999355216
     List:
     - Name: Main_SoundBank
       Path: Default Work Unit\Main_SoundBank

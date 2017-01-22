@@ -5,8 +5,24 @@
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<ChildrenList>
-						<Bus Name="Narrator" ID="{DF953179-D2DF-4E43-947B-EBFFF216983A}"/>
-						<Bus Name="People" ID="{CC2850E7-45D1-4498-845D-1ED399199B00}"/>
+						<Bus Name="Narrator" ID="{DF953179-D2DF-4E43-947B-EBFFF216983A}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="People" ID="{CC2850E7-45D1-4498-845D-1ED399199B00}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
 						<Bus Name="SFX" ID="{A4A8E592-7153-43E9-BCA0-13946EA75907}"/>
 						<Bus Name="Music" ID="{DB78BB22-DF94-49C0-A53E-AF4A9B890E12}"/>
 						<Bus Name="UI" ID="{D14D3C7D-0972-4CBD-B78D-C7B4826FC761}"/>

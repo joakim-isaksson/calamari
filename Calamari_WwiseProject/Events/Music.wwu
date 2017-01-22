@@ -55,6 +55,13 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Stop" ID="{95D1E549-B8BA-4894-9713-521C98043EC6}" ShortID="313587740" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{20FD8E04-EB6D-4EB2-8F94-03734160A573}" Global="false">
+									<ObjectRef Name="Cars" ID="{4F7A7D9C-ECC4-4741-86D2-F0CF280AEBD9}" WorkUnitID="{F3EE3F16-094D-4B1C-84F0-8447E5971D36}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

@@ -4,6 +4,13 @@
 		<WorkUnit Name="UI" ID="{5E8E5288-D206-403B-93D7-E1E9D1962C00}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Menu" ID="{827BC3F3-AB66-4FB3-8889-729B5C7B8A84}" ShortID="904246175">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
@@ -57,6 +64,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Menu_Button_Hit_01" ID="{D633CF94-692E-4D89-96A9-6519F90A8569}" ShortID="481351117">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="9.99728374047046E-03"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Menu_Button_Hit_01.wav</AudioFile>
 								</AudioFileSource>
@@ -83,6 +94,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Menu_Button_Release_01" ID="{F12113DD-5F98-4454-8BAB-3337D7E852CB}" ShortID="5196065">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="6.52524008716176E-03"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="6.84510479731674E-02"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Menu_Button_Release_01.wav</AudioFile>
 								</AudioFileSource>
@@ -103,11 +119,6 @@
 										<Value>130</Value>
 									</ValueList>
 								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -119,6 +130,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Menu_Click_01" ID="{567BF498-D828-433C-88FD-040F5AD8C544}" ShortID="581858833">
+									<PropertyList>
+										<Property Name="TrimBegin" Type="Real64" Value="3.69169850726448E-03"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Menu_Click_01.wav</AudioFile>
 								</AudioFileSource>

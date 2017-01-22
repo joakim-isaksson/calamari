@@ -1507,7 +1507,7 @@
 							<ChildrenList>
 								<Effect Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
-										<Property Name="DecayTime" Type="Real32" Value="0.8"/>
+										<Property Name="DecayTime" Type="Real32" Value="1"/>
 										<Property Name="Density" Type="Real32" Value="93"/>
 										<Property Name="Diffusion" Type="Real32" Value="9"/>
 										<Property Name="ERLevel" Type="Real32" Value="-31"/>

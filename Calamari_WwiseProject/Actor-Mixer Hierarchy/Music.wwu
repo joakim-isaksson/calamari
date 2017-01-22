@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D5433385-3CBC-4362-807D-7458262DBEAE}" SchemaVersion="75">
+	<AudioObjects>
+		<WorkUnit Name="Music" ID="{D5433385-3CBC-4362-807D-7458262DBEAE}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Music" ID="{BF353A6E-D2EA-4D6A-8625-A071DC463CD3}" ShortID="492656394">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{DB78BB22-DF94-49C0-A53E-AF4A9B890E12}" WorkUnitID="{EA92F3B2-4A52-4404-BD18-2D4F0CD2BB34}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

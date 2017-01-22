@@ -4,6 +4,13 @@
 		<WorkUnit Name="SFX" ID="{40D63269-781E-4BD4-8619-D96D532107FD}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="SFX" ID="{10EBDE18-9082-46EB-85A1-EDC2714BBBE9}" ShortID="995300770">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6C81CF76-D405-4529-A09D-44ACC30DF42B}"/>
@@ -23,11 +30,6 @@
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-8</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -49,6 +51,12 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Wave_Miss_01" ID="{EC35E065-F63A-4E3A-96A9-D7D5DB40FBA1}" ShortID="561283307">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.53718760500355E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.04462512600426E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.59668777300923E-02"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.683137762647206"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Wave_Miss_01.wav</AudioFile>
 												</AudioFileSource>
@@ -68,6 +76,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Wave_Miss_02" ID="{F3846D3E-C6A3-4073-86D9-149D07DA5D07}" ShortID="633845885">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.10805481612935E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.35784405451029E-02"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.675526199832196"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Wave_Miss_02.wav</AudioFile>
 												</AudioFileSource>
@@ -87,6 +100,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Wave_Miss_03" ID="{08E6FCBA-6181-4529-B598-DA92AB617D79}" ShortID="867681206">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.88509618576801E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="8.35295679940121E-02"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.692194637097667"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Wave_Miss_03.wav</AudioFile>
 												</AudioFileSource>
@@ -112,7 +130,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -136,6 +154,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Wave_Hit_01" ID="{3840E9FB-F9A0-45A0-979F-87423EC2AE4E}" ShortID="764982263">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.166533469347514"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.0476852438698"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Wave_Hit_01.wav</AudioFile>
 												</AudioFileSource>
@@ -155,6 +177,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Wave_Hit_02" ID="{12A4C4D4-A894-44B8-883F-9AA18AF06534}" ShortID="120168269">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.141532694710537"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.903631820074969"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Wave_Hit_02.wav</AudioFile>
 												</AudioFileSource>
