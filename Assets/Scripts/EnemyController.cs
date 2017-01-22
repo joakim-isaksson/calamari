@@ -45,7 +45,8 @@ public class EnemyController : MonoBehaviour
 	{
         Player = GameObject.FindGameObjectWithTag("Player");
 
-    }
+	    Friendly = Random.value > 0.3;
+	}
 
 	void Start(){
 		Score = ScoreManager.instance;
