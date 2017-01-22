@@ -16,7 +16,7 @@ public class BgmController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		SceneManager.sceneLoaded += CheckMusicToPlay;
-		//AkSoundEngine.PostEvent ("Play_MenuAndCredits_Music", gameObject);
+		AkSoundEngine.PostEvent ("Play_MenuAndCredits_Music", gameObject);
 	}
 	
 	// Update is called once per frame
@@ -41,7 +41,7 @@ public class BgmController : MonoBehaviour {
 
 	private void PlayGamePlayMusic(){
 		AkSoundEngine.PostEvent ("Play_StartLevel_Music", gameObject);
-		Invoke ("PlayIngameMusic", 2.5f);
+		Invoke ("PlayIngameMusic", 3f);
 	}
 
 	private void PlayIngameMusic(){
