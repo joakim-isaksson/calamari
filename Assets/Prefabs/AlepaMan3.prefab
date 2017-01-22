@@ -9,36 +9,18 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1201381543206692}
+  m_RootGameObject: {fileID: 1506829926591840}
   m_IsPrefabParent: 1
---- !u!1 &1201381543206692
+--- !u!1 &1439284343084956
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4830996326210538}
-  - component: {fileID: 114436469341454744}
-  - component: {fileID: 54640139239526658}
-  - component: {fileID: 65801686226011352}
-  m_Layer: 0
-  m_Name: Granma3
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1946880276987794
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4994475870220928}
-  - component: {fileID: 212277661433588464}
-  - component: {fileID: 95626999431531104}
+  - component: {fileID: 4597464767317254}
+  - component: {fileID: 212788128709371906}
+  - component: {fileID: 95024572413062432}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -46,39 +28,57 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4830996326210538
+--- !u!1 &1506829926591840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4354475733872388}
+  - component: {fileID: 114895524136273834}
+  - component: {fileID: 54719971709130200}
+  - component: {fileID: 65883196791242398}
+  m_Layer: 0
+  m_Name: AlepaMan3
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4354475733872388
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1201381543206692}
+  m_GameObject: {fileID: 1506829926591840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4994475870220928}
+  - {fileID: 4597464767317254}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4994475870220928
+--- !u!4 &4597464767317254
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1946880276987794}
+  m_GameObject: {fileID: 1439284343084956}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4830996326210538}
+  m_Father: {fileID: 4354475733872388}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &54640139239526658
+--- !u!54 &54719971709130200
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1201381543206692}
+  m_GameObject: {fileID: 1506829926591840}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -88,28 +88,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65801686226011352
+--- !u!65 &65883196791242398
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1201381543206692}
+  m_GameObject: {fileID: 1506829926591840}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.8640552, z: 0.1317543}
   m_Center: {x: 0, y: 1.0321, z: -0.01386261}
---- !u!95 &95626999431531104
+--- !u!95 &95024572413062432
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1946880276987794}
+  m_GameObject: {fileID: 1439284343084956}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d81a5561a078f144baf12db0bd73d6ec, type: 2}
+  m_Controller: {fileID: 9100000, guid: 891a2686ff4ddb54fabd31ccb21d2cfe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -117,12 +117,12 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114436469341454744
+--- !u!114 &114895524136273834
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1201381543206692}
+  m_GameObject: {fileID: 1506829926591840}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 901192f8f39d45846b6861ff792273fe, type: 3}
@@ -132,7 +132,7 @@ MonoBehaviour:
   RunningSpeed: -5
   Friendly: 1
   WaveMinDelay: 1
-  WaveMaxDelay: 4
+  WaveMaxDelay: 6
   MaxResponseTime: 2
   ScoreNotGreetedFriendly: -1000
   ScoreNotGreetedHostile: 1000
@@ -140,16 +140,16 @@ MonoBehaviour:
   ScoreGreetFriendlyEarly: -2000
   ScoreGreetFriendlyOnTime: 10000
   ScoreGreetFriendlyLate: -500
-  Anim: {fileID: 95626999431531104}
-  NegativeWwiseSfx: Grandma_Negative
-  PositiveWwiseSfx: Grandma_Positive
-  VeryNegativeWwiseSfx: Grandma_Very_Negative
---- !u!212 &212277661433588464
+  Anim: {fileID: 95024572413062432}
+  NegativeWwiseSfx: Man_Negative
+  PositiveWwiseSfx: Man_Positive
+  VeryNegativeWwiseSfx: Man_Very_Negative
+--- !u!212 &212788128709371906
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1946880276987794}
+  m_GameObject: {fileID: 1439284343084956}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -175,7 +175,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300006, guid: 93e638434efe8044ab041970f27bed3e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1a5e68d5d2a5d4b4c9b298449e57002d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
