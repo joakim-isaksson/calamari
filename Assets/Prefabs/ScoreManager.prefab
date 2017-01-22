@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cf59702f3154c548b36952ab5d510d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ComboMultiplier: 1
+  ComboMultiplier: 0.2
   MaxCombo: 0
   BadWaveScores: 0
   GoodWaveScores: 0
