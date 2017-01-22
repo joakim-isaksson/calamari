@@ -127,7 +127,8 @@ public class GamePlayUI : MonoBehaviour {
 		StartCoroutine (ShowScoreCoroutine());
 		HandInput.enabled = false;
         transform.Find("Crosshair").gameObject.SetActive(false);
-	}
+        Cursor.visible = true;
+    }
 
 	/// <summary>
 	/// The retry is clicked. Restart the game
