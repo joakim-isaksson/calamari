@@ -84,7 +84,12 @@ public class ScoreManager : MonoBehaviour
 			MaxCombo = Combo;
 		}
 
-		int actualAmout = (int)Mathf.Round(Combo * ComboMultiplier * amount);
+
+
+		int actualAmout = (int)Mathf.Round(Combo * ComboMultiplier * amount + amount);
+		if (amount < 0) {
+			actualAmout = amount;
+		}
 		TotalScore += actualAmout;
 		if (actualAmout > 0) {
 			GoodWaveScores += actualAmout;
