@@ -132,6 +132,7 @@ public class GamePlayUI : MonoBehaviour {
 	/// The retry is clicked. Restart the game
 	/// </summary>
 	public void OnClickRetry(){
+		AkSoundEngine.PostEvent ("Menu_Start_Game", gameObject);
 		SceneManager.LoadScene ("Main");
 	}
 
@@ -140,7 +141,7 @@ public class GamePlayUI : MonoBehaviour {
 	/// When the quit button is clicked. Quit the game and back to menu
 	/// </summary>
 	public void OnClickQuit(){
-		//SceneManager.LoadScene ("TestScene_Xiaoxiao");
+		AkSoundEngine.PostEvent ("Menu_Click", gameObject);
 		ScreenFader.instance.FadeIn (Color.black, 1, delegate {
 			SceneManager.LoadScene ("CreditsScene");
 		});
