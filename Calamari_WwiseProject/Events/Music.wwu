@@ -23,6 +23,13 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Stop" ID="{08136916-A5A4-4AD7-8C4E-5DAA946A9950}" ShortID="600568039" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0812F465-66BA-4138-ABC1-02BD06AB7954}" Global="false">
+									<ObjectRef Name="music_menu" ID="{1F3BA351-843E-4211-A7B8-2DE1BF1D09C1}" WorkUnitID="{55A3D991-FCA0-4AC9-8509-9A25F89CE836}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_MenuAndCredits_Music" ID="{FBD4DFF2-6138-4B8B-8A5F-54A528350A42}">
@@ -31,6 +38,13 @@
 							<ElementList>
 								<Element ID="{334A81DF-292B-46CB-BD00-6797D22E1544}" Global="false">
 									<ObjectRef Name="music_menu" ID="{1F3BA351-843E-4211-A7B8-2DE1BF1D09C1}" WorkUnitID="{55A3D991-FCA0-4AC9-8509-9A25F89CE836}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{E998A610-4E26-4C7D-9EDC-CB0B21741789}" ShortID="841539591" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{DAD58D6A-76EF-491F-8A67-432C4440BDAD}" Global="false">
+									<ObjectRef Name="music_level" ID="{09E5F8BB-BAE7-46FE-A8AC-B3606147A2B5}" WorkUnitID="{55A3D991-FCA0-4AC9-8509-9A25F89CE836}"/>
 								</Element>
 							</ElementList>
 						</Action>
