@@ -112,6 +112,8 @@ public class EnemyController : MonoBehaviour
     /// </returns>
     public void Greet()
     {
+		if (greeted)
+			return;
         greeted = true;
 
         // Greeting an unfriendly character (really bad)
