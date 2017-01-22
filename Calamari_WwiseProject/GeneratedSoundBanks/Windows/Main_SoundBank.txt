@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	126614945	Menu_Button_Hit			\UI\Menu\Menu_Button_Hit	
 	347845317	Play_InGame_Music			\Music\Play_InGame_Music	
+	422348590	Car_Play			\Atmo\Cars\Car_Play	
 	543282405	Wave_Miss			\SFX\Foley\Wave_Miss	
 	645232014	Narrator_Neutral			\Dialogue\Narrator\Narrator_Neutral	
 	666034363	Man_Positive			\Dialogue\People\Man_Positive	
@@ -22,7 +23,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3540843768	Play_MenuAndCredits_Music			\Music\Play_MenuAndCredits_Music	
 	3544995775	Grandma_Positive			\Dialogue\People\Grandma_Positive	
 	3640189846	Narrator_Ready			\Dialogue\Narrator\Narrator_Ready	
-	4142440576	Car_PassBy			\Atmo\Cars\Car_PassBy	
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
@@ -36,7 +36,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	13714518	Woman_Positive_10	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Positive_10_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Positive\Woman_Positive_10		71004
 	14062417	Man_Negative_18	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Negative_18_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_18		40244
 	14429959	narration_START_ready	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\narration_START_ready_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\Narrator\narration_START_ready		273200
-	21487690	fx_car3	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\fx_car3_9E69E797.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car3		1209664
+	21487690	fx_car3	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\fx_car3_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car3		1209664
 	25210492	Man_Positive_22	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_22_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_22		56546
 	26825925	Man_Very_Negative_01	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Very_Negative_01_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Very_Negative\Man_Very_Negative_01		62816
 	27076988	Grandma_Negative_08	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Grandma_Negative_08_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Grandma_Negative\Grandma_Negative_08		240832
@@ -57,7 +57,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	109703742	Grandma_Positive_03	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Grandma_Positive_03_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Grandma_Positive\Grandma_Positive_03		163370
 	111152215	Woman_Positive_17	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Positive_17_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Positive\Woman_Positive_17		71152
 	114133025	Man_Negative_17	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Negative_17_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_17		91576
-	119191464	fx_car1	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\fx_car1_9E69E797.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car1		1209664
+	119191464	fx_car1	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\fx_car1_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car1		1209664
 	120168269	Wave_Hit_02	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Wave_Hit_02_9E69E797.wem		\Actor-Mixer Hierarchy\SFX\SFX\Foley\Wave_Hit\Wave_Hit_02		180430
 	123469264	Woman_Negative_17	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Negative_17_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Negative\Woman_Negative_17		77732
 	124560204	Grandma_Positive_02	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Grandma_Positive_02_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Grandma_Positive\Grandma_Positive_02		129424
@@ -176,7 +176,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	810946531	Man_Positive_20	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_20_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_20		72308
 	811978281	Woman_Very_Negative_04	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Woman_Very_Negative_04_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Woman_Very_Negative\Woman_Very_Negative_04		90412
 	819243105	Man_Positive_36	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_36_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_36		45754
-	821489082	fx_car2	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\fx_car2_9E69E797.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car2		1512064
+	821489082	fx_car2	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\fx_car2_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Atmo\Atmo\Cars\fx_car2		1512064
 	823370847	Man_Negative_01	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Negative_01_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Negative\Man_Negative_01		42440
 	837088202	Man_Positive_26	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Positive_26_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Positive\Man_Positive_26		44486
 	847225438	Man_Very_Negative_02	C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\SFX\Man_Very_Negative_02_9E69E797.wem		\Actor-Mixer Hierarchy\Dialogue\People\Man_Very_Negative\Man_Very_Negative_02		77082
