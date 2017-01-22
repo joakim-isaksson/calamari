@@ -124,7 +124,7 @@ public class EnemyController : MonoBehaviour
 
             StartCoroutine(FlashEnemy(Color.red));
 
-            AkSoundEngine.PostEvent (NegativeWwiseSfx, this.gameObject);
+			AkSoundEngine.PostEvent ("Narrator_Negative", this.gameObject);
 			Invoke ("GreetNegativeSound", 0.9f);
 			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Bad);
         }
