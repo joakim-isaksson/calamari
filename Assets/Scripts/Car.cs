@@ -57,6 +57,8 @@ public class Car : MonoBehaviour
                 transform.position.y, 
                 playerZ - differenceZ);
         }
+
+		AkSoundEngine.PostEvent ("Car_Play", gameObject);
     }
 
     void OnTriggerEnter(Collider other)
