@@ -30,6 +30,13 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Stop" ID="{E10E9380-DFC0-4337-9BAD-ED8B68AA8A36}" ShortID="363084616" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6A6A90D7-D37B-4075-8515-24693EFC3938}" Global="false">
+									<ObjectRef Name="music_level" ID="{09E5F8BB-BAE7-46FE-A8AC-B3606147A2B5}" WorkUnitID="{55A3D991-FCA0-4AC9-8509-9A25F89CE836}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_MenuAndCredits_Music" ID="{FBD4DFF2-6138-4B8B-8A5F-54A528350A42}">

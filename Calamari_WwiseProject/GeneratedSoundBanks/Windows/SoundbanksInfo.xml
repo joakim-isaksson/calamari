@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\mikko\Documents\Git\Calamari\Calamari_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\dfast\Documents\hiornotgame\Calamari_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,7 +21,7 @@
 			<ShortName>Main_SoundBank</ShortName>
 			<Path>Main_SoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4142440576" Name="Car_PassBy" ObjectPath="\Events\Atmo\Cars\Car_PassBy"/>
+				<Event Id="422348590" Name="Car_Play" ObjectPath="\Events\Atmo\Cars\Car_Play" MaxAttenuation="20.000000"/>
 				<Event Id="3032610195" Name="Grandma_Negative" ObjectPath="\Events\Dialogue\People\Grandma_Negative" MaxAttenuation="13.000000"/>
 				<Event Id="3544995775" Name="Grandma_Positive" ObjectPath="\Events\Dialogue\People\Grandma_Positive" MaxAttenuation="13.000000"/>
 				<Event Id="1911024840" Name="Grandma_Very_Negative" ObjectPath="\Events\Dialogue\People\Grandma_Very_Negative" MaxAttenuation="13.000000"/>
@@ -77,7 +77,7 @@
 				</File>
 				<File Id="21487690" Language="SFX">
 					<ShortName>fx_car3.wav</ShortName>
-					<Path>SFX\fx_car3_9E69E797.wem</Path>
+					<Path>SFX\fx_car3_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="25210492" Language="SFX">
 					<ShortName>Man_Positive_22.wav</ShortName>
@@ -161,7 +161,7 @@
 				</File>
 				<File Id="119191464" Language="SFX">
 					<ShortName>fx_car1.wav</ShortName>
-					<Path>SFX\fx_car1_9E69E797.wem</Path>
+					<Path>SFX\fx_car1_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="120168269" Language="SFX">
 					<ShortName>Wave_Hit_02.wav</ShortName>
@@ -637,7 +637,7 @@
 				</File>
 				<File Id="821489082" Language="SFX">
 					<ShortName>fx_car2.wav</ShortName>
-					<Path>SFX\fx_car2_9E69E797.wem</Path>
+					<Path>SFX\fx_car2_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="823370847" Language="SFX">
 					<ShortName>Man_Negative_01.wav</ShortName>
