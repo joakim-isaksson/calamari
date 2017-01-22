@@ -53,5 +53,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WorldControllerReference: {fileID: 0}
   CameraControllerReference: {fileID: 0}
-  LevelLength: 4
+  LevelLength: 5
   EnemyCount: 5
