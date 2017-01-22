@@ -14,7 +14,7 @@ public class EnemyController : MonoBehaviour
 
     // Wave delay
     public float WaveMinDelay = 0.0f;
-    public float WaveMaxDelay = 5.0f;
+    public float WaveMaxDelay = 3.5f;
 
     // Maximum time for the player to respond to the wave
     public float MaxResponseTime = 2.0f;
@@ -124,7 +124,7 @@ public class EnemyController : MonoBehaviour
 
             StartCoroutine(FlashEnemy(Color.red));
 
-            AkSoundEngine.PostEvent (NegativeWwiseSfx, this.gameObject);
+			AkSoundEngine.PostEvent ("Narrator_Negative", this.gameObject);
 			Invoke ("GreetNegativeSound", 0.9f);
 			//GamePlayUI.gamePlayUI.ShowClickText (transform.position + Vector3.up * 2.5f, GamePlayUI.WaveQualityText.Bad);
         }

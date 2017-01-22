@@ -132,7 +132,7 @@ MonoBehaviour:
   RunningSpeed: -5
   Friendly: 1
   WaveMinDelay: 1
-  WaveMaxDelay: 4
+  WaveMaxDelay: 4.5
   MaxResponseTime: 2
   ScoreNotGreetedFriendly: -1000
   ScoreNotGreetedHostile: 1000
