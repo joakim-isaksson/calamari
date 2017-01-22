@@ -60,10 +60,9 @@ MonoBehaviour:
   - {fileID: 1490371893538466, guid: ecef599320b4e5b4bb259d969e040772, type: 2}
   - {fileID: 1151986400384122, guid: 4a4ba1fdcee54fb498038daf98f8e56f, type: 2}
   - {fileID: 1151986400384122, guid: 4a4ba1fdcee54fb498038daf98f8e56f, type: 2}
-  StartingTile: {fileID: 1202316541548078, guid: 16cfca004a1894740b81847037b90855,
-    type: 2}
   EndingTile: {fileID: 1916484109743584, guid: ff10682fc96c7cd4795cb3ffaccccc2d, type: 2}
   EnemyPrefabs:
   - {fileID: 1201381543206692, guid: c3ed3c990b25b7b40818236f5d7e9661, type: 2}
   - {fileID: 1506829926591840, guid: 6372e366d20852048b5c40771f4203d6, type: 2}
+  - {fileID: 1506829926591840, guid: a54e9f9a626601049a4e782cda058dc3, type: 2}
   CarPrefab: {fileID: 1583434171872894, guid: ca3f9fab856a53b4ebbc95e869a87b48, type: 2}
